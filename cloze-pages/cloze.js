@@ -38,6 +38,7 @@
       }
     }
     let activeBlank = null;
+    let pointerInPicker = false;
     const update = () => {
       let correct = 0;
       let checked = 0;
@@ -76,6 +77,7 @@
       if (!activeBlank) return;
       const blank = activeBlank;
       activeBlank = null;
+      pointerInPicker = false;
       blank.setAttribute('aria-expanded', 'false');
       picker.hidden = true;
       if (restoreFocus) blank.focus({preventScroll: true});
@@ -157,7 +159,12 @@
       update();
     }
 
+    document.addEventListener('pointerdown', event => {
+      pointerInPicker = !picker.hidden && picker.contains(event.target);
+    });
+    document.addEventListener('pointercancel', () => { pointerInPicker = false; });
     document.addEventListener('click', event => {
+      pointerInPicker = false;
       const blank = event.target.closest('[data-blank]');
       const inlineOption = event.target.closest('[data-inline-option]');
       if (blank) {
@@ -174,9 +181,11 @@
       }
     });
     document.addEventListener('focusin', event => {
-      if (event.target !== activeBlank && !picker.contains(event.target)) closePicker();
+      // iOS WebKit can move focus before dispatching a tap's click.
+      if (!pointerInPicker && event.target !== activeBlank && !picker.contains(event.target)) closePicker();
     });
     document.addEventListener('keydown', event => {
+      pointerInPicker = false;
       if (!activeBlank) return;
       if (event.key === 'Escape') {
         event.preventDefault();
