@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>阅读类型选择 · 十环</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../site-editorial.css">
+<link rel="stylesheet" href="../reading-editorial.css">
+<link rel="stylesheet" href="../exam-reading-layout.css">
+
+</head>
+<body>
+<a class="skip" href="#reading-main">跳到正文</a>
+<header class="site-header"><div class="site-inner"><a class="brand" href="../index.html" aria-label="十环"><img src="../assets/zhang-shihuan-logo.svg" alt="" width="69" height="36"></a><nav class="site-nav" aria-label="主导航"><a href="../external-practice.html">每日外刊</a><a href="../index.html?view=study">专题精讲</a><a href="../cloze-pages/index.html">完形填空</a><a href="../index.html?view=reading&amp;reading_type=comprehension" aria-current="page">阅读理解</a></nav></div></header>
+<main class="editorial-page reading-page" id="reading-main" tabindex="-1">
+
+<nav class="editorial-rail reading-nav" aria-label="阅读路径">
+  <a href="../index.html?view=reading" data-history-back>‹ 返回阅读模块</a>
+</nav>
+<header class="directory-header"><h1 class="editorial-title">先选题型</h1></header>
+<section class="directory-choices" aria-label="阅读题型"><article class="directory-choice"><h2><a href="reading-comprehension/index.html">阅读理解</a></h2><p>433 个题组 · 1759 道小题 · 已匹配 223 篇外刊</p></article><article class="directory-choice"><h2><a href="task-reading/index.html">任务型阅读（阅读表达）</a></h2><p>46 个题组 · 230 道小题 · 已匹配 46 篇外刊</p></article></section>
+</main>
+<script>
+document.querySelectorAll('[data-history-back]').forEach(link => {
+  link.addEventListener('click', event => {
+    if (event.button || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (history.length > 1) {
+      event.preventDefault();
+      history.back();
+    }
+  });
+});
+document.querySelectorAll('.reading-contents a, .letter-links a, .letter-glossary a').forEach(link => {
+  link.addEventListener('click', event => {
+    if (event.button || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const section = document.getElementById(link.hash.slice(1));
+    if (!section) return;
+    history.replaceState(history.state, '', link.hash);
+    event.preventDefault();
+    section.scrollIntoView();
+    section.focus({preventScroll: true});
+  });
+});
+</script>
+</body>
+</html>

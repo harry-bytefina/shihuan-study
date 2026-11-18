@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>代词 · 十环</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="site-editorial.css">
+<script>
+if (window.__GRAMMAR_CARD_EMBED__) document.documentElement.dataset.embedded = 'true';
+</script>
+<style>
+:root{--pen:var(--accent);--edge:var(--rule)}
+[hidden]{display:none!important}
+button,summary{font:inherit;cursor:pointer;color:inherit}
+.manual-page{--manual-inset:28px;min-width:0;padding-block:40px 82px}
+html[data-embedded],html[data-embedded] body{background:transparent}
+html[data-embedded] .manual-page{padding:0 3px 4px}
+html[data-embedded] :is(.site-header,.skip,.standalone){display:none}
+body.prepositions{--pen:#2f6056}
+body.nonfinite{--pen:#68452d}
+.cover{padding:11px var(--manual-inset);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:3px 14px}
+.cover h1{margin:0;font:700 1.18rem/1.45 var(--serif)}
+.standalone{font-size:.83rem;margin-inline-end:auto}
+.turn{color:var(--accent);border:1px solid var(--deep-rule);border-radius:2px;background:transparent;min-height:36px;min-width:0;padding:4px 11px}
+.turn:hover:not(:disabled){background:var(--wash);border-color:var(--accent)}
+.chapter-map{padding:32px var(--manual-inset)}
+.chapter-map h2{color:var(--accent);font:650 1.65rem/1.35 var(--serif);margin:0 0 12px}
+.chapter-map>p{margin:0 0 16px;max-width:56em;line-height:1.7}
+.anchor-example{padding:14px 16px;background:var(--wash);border-inline-start:2px solid var(--pen);overflow-wrap:anywhere}
+.anchor-example p{margin:.55em 0}
+.anchor-example table{width:100%;border-collapse:collapse;text-align:left}
+.anchor-example th,.anchor-example td{padding:7px;border-bottom:1px solid var(--edge)}
+.anchor-example caption{font-weight:600;padding:7px 0;text-align:left}
+.anchor-example td span[lang=en]{display:block;font-family:var(--serif)}
+.outline{border-top:3px double var(--deep-rule);margin-bottom:28px}
+.outline-group{display:grid;grid-template-columns:minmax(170px,30%) 1fr;gap:8px 24px;padding:12px 0;border-bottom:1px solid var(--edge)}
+.outline-group h3{font:650 19px/1.45 var(--serif);margin:0}
+.outline a{text-decoration:none}.outline a:hover{text-decoration:underline}
+.group-number,.section-number{font:550 12px/1.6 var(--sans);color:var(--muted);font-variant-numeric:tabular-nums;display:inline-block}
+.group-number{padding-right:10px;vertical-align:.15em}
+.section-number{min-width:2.4em}
+.outline-links{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px}
+.outline-links a{display:flex;align-items:baseline;color:var(--ink);font-size:14px;line-height:1.5;padding:4px 0}
+.group-nav p{margin:4px 0}
+@media(max-width:780px){.outline-group{grid-template-columns:1fr}.outline-links{padding-inline-start:1.6em}}
+@media(max-width:500px){.outline-links{grid-template-columns:1fr}.outline-group{gap:4px}.outline-links a{padding:5px 0}}
+.group-nav,.group-recall{padding:14px var(--manual-inset)}
+.group-nav{border-bottom:1px solid var(--edge)}
+.group-nav h2{margin:0;color:var(--accent);font:650 1.25rem/1.45 var(--serif)}
+.group-nav p{font-size:14px;color:var(--muted)}
+.group-nav nav{display:flex;flex-wrap:wrap;gap:3px 12px;margin-top:7px}
+.group-nav a{padding:4px 1px;border-bottom:2px solid transparent;text-decoration:none;font:14px/1.45 var(--sans)}
+.group-nav a:hover{text-decoration:underline}
+.group-nav a[aria-current]{color:var(--ink);border-color:var(--accent);background:var(--wash)}
+.group-recall{border-top:3px double var(--deep-rule)}
+.group-recall h3{font:600 19px/1.5 var(--serif);margin:0}
+.group-recall summary{color:var(--pen)}.group-recall p{margin:6px 0}
+.back-map{border:0;background:none;font:14px/1.4 var(--sans);color:var(--accent);text-decoration:underline;text-underline-offset:3px;padding:7px 0}
+article[data-page]{max-width:846px;min-width:0;margin-inline:auto;padding:34px var(--manual-inset);overflow-wrap:break-word}
+article h2,article h3,article h4{font-family:var(--serif);line-height:1.35;text-wrap:balance}
+article h2{font-size:2rem;margin:0 0 .65em}
+article h3{font-size:1.4rem;margin:.65em 0}
+article p{margin:.65em 0}
+article svg{max-width:100%}
+.manual-example,article blockquote{font-family:var(--serif);font-size:1.17em}
+.manual-caption{color:var(--muted);font-size:.9em}
+.manual-note,.manual-reading{border-inline-start:3px solid var(--pen);padding:.3em 1em;margin:1em 0}
+.manual-table, article table{width:100%;border-collapse:collapse;text-align:left;font-size:.96em;line-height:1.55}
+article th,article td{padding:.6em .7em;vertical-align:top;border-bottom:1px solid var(--edge)}
+article th{color:var(--pen);background:var(--wash)}
+article summary{color:var(--pen);font-weight:600}
+.manual-reading blockquote{margin:12px 0}
+footer{border-top:1px solid var(--edge);padding:12px var(--manual-inset);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.counter{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:760px){
+  .manual-page{--manual-inset:0px;padding-block:22px 52px}
+  .chapter-map,article[data-page]{padding-block:24px}
+  .chapter-map h2{font-size:1.45rem}
+  article h2{font-size:1.55rem}
+  article h3{font-size:1.22rem}
+  article td,article th{padding:.45em .38em}
+  .turn{padding-inline:8px}
+}
+@media(min-width:651px){article[data-page].turning{animation:page-in .21s ease-out}@keyframes page-in{from{opacity:.72;transform:translateX(7px)}to{opacity:1;transform:none}}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+body.pronouns {
+  --pen:#694058;
+  --pr-green:#23564c;
+  --pr-green-light:#e6efea;
+  --pr-plum:#694058;
+  --pr-plum-light:#f3e8ed;
+  --pr-edge:#c9c5bd;
+  --pr-sheet:#f8f5ee;
+}
+.pr-manual h2 {font-size:27px;margin:0 0 10px}
+.pr-manual h3 {font-size:20px;margin:24px 0 8px}
+.pr-manual .pr-lead {max-width:47em;margin:0 0 16px}
+.pr-manual figure {margin:18px 0}
+.pr-latin {font-family:var(--serif);font-size:1.15em;line-height:1.5}
+.pr-manual mark,.pr-overview mark {background:var(--pr-green-light);color:var(--pr-green);padding:0 .12em}
+.pr-manual mark.pr-shift {background:var(--pr-plum-light);color:var(--pr-plum)}
+.pr-legend {font-size:13px;color:var(--muted);font-weight:500}
+.pr-diagram {border-block:1px solid var(--pr-edge);padding:13px 0 15px}
+.pr-diagram figcaption {margin-bottom:12px;color:var(--pen);font-weight:650}
+.pr-switch {border:0;padding:0;margin:0;min-inline-size:0;position:relative}
+.pr-a11y,.pr-switch input {position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.pr-tabs {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--pr-edge)}
+.pr-tabs label {display:flex;flex-direction:column;gap:1px;cursor:pointer;padding:6px 7px;text-align:center;border-block-end:3px solid transparent;line-height:1.32}
+.pr-tabs label:hover {background:var(--pr-sheet)}
+.pr-tabs label span[lang=en] {font-family:var(--serif);font-weight:650;font-size:18px}
+.pr-tabs label small {font-size:12px;color:var(--muted)}
+#pr-it:checked ~ .pr-tabs [for=pr-it],#pr-one:checked ~ .pr-tabs [for=pr-one],#pr-those:checked ~ .pr-tabs [for=pr-those] {border-color:var(--pen);color:var(--pen);background:var(--pr-plum-light)}
+#pr-it:focus-visible ~ .pr-tabs [for=pr-it],#pr-one:focus-visible ~ .pr-tabs [for=pr-one],#pr-those:focus-visible ~ .pr-tabs [for=pr-those] {outline:2px solid var(--pen);outline-offset:2px}
+.pr-case {display:none;padding-top:8px}
+#pr-it:checked ~ .pr-case-it,#pr-one:checked ~ .pr-case-one,#pr-those:checked ~ .pr-case-those {display:block}
+.pr-rewrite {display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:7px;align-items:center;margin:9px 0;color:var(--pr-green)}
+.pr-rewrite.pr-new {color:var(--pr-plum)}
+.pr-rewrite span[lang=en] {padding:7px 9px;background:var(--pr-green-light);font-family:var(--serif);overflow-wrap:anywhere}
+.pr-rewrite.pr-new span[lang=en] {background:var(--pr-plum-light)}
+.pr-matrix {table-layout:fixed;margin:.6em 0 1.1em}
+.pr-matrix caption {text-align:left;color:var(--pen);font-weight:650;margin-bottom:6px}
+.pr-manual .pr-matrix th,.pr-manual .pr-matrix td {background:none;overflow-wrap:anywhere;padding:9px 8px}
+.pr-manual .pr-matrix thead th {background:var(--pr-sheet)}
+.pr-matrix.pr-rows th:first-child {width:29%}
+.pr-matrix th span[lang=en],.pr-matrix td span[lang=en] {font-family:var(--serif)}
+.pr-set {margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;list-style:none}
+.pr-set li {border:1px dashed var(--pr-edge);padding:7px 5px;text-align:center;color:var(--muted);font-size:13px}
+.pr-set li:first-child {border:1px solid var(--pr-green);background:var(--pr-green-light);color:var(--pr-green)}
+.pr-set b {display:block;font-family:var(--serif);font-size:20px}
+.pr-sets-list {margin:14px 0 0}
+.pr-sets-list div {display:grid;grid-template-columns:minmax(6.2em,25%) minmax(0,1fr);gap:10px;padding:8px 0;border-top:1px solid var(--pr-edge)}
+.pr-sets-list dt {font-family:var(--serif);font-weight:650;color:var(--pen)}
+.pr-sets-list dd {margin:0}
+.pr-sign {display:inline-flex;min-width:2.3em;justify-content:center;padding:1px 4px;font-size:13px;font-weight:650}
+.pr-sign.is-pass {background:var(--pr-green-light);color:var(--pr-green)}
+.pr-truth th,.pr-truth td {text-align:center}
+.pr-truth th:first-child {width:33%;text-align:start}
+.pr-truth tbody th {font-weight:600}
+.pr-boundary {padding:6px 0 6px 13px;margin:1em 0;border-inline-start:3px solid var(--pr-green)}
+.pr-boundary p {margin:.36em 0}
+.pr-bracket {display:inline;color:var(--pr-plum);border-bottom:2px solid var(--pr-plum);padding-bottom:2px}
+.pr-bank {border-top:1px solid var(--pr-edge);padding-top:13px;margin-top:22px}
+.pr-overview .pr-bank {margin:0;padding:0;border:0}
+.pr-bank .pr-source {margin:0 0 5px;color:var(--muted);font-size:13px}
+.pr-bank .pr-stem {margin:.44em 0;font-family:var(--serif);font-size:1.17em;line-height:1.65}
+.pr-blank {display:inline-block;width:4.2ch;border-bottom:1px solid currentColor;margin:0 .12em}
+.pr-options {margin:8px 0 10px;padding-left:1.7em;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 22px;font-family:var(--serif);line-height:1.55}
+.pr-bank summary,.pr-extension summary {color:var(--pen);font-weight:650}
+.pr-bank .pr-explain {border-inline-start:3px solid var(--pr-green);padding:4px 12px;background:var(--pr-green-light);margin-top:7px}
+.pr-explain p {margin:.35em 0}
+@media(max-width:480px) {
+  .pr-manual .pr-matrix th,.pr-manual .pr-matrix td {padding:7px 4px}
+  .pr-options {column-gap:14px}
+  .pr-sets-list div {gap:6px}
+  .pr-sign {padding-inline:2px}
+}
+
+</style>
+</head>
+<body class="pronouns">
+<header class="site-header"><div class="site-inner"><a class="brand" href="index.html" aria-label="十环"><img src="assets/zhang-shihuan-logo.svg" alt="" width="69" height="36"></a><nav class="site-nav" aria-label="主导航"><a href="external-practice.html">每日外刊</a><a href="index.html?view=study" aria-current="page">专题精讲</a><a href="cloze-pages/index.html">完形填空</a><a href="index.html?view=reading&amp;reading_type=comprehension">阅读理解</a></nav></div></header>
+<main id="manual" class="manual-page editorial-page">
+<header class="cover editorial-rail"><h1>代词</h1><a class="standalone" id="course" href="index.html?topic=pronouns&amp;chapter=handbook">在本章题卷中查看</a><button type="button" class="back-map" data-target="overview" hidden>返回本章总览</button></header>
+<section class="chapter-map" id="overview"><h2 tabindex="-1">考点目录</h2><nav aria-label="本章考点目录"><div class="outline"><section class="outline-group"><h3><a href="#it-one-that-those" data-target="it-one-that-those"><small class="group-number">01</small>指代、替代与数量范围</a></h3><ol class="outline-links"><li><a href="#it-one-that-those" data-target="it-one-that-those"><small class="section-number">1.1</small>同一所指、同类替代与确定范围</a></li><li><a href="#another-the-other" data-target="another-the-other"><small class="section-number">1.2</small>other 词族：另一个与其余</a></li><li><a href="#both-either-neither" data-target="both-either-neither"><small class="section-number">1.3</small>两者范围与部分否定</a></li><li><a href="#unit-4" data-target="unit-4"><small class="section-number">1.4</small>不定代词与主谓一致</a></li></ol></section><section class="outline-group"><h3><a href="#expanded-pronouns-1" data-target="expanded-pronouns-1"><small class="group-number">02</small>代词形式与句法功能</a></h3><ol class="outline-links"><li><a href="#expanded-pronouns-1" data-target="expanded-pronouns-1"><small class="section-number">2.1</small>人称、物主与反身代词</a></li><li><a href="#expanded-pronouns-2" data-target="expanded-pronouns-2"><small class="section-number">2.2</small>some、any、no 与复合不定代词</a></li><li><a href="#expanded-pronouns-3" data-target="expanded-pronouns-3"><small class="section-number">2.3</small>指代 it、形式 it 与存在 there</a></li></ol></section><section class="outline-group"><h3><a href="#expanded-pronouns-4" data-target="expanded-pronouns-4"><small class="group-number">03</small>从句结构与语篇回指</a></h3><ol class="outline-links"><li><a href="#expanded-pronouns-4" data-target="expanded-pronouns-4"><small class="section-number">3.1</small>代词与定语从句</a></li><li><a href="#expanded-pronouns-5" data-target="expanded-pronouns-5"><small class="section-number">3.2</small>语篇回指与比较对象</a></li></ol></section></div></nav><h2>典型题精析</h2><p>代词要放回语境判断。先还原所指，再检查数、句法位置和范围；遇到无具体所指的 it、there，则看整个句型的功能。</p><div class="anchor-example"><div class="pr-overview">
+    <section class="pr-bank" data-question-id="bank-pronouns-1" aria-label="题库例题">
+      <p class="pr-source">题库原题 · 2025 天津第一次，第 2 题</p>
+      <p class="pr-stem" lang="en">Equipped with modern facilities, today&#x27;s libraries differ greatly from <span class="pr-blank" aria-label="空格"></span> of the past.</p>
+      <ol class="pr-options" lang="en" type="A"><li>that</li><li>one</li><li>those</li><li>ones</li></ol>
+      <details><summary>核对答案与依据</summary><div class="pr-explain">
+        <p class="pr-latin" lang="en"><strong>C. those</strong></p><p><i lang="en">those of the past</i> 指 <i lang="en">the libraries of the past</i>。比较项是两个时期各自的一组图书馆，必须保留复数，排除 <i lang="en">that</i> 和 <i lang="en">one</i>。选项中的 <i lang="en">ones</i> 没有定冠词，不能准确替代这里特指的对应集合；<i lang="en">the ones from the past</i> 在另一个句子中可以成立。</p>
+      </div></details>
+    </section></div></div></section>
+<section class="group-nav" data-g="0" hidden><h2><small class="group-number">01</small>指代、替代与数量范围</h2><p>认清代词是延续同一对象，还是在同类中另选；用不定代词时，再数清它涵盖哪些成员。</p><nav aria-label="本组知识点"><a href="#it-one-that-those" data-target="it-one-that-those"><small class="section-number">1.1</small>同一所指、同类替代与确定范围</a><a href="#another-the-other" data-target="another-the-other"><small class="section-number">1.2</small>other 词族：另一个与其余</a><a href="#both-either-neither" data-target="both-either-neither"><small class="section-number">1.3</small>两者范围与部分否定</a><a href="#unit-4" data-target="unit-4"><small class="section-number">1.4</small>不定代词与主谓一致</a></nav></section><section class="group-nav" data-g="1" hidden><h2><small class="group-number">02</small>代词形式与句法功能</h2><p>在句中区分主宾、归属和回指；遇到 it 或 there，先看它有没有实际所指。</p><nav aria-label="本组知识点"><a href="#expanded-pronouns-1" data-target="expanded-pronouns-1"><small class="section-number">2.1</small>人称、物主与反身代词</a><a href="#expanded-pronouns-2" data-target="expanded-pronouns-2"><small class="section-number">2.2</small>some、any、no 与复合不定代词</a><a href="#expanded-pronouns-3" data-target="expanded-pronouns-3"><small class="section-number">2.3</small>指代 it、形式 it 与存在 there</a></nav></section><section class="group-nav" data-g="2" hidden><h2><small class="group-number">03</small>从句结构与语篇回指</h2><p>把关系代词在从句内的工作和外层代词的所指分开；用回填核对比较双方是否对称。</p><nav aria-label="本组知识点"><a href="#expanded-pronouns-4" data-target="expanded-pronouns-4"><small class="section-number">3.1</small>代词与定语从句</a><a href="#expanded-pronouns-5" data-target="expanded-pronouns-5"><small class="section-number">3.2</small>语篇回指与比较对象</a></nav></section>
+<div id="pages"><article data-page="it-one-that-those" data-g="0" aria-label="同一所指、同类替代与确定范围" hidden><section class="pr-manual"><h2>同一所指、同类替代与确定范围</h2><p class="pr-lead">代词换回名词后，先看对象有没有变，再看可数性、数量和范围。<i lang="en">it</i> 和 <i lang="en">one</i> 都能指一个东西，差别在于是不是原来那一个。</p>
+    <figure class="pr-diagram">
+      <figcaption>把代词还原为完整名词短语</figcaption>
+      <fieldset class="pr-switch"><legend class="pr-a11y">选择要还原的代词</legend>
+        <input type="radio" name="pr-reference" id="pr-it" checked>
+        <input type="radio" name="pr-reference" id="pr-one">
+        <input type="radio" name="pr-reference" id="pr-those">
+        <div class="pr-tabs">
+          <label for="pr-it"><span lang="en">it</span><small>回指原物</small></label>
+          <label for="pr-one"><span lang="en">one</span><small>同类另取</small></label>
+          <label for="pr-those"><span lang="en">those</span><small>对应的一组</small></label>
+        </div>
+        <div class="pr-case pr-case-it">
+          <p class="pr-latin" lang="en">I printed <mark>a poster</mark> yesterday. I brought <mark>it</mark> to school.</p>
+          <div class="pr-rewrite"><span lang="en">it</span><span>还原为</span><span lang="en">the poster I printed yesterday</span></div>
+          <p>打印的是哪张，带到学校的就是哪张。若换成 <i lang="en">one</i>，只说带了一张海报，不能确定是昨天打印的那张。</p>
+        </div>
+        <div class="pr-case pr-case-one">
+          <p class="pr-latin" lang="en">My folder is full. Could I borrow <mark class="pr-shift">one</mark> from you?</p>
+          <div class="pr-rewrite pr-new"><span lang="en">one</span><span>还原为</span><span lang="en">a folder</span></div>
+          <p>借的仍是同类物品，换了一份。<i lang="en">it</i> 会继续指自己那个已经装满的文件夹。</p>
+        </div>
+        <div class="pr-case pr-case-those">
+          <p class="pr-latin" lang="en">The labels on this machine are clearer than <mark class="pr-shift">those on the old machine</mark>.</p>
+          <div class="pr-rewrite pr-new"><span lang="en">those</span><span>还原为</span><span lang="en">the labels</span></div>
+          <p>比较的是新旧两台机器上的标签。<i lang="en">on the old machine</i> 限定了另一组标签，<i lang="en">those</i> 保留复数。</p>
+        </div>
+      </fieldset>
+    </figure><table class="pr-matrix pr-rows"><caption>三种替代方式</caption><thead><tr><th scope="col">形式</th><th scope="col">检验方法</th></tr></thead><tbody><tr><th scope="row"><span lang="en">it / them</span></th><td>回指已经提到的同一项、同一批或同一整体。<i lang="en">I bought milk. It was fresh.</i> 中 <i lang="en">it</i> 指买来的牛奶。</td></tr><tr><th scope="row"><span lang="en">one / ones</span></th><td>替代可数名词。单数用 <i lang="en">one</i>，复数常用 <i lang="en">the ones</i>、<i lang="en">new ones</i> 等形式。<i lang="en">blue ones</i> 可还原为 <i lang="en">blue folders</i>。</td></tr><tr><th scope="row"><span lang="en">that / those</span></th><td>在比较或对照中替代确定的对应项。<i lang="en">that</i> 对应单数或不可数名词，<i lang="en">those</i> 对应复数。</td></tr></tbody></table><aside class="pr-boundary"><p><strong>区分：</strong><i lang="en">the ones with red covers</i> 同样自然。后面有修饰语，仍要结合数和是否指一组确定的对象判断。指示用法另看语境，如 <i lang="en">This is my seat; that is yours.</i></p></aside>
+    <section class="pr-bank" data-question-id="practice-pronouns-one" aria-label="题库例题">
+      <p class="pr-source">题库原题 · 2023 天津第二次，第 7 题</p>
+      <p class="pr-stem" lang="en">I really want to go to a place for the summer vacation, especially <span class="pr-blank" aria-label="空格"></span> with beautiful scenery and unique culture.</p>
+      <ol class="pr-options" lang="en" type="A"><li>it</li><li>that</li><li>this</li><li>one</li></ol>
+      <details><summary>核对答案与依据</summary><div class="pr-explain">
+        <p class="pr-latin" lang="en"><strong>D. one</strong></p><p>说话人只提出想去的<strong>地点类型</strong>，尚未选定某个地点。<i lang="en">one with beautiful scenery and unique culture</i> 可还原为 <i lang="en">a place with beautiful scenery and unique culture</i>。<i lang="en">it</i> 会回指一处已确定的地方，<i lang="en">this / that</i> 在此也没有可供指认的地点。</p>
+      </div></details>
+    </section></section></article><article data-page="another-the-other" data-g="0" aria-label="other 词族：另一个与其余" hidden><section class="pr-manual"><h2>other 词族：另一个与其余</h2><p class="pr-lead"><i lang="en">another</i> 只补选一个；<i lang="en">the other</i> 和 <i lang="en">the others</i> 要回到已圈定的集合，看还剩几个。</p>
+        <figure class="pr-diagram">
+          <figcaption>范围已知：四份报告中，A 已选</figcaption>
+          <ol class="pr-set"><li><b>A</b>已选</li><li><b>B</b>未选</li><li><b>C</b>未选</li><li><b>D</b>未选</li></ol>
+          <dl class="pr-sets-list">
+            <div><dt lang="en">another report</dt><dd>B、C、D 中再选一份；还没指定哪份。</dd></div>
+            <div><dt lang="en">others</dt><dd>其余当中的一些，比如 B 和 C；说法不保证涵盖 D。</dd></div>
+            <div><dt lang="en">the others</dt><dd>其余全部，即 B、C、D，等于 <i lang="en">the other three reports</i>。</dd></div>
+          </dl>
+        </figure>
+        <p class="pr-latin" lang="en">Of the <mark>two copies</mark>, one is signed and <mark class="pr-shift">the other</mark> is not.</p>
+        <p>如果范围只有两份，一份已说过，另一份可以唯一确定，这时用 <i lang="en">the other</i>。</p>
+        <aside class="pr-boundary"><p><strong>区分：</strong><i lang="en">other reports</i> 和 <i lang="en">other evidence</i> 中，<i lang="en">other</i> 后还有名词；<i lang="en">others</i> 本身已是代词，不能再接 <i lang="en">reports</i>。<i lang="en">We need another two days.</i> 表示“我们还需要两天”，把两天看作一段额外时间。</p></aside>
+    <section class="pr-bank" data-question-id="practice-pronouns-ppt-6" aria-label="题库例题">
+      <p class="pr-source">题库练习 · 《重难突破》代词课件，第 6 题</p>
+      <p class="pr-stem" lang="en">To warm himself, the sailor sat in front of the fire rubbing one bare foot against <span class="pr-blank" aria-label="空格"></span> .</p>
+      <ol class="pr-options" lang="en" type="A"><li>another</li><li>the other</li><li>other</li><li>either</li></ol>
+      <details><summary>核对答案与依据</summary><div class="pr-explain">
+        <p class="pr-latin" lang="en"><strong>B. the other</strong></p><p>人只有两只脚，前面已经指出 <i lang="en">one bare foot</i>。空格指唯一剩下的另一只脚，用 <i lang="en">the other</i>。<i lang="en">another</i> 不强调唯一剩余项，<i lang="en">either</i> 则表示两只脚中的任意一只。</p>
+      </div></details>
+    </section></section></article><article data-page="both-either-neither" data-g="0" aria-label="两者范围与部分否定" hidden><section class="pr-manual"><h2>两者范围与部分否定</h2><p class="pr-lead"><i lang="en">both</i> 包含两项；<i lang="en">either</i> 可从两项中任选；<i lang="en">neither</i> 把两项都排除。否定 <i lang="en">both</i> 只否定“两项全成立”。</p>
+        <p>两份申请 A、B 只有以下四种审核结果。逐列看一句话在哪些情况下成立。</p>
+        <table class="pr-matrix pr-truth">
+          <caption>“并非都通过”允许有一份通过</caption>
+          <thead><tr><th scope="col">申请结果</th><th scope="col" lang="en">Both passed</th><th scope="col" lang="en">Not both passed</th><th scope="col" lang="en">Neither passed</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">两份都通过</th><td><span class="pr-sign is-pass">成立</span></td><td>不成立</td><td>不成立</td></tr>
+            <tr><th scope="row">只有 A 通过</th><td>不成立</td><td><span class="pr-sign is-pass">成立</span></td><td>不成立</td></tr>
+            <tr><th scope="row">只有 B 通过</th><td>不成立</td><td><span class="pr-sign is-pass">成立</span></td><td>不成立</td></tr>
+            <tr><th scope="row">两份都未通过</th><td>不成立</td><td><span class="pr-sign is-pass">成立</span></td><td><span class="pr-sign is-pass">成立</span></td></tr>
+          </tbody>
+        </table>
+        <p><i lang="en">Either date works for me.</i> 表示两个日期选哪一个都行，并没有说仅一个合适。<i lang="en">There are trees on either side of the road.</i> 中则指路两边各有树。</p>
+        <details class="pr-extension"><summary>并列与谓语一致</summary>
+          <p><i lang="en">Both A and B</i> 并列作主语时通常接复数谓语。用 <i lang="en">either … or …</i> 或 <i lang="en">neither … nor …</i> 连接主语时，考试常按靠近谓语的一项定数，如 <i lang="en">Neither the coach nor the players are available.</i></p>
+          <p><i lang="en">not all</i> 与 <i lang="en">not both</i> 是同类否定：<i lang="en">Not all the plans worked.</i> 只保证至少有一项未奏效，不能改写成 <i lang="en">None of the plans worked.</i></p>
+        </details>
+        
+    <section class="pr-bank" data-question-id="practice-pronouns-ppt-5" aria-label="题库例题">
+      <p class="pr-source">题库练习 · 《重难突破》代词课件，第 5 题</p>
+      <p class="pr-stem" lang="en">—John, when shall we meet again, Thursday or Friday? — <span class="pr-blank" aria-label="空格"></span> . I&#x27;ll be off to London then.</p>
+      <ol class="pr-options" lang="en" type="A"><li>Either</li><li>Neither</li><li>Both</li><li>None</li></ol>
+      <details><summary>核对答案与依据</summary><div class="pr-explain">
+        <p class="pr-latin" lang="en"><strong>B. Neither</strong></p><p>问句明确给了周四和周五两个选项。<i lang="en">I’ll be off to London then</i> 表明那段时间无法赴约，因此用 <i lang="en">Neither</i> 直接排除两天。<i lang="en">Either</i> 会答成“哪天都行”，与下文不合。</p>
+      </div></details>
+    </section></section></article><article data-page="unit-4" data-g="0" aria-label="不定代词与主谓一致" hidden><section class="pr-manual"><h2>不定代词与主谓一致</h2><p class="pr-lead"><i lang="en">each</i> 和 <i lang="en">every</i> 都能逐项分配，但能不能单独作主语不同。<i lang="en">none</i>、<i lang="en">all</i> 则先确定指的是可数成员，还是一份总量。</p><table class="pr-matrix pr-rows"><caption>结构决定谓语</caption><thead><tr><th scope="col">主语</th><th scope="col">可以怎么用</th></tr></thead><tbody><tr><th scope="row"><span lang="en">each</span></th><td><span class="pr-latin" lang="en">Each of the reports <b>contains</b> a chart.</span><br>也可说 <i lang="en">Each report contains …</i>，正式笔试中二者用单数。</td></tr><tr><th scope="row"><span lang="en">every</span></th><td><span class="pr-latin" lang="en">Every report <b>contains</b> a chart.</span><br><i lang="en">every</i> 不能像 <i lang="en">each</i> 单独作主语。若接 <i lang="en">of</i>，写 <i lang="en">every one of the reports</i>。</td></tr><tr><th scope="row"><span lang="en">all / some / most</span></th><td><span class="pr-latin" lang="en">All the equipment <b>is</b> ready. / All the reports <b>are</b> ready.</span><br>谓语与所说的总量或复数成员相配。</td></tr><tr><th scope="row"><span lang="en">none</span></th><td><span class="pr-latin" lang="en">None of the equipment <b>is</b> damaged.</span><br>指复数成员时，<i lang="en">None of the reports is complete.</i> 和 <i lang="en">None of the reports are complete.</i> 均可见，单数突出“没有一份”。</td></tr></tbody></table><aside class="pr-boundary"><p><strong>区分：</strong><i lang="en">Each of us has a copy.</i> 的主语是 <i lang="en">each</i>；<i lang="en">We each have a copy.</i> 的主语是 <i lang="en">we</i>。<i lang="en">everyone / everything</i> 作主语时用单数，如 <i lang="en">Everyone has a copy.</i></p></aside>
+    <section class="pr-bank" data-question-id="coverage-pronouns-4" aria-label="题库例题">
+      <p class="pr-source">题库原题 · 2026 天津和平质量调查（一），第 11 题</p>
+      <p class="pr-stem" lang="en">I&#x27;ve read through all the plans you provided, but <span class="pr-blank" aria-label="空格"></span> appears practical enough to carry out.</p>
+      <ol class="pr-options" lang="en" type="A"><li>both</li><li>every</li><li>either</li><li>none</li></ol>
+      <details><summary>核对答案与依据</summary><div class="pr-explain">
+        <p class="pr-latin" lang="en"><strong>D. none</strong></p><p><i lang="en">all the plans you provided</i> 先给出了范围。说话人看完方案，<i lang="en">but</i> 转到“其中没有一项可行”，所以用 <i lang="en">none</i>。<i lang="en">every</i> 单独不能作主语；<i lang="en">either</i> 通常限于两项且不表否定；<i lang="en">both</i> 表两项都成立，也不配此处的 <i lang="en">appears</i>。</p>
+      </div></details>
+    </section></section></article><aside class="group-recall" data-g="0" hidden><h3>考点辨析</h3><p>对照 Some reports need revision, and others are ready 与 Some reports need revision, and the others are ready。哪一句保证所有报告都得到了交代？</p><details><summary>查看解析</summary><div class="recall-answer">第二句。<i lang="en">the others</i> 指这批报告中除第一组外的全部；第一句的 <i lang="en">others</i> 只指出另一些，未说明是否包含所有剩余报告。</div></details></aside><article data-page="expanded-pronouns-1" data-g="1" aria-label="人称、物主与反身代词" hidden><section class="pr-manual"><h2>人称、物主与反身代词</h2><p class="pr-lead">先定代词的句法位置，再定它指谁。作宾语用宾格；表示归属时，看后面是否还有名词；宾语指回本句主语时，才考虑反身形式。</p>
+        <figure class="pr-diagram"><figcaption>同一个动作，宾语可以指向不同的人</figcaption>
+          <p class="pr-latin" lang="en"><mark>Qian</mark> saw <mark class="pr-shift">her</mark> in the mirror.</p>
+          <div class="pr-rewrite pr-new"><span lang="en">Qian</span><span aria-hidden="true">→</span><span>镜中另一位女性</span></div>
+          <p class="pr-latin" lang="en"><mark>Qian</mark> saw <mark>herself</mark> in the mirror.</p>
+          <div class="pr-rewrite"><span lang="en">Qian</span><span aria-hidden="true">↺</span><span>镜中的 Qian 本人</span></div>
+        </figure>
+        <table class="pr-matrix pr-rows"><caption>位置与形式</caption><thead><tr><th scope="col">位置</th><th scope="col">例句与分析</th></tr></thead><tbody><tr><th scope="row">主格与宾格</th><td><span class="pr-latin" lang="en"><b>She</b> invited Lin and <b>me</b>.</span><br>暂去掉 <i lang="en">Lin and</i>，留下 <i lang="en">She invited me.</i> 介词后也用宾格，如 <i lang="en">between you and me</i>。</td></tr><tr><th scope="row">两种物主形式</th><td><span class="pr-latin" lang="en">This is <b>her</b> folder. That one is <b>mine</b>.</span><br><i lang="en">her</i> 限定后面的名词；<i lang="en">mine</i> 独立表示 <i lang="en">my folder</i>。<i lang="en">its</i> 表所属，<i lang="en">it’s</i> 是 <i lang="en">it is / it has</i> 的缩写。</td></tr><tr><th scope="row">反身与强调</th><td><span class="pr-latin" lang="en">She checked the results <b>herself</b>.</span><br>这里强调她亲自核查，可以删去。<i lang="en">by herself</i> 则表示独自或靠自己。</td></tr></tbody></table><aside class="pr-boundary"><p><strong>区分：</strong><i lang="en">They blamed themselves.</i> 是各自责怪自己；<i lang="en">They blamed each other.</i> 是相互责怪。<i lang="en">Please contact me</i> 中 <i lang="en">me</i> 不指回省略的主语 <i lang="en">you</i>，不换成 <i lang="en">myself</i>。</p></aside>
+    <section class="pr-bank" data-question-id="coverage-pronouns-3" aria-label="题库例题">
+      <p class="pr-source">题库原题 · 2026 天津塘沽一中等十二校联考（一），第 9 题</p>
+      <p class="pr-stem" lang="en">Professional skills are tools like a knife or a hammer. You need <span class="pr-blank" aria-label="空格"></span> to complete the things you want to do.</p>
+      <ol class="pr-options" lang="en" type="A"><li>it</li><li>that</li><li>them</li><li>ones</li></ol>
+      <details><summary>核对答案与依据</summary><div class="pr-explain">
+        <p class="pr-latin" lang="en"><strong>C. them</strong></p><p>前句把 <i lang="en">professional skills</i> 比作工具。后句继续指这些技能，空格作 <i lang="en">need</i> 的宾语，用复数宾格 <i lang="en">them</i>。<i lang="en">a knife or a hammer</i> 只是举例，不能用单数 <i lang="en">it</i> 代替整批技能。</p>
+      </div></details>
+    </section></section></article><article data-page="expanded-pronouns-2" data-g="1" aria-label="some、any、no 与复合不定代词" hidden><section class="pr-manual"><h2>some、any、no 与复合不定代词</h2><p class="pr-lead"><i lang="en">some</i> 提出一部分人或事物；<i lang="en">any</i> 常用于否定、开放式疑问与条件。请求、提供东西和允许任意选择时，要把说话人的意思考虑进去。</p><table class="pr-matrix pr-rows"><caption>同样是问句，用词可以不同</caption><thead><tr><th scope="col">情境</th><th scope="col">所指范围与语气</th></tr></thead><tbody><tr><th scope="row">有无疑问</th><td><span class="pr-latin" lang="en">Do you have <b>any</b> questions?</span><br>没有预设对方一定有问题。</td></tr><tr><th scope="row">提供或请求</th><td><span class="pr-latin" lang="en">Would you like <b>some</b> water?</span><br>以提问的形式给对方提供水。</td></tr><tr><th scope="row">任选</th><td><span class="pr-latin" lang="en"><b>Any</b> seat in this row is fine.</span><br>把这一排座位看成可选范围，选哪一个都可以。</td></tr><tr><th scope="row">数量为零</th><td><span class="pr-latin" lang="en">We had <b>no</b> objections. / We didn’t have <b>any</b> objections.</span><br><i lang="en">no</i> 直接限定名词，<i lang="en">any</i> 与前面的 <i lang="en">didn’t</i> 配合。</td></tr></tbody></table>
+        <h3>复合不定代词：先看指人还是指事物</h3>
+        <p><i lang="en">someone / anyone / everyone / no one</i> 指人；相应的 <i lang="en">-body</i> 形式也指人。<i lang="en">something / anything / everything / nothing</i> 指事物或情况。作主语用单数谓语，修饰它的形容词放在后面：<i lang="en">Something important has happened.</i></p>
+        <aside class="pr-boundary"><p><strong>区分：</strong>问“谁到了？”可答 <i lang="en">No one.</i>；问“发生了什么？”可答 <i lang="en">Nothing.</i>；问“这些人或东西里还有几个？”可用 <i lang="en">None of them.</i> 指指定范围内一个也没有。<i lang="en">anything but easy</i> 表示一点也不容易，<i lang="en">nothing but an excuse</i> 表示不过是个借口。</p></aside>
+    <section class="pr-bank" data-question-id="practice-pronouns-ppt-10" aria-label="题库例题">
+      <p class="pr-source">题库练习 · 《重难突破》代词课件，第 10 题</p>
+      <p class="pr-stem" lang="en">A smile costs <span class="pr-blank" aria-label="空格"></span> , but gives much.</p>
+      <ol class="pr-options" lang="en" type="A"><li>anything</li><li>something</li><li>nothing</li><li>everything</li></ol>
+      <details><summary>核对答案与依据</summary><div class="pr-explain">
+        <p class="pr-latin" lang="en"><strong>C. nothing</strong></p><p><i lang="en">costs nothing, but gives much</i> 把“付出为零”与“给出的价值很大”对照起来。<i lang="en">something</i> 意味着要付出一些代价；<i lang="en">everything</i> 表示付出一切。</p>
+      </div></details>
+    </section></section></article><article data-page="expanded-pronouns-3" data-g="1" aria-label="指代 it、形式 it 与存在 there" hidden><section class="pr-manual"><h2>指代 it、形式 it 与存在 there</h2><p class="pr-lead">有指代的 <i lang="en">it</i> 可以换回原对象。形式 <i lang="en">it</i> 只占句法位置，真正要评价的内容常在句末。存在句另用 <i lang="en">there</i> 引出人或物。</p>
+        <figure class="pr-diagram"><figcaption>形式主语：把真正的内容移回句首</figcaption>
+          <p class="pr-latin" lang="en"><mark>It</mark> is important <span class="pr-bracket">to record every result</span>.</p>
+          <p class="pr-legend">句意检验</p>
+          <p class="pr-latin" lang="en"><span class="pr-bracket">To record every result</span> is important.</p>
+          <p><i lang="en">important</i> 评价的是“记录每项结果”。第一句把较长的内容放在后面，英语表达更自然。</p>
+        </figure>
+        <table class="pr-matrix pr-rows"><caption>相似的形式，句子承担的工作不同</caption><thead><tr><th scope="col">功能</th><th scope="col">例句与依据</th></tr></thead><tbody><tr><th scope="row">回指事物</th><td><span class="pr-latin" lang="en">The sample is ready. <b>It</b> is in the lab.</span><br><i lang="en">it</i> 指已提到的样品。</td></tr><tr><th scope="row">形式宾语</th><td><span class="pr-latin" lang="en">We found <b>it</b> useful to compare the results.</span><br>真正被评价的是句尾“比较结果”这件事。</td></tr><tr><th scope="row">天气、时间、距离</th><td><span class="pr-latin" lang="en"><b>It</b> was raining. / <b>It</b> is two kilometres to the library.</span><br>不能把 <i lang="en">it</i> 换成一个名词。</td></tr><tr><th scope="row">存在与地点</th><td><span class="pr-latin" lang="en"><b>There</b> are two folders over <b>there</b>.</span><br>句首 <i lang="en">there</i> 引出两份文件夹，不能译成“那里”；句末的 <i lang="en">over there</i> 才说明地点。书面试题中 <i lang="en">two folders</i> 对应 <i lang="en">are</i>。</td></tr></tbody></table><aside class="pr-boundary"><p><strong>区分：</strong><i lang="en">It was at the library that we met.</i> 是强调句。将被强调的地点放回去得到 <i lang="en">We met at the library.</i>。这个还原方式不同于把形式主语后面的内容移回主语位置。</p></aside>
+    <section class="pr-bank" data-question-id="practice-pronouns-extraposition" aria-label="题库例题">
+      <p class="pr-source">题库原题 · 2025 天津和平质量调查（二），第 3 题</p>
+      <p class="pr-stem" lang="en">After months of waiting and wondering about her job application status, <span class="pr-blank" aria-label="空格"></span> suddenly struck her that she should check her email for any updates or notifications.</p>
+      <ol class="pr-options" lang="en" type="A"><li>what</li><li>that</li><li>this</li><li>it</li></ol>
+      <details><summary>核对答案与依据</summary><div class="pr-explain">
+        <p class="pr-latin" lang="en"><strong>D. it</strong></p><p><i lang="en">It struck her that …</i> 表示“她突然想到……”。<i lang="en">that she should check her email …</i> 就是她想到的内容。句首用无具体指代的 <i lang="en">it</i> 占主语位置。<i lang="en">this / that</i> 可单独指前面的事，却不能在该句型中代替形式主语。</p>
+      </div></details>
+    </section></section></article><aside class="group-recall" data-g="1" hidden><h3>考点辨析</h3><p>It was difficult to find a seat. There were no seats left. 第一句评价的是什么？第二句引出的是什么？</p><details><summary>查看解析</summary><div class="recall-answer"><i lang="en">difficult</i> 评价“找到座位”这件事，<i lang="en">it</i> 是形式主语。第二句说没有余座，<i lang="en">no seats</i> 是所述对象，<i lang="en">there</i> 引入存在关系。</div></details></aside><article data-page="expanded-pronouns-4" data-g="2" aria-label="代词与定语从句" hidden><section class="pr-manual"><h2>代词与定语从句</h2><p class="pr-lead"><i lang="en">those who</i> 里有两个层级。<i lang="en">those</i> 指一组人；<i lang="en">who</i> 在修饰这组人的从句内部作主语。两者可以相邻，各有自己的任务。</p>
+        <figure class="pr-diagram"><figcaption>外层指代与从句内部成分</figcaption>
+          <p class="pr-latin" lang="en">The students <span class="pr-bracket">who chose physics</span> arrived earlier than <mark>those</mark> <span class="pr-bracket">who chose chemistry</span>.</p>
+          <div class="pr-rewrite"><span lang="en">those</span><span>还原为</span><span lang="en">the students</span></div>
+          <p><i lang="en">who chose chemistry</i> 限定第二组学生。把 <i lang="en">those</i> 换成复数名词后，<i lang="en">who</i> 仍要保留，因为从句里仍需要 <i lang="en">chose</i> 的主语。</p>
+        </figure>
+        <table class="pr-matrix pr-rows"><caption>从句内部需要什么</caption><thead><tr><th scope="col">关系词</th><th scope="col">对应成分和使用边界</th></tr></thead><tbody><tr><th scope="row"><span lang="en">who / whom</span></th><td>指人。<i lang="en">who</i> 可作主语；作宾语时常用 <i lang="en">who</i> 或较正式的 <i lang="en">whom</i>。介词直接前置时用 <i lang="en">to whom</i> 等形式。</td></tr><tr><th scope="row"><span lang="en">which / that</span></th><td>通常用 <i lang="en">which</i> 指物；<i lang="en">that</i> 在限制性定语从句中可指人或物。逗号后的非限制性从句不用 <i lang="en">that</i>，前置介词后也不用 <i lang="en">that</i>。</td></tr><tr><th scope="row"><span lang="en">whose + 名词</span></th><td>表示所属，如 <i lang="en">the candidate whose article won</i>。<i lang="en">whose article</i> 整体作从句主语。也可指物，如 <i lang="en">a building whose roof was damaged</i>。</td></tr></tbody></table><aside class="pr-boundary"><p><strong>区分：</strong><i lang="en">the report (that) I submitted</i> 中 <i lang="en">that</i> 作宾语，限制性定语从句中常可省。<i lang="en">the report that explains the result</i> 中 <i lang="en">that</i> 是 <i lang="en">explains</i> 的主语，不能直接删除。</p></aside>
+    <section class="pr-bank" data-question-id="bank-clause-part-of-people" aria-label="题库例题">
+      <p class="pr-source">题库原题 · 2025 天津部分区质量调查（一），第 15 题</p>
+      <p class="pr-stem" lang="en">Many young people, most of <span class="pr-blank" aria-label="空格"></span> were well-educated, headed for remote regions to fulfill their dreams.</p>
+      <ol class="pr-options" lang="en" type="A"><li>which</li><li>who</li><li>whom</li><li>them</li></ol>
+      <details><summary>核对答案与依据</summary><div class="pr-explain">
+        <p class="pr-latin" lang="en"><strong>C. whom</strong></p><p>先把补充的信息读成 <i lang="en">most of the young people were well-educated</i>。<i lang="en">of</i> 后指人，且要用能把分句接入主句的关系代词，因此填 <i lang="en">whom</i>。<i lang="en">them</i> 只能作普通代词；要保留 <i lang="en">them</i>，可另起句说 <i lang="en">Most of them …</i>。</p>
+      </div></details>
+    </section></section></article><article data-page="expanded-pronouns-5" data-g="2" aria-label="语篇回指与比较对象" hidden><section class="pr-manual"><h2>语篇回指与比较对象</h2><p class="pr-lead">还原代词后读整句：比较的是同一类事物吗？修饰语收住了范围吗？句法成立而两个先行项都说得通时，原句就可能有歧义。</p>
+        <p class="pr-latin" lang="en">When Qian called Lin, <mark>she</mark> was already at the station.</p>
+        <p>只看这句，不知道是 Qian 还是 Lin 已到车站。写作时把 <i lang="en">she</i> 改成所指的姓名；阅读时用前后文核实，不能只找最近的人名。</p>
+        <p class="pr-latin" lang="en">The lab was closed. <mark>This</mark> delayed the test.</p>
+        <p><i lang="en">This</i> 指“实验室关闭”这件事，而非实验室这一地点。用 <i lang="en">This closure</i> 可以让所指更明确。</p>
+        
+    <section class="pr-bank" data-question-id="coverage-pronouns-7" aria-label="题库例题">
+      <p class="pr-source">题库原题 · 2025 天津南开“三月高考”，第 3 题</p>
+      <p class="pr-stem" lang="en">China&#x27;s territory is almost equal to <span class="pr-blank" aria-label="空格"></span> of the whole of Europe.</p>
+      <ol class="pr-options" lang="en" type="A"><li>it</li><li>one</li><li>that</li><li>those</li></ol>
+      <details><summary>核对答案与依据</summary><div class="pr-explain">
+        <p class="pr-latin" lang="en"><strong>C. that</strong></p><p>比较的是“中国的领土面积”和“整个欧洲的领土面积”。<i lang="en">that of the whole of Europe</i> 可还原为 <i lang="en">the territory of the whole of Europe</i>。<i lang="en">it</i> 会指回前面同一对象；<i lang="en">one</i> 会改作泛指一块领土；<i lang="en">those</i> 改成了复数。</p>
+      </div></details>
+    </section>
+        <details class="pr-extension pr-boundary"><summary>阅读原句：两处 those 与比较句中的省略</summary>
+          <p><a href="reading-pages/reading-comprehension/reading-0070.html" target="_blank" rel="noopener">2016 天津阅读 C</a></p>
+          <p class="pr-latin" lang="en">The study showed that <mark>those who had worked as boys</mark> enjoyed happier and more productive lives than <mark class="pr-shift">those who had not</mark>.</p>
+          <p>第一处指小时候做过相关工作的人；第二处指小时候没做过的人。<i lang="en">had not</i> 后省略了 <i lang="en">worked as boys</i>，这样两边比较的是两组人日后的生活情况。</p>
+        </details>
+        </section></article><aside class="group-recall" data-g="2" hidden><h3>考点辨析</h3><p>The photos we took today are clearer than those we took yesterday. 把 those 换回名词，再找 yesterday 所在从句里省略了什么。</p><details><summary>查看解析</summary><div class="recall-answer"><i lang="en">those</i> 指 <i lang="en">the photos</i>。<i lang="en">we took yesterday</i> 的宾语关系词已省，补回可说 <i lang="en">the photos that we took yesterday</i>；整句比较两天所拍的照片。</div></details></aside></div>
+<footer hidden><button class="turn" data-prev></button><span class="counter"></span><button class="turn" data-next></button></footer>
+</main>
+<script>
+const moduleId = 'pronouns';
+const config = window.__GRAMMAR_CARD_EMBED__;
+const pages = Array.from(document.querySelectorAll('article[data-page]'));
+const groups = Array.from(document.querySelectorAll('.group-nav'));
+const main = document.querySelector('#manual');
+const map = document.querySelector('#overview');
+const back = document.querySelector('.back-map');
+const previous = document.querySelector('[data-prev]');
+const next = document.querySelector('[data-next]');
+let current;
+
+function report() {
+  if (config) parent.postMessage({type:'grammar-cards-state', module:moduleId, unitId:current?.dataset.page || null, manualOverview: !current, height:Math.ceil(main.getBoundingClientRect().height)}, '*');
+}
+
+function show(target, userAction) {
+  current = pages.find(p => p.dataset.page === target);
+  const groupId = current?.dataset.g;
+  const unit = current?.dataset.page || 'overview';
+  const inGroup = pages.filter(p => p.dataset.g === groupId);
+  const i = pages.indexOf(current);
+  const lastInGroup = current && current === inGroup[inGroup.length-1];
+  map.hidden = Boolean(current);
+  document.querySelector('footer').hidden = back.hidden = !current;
+  pages.forEach(p => { p.hidden = current !== p; });
+  groups.forEach(g => { g.hidden = g.dataset.g !== groupId; });
+  document.querySelectorAll('.group-recall').forEach(r => { r.hidden = !lastInGroup || r.dataset.g !== groupId; });
+  document.querySelectorAll('.group-nav a').forEach(a => {
+    if (a.dataset.target === unit) a.setAttribute('aria-current','page');
+    else a.removeAttribute('aria-current');
+  });
+  if (current) {
+    previous.dataset.target = pages[i-1]?.dataset.page || 'overview';
+    previous.textContent = i === 0 ? '‹ 本章总览' : '‹ 上一张';
+    next.dataset.target = pages[i+1]?.dataset.page || 'overview';
+    next.textContent = i === pages.length-1 ? '回到本章总览' : lastInGroup ? '下一组 ›' : '下一张 ›';
+    document.querySelector('.counter').textContent = '本组 ' + (inGroup.indexOf(current)+1) + ' / ' + inGroup.length;
+  }
+  document.querySelector('#course').href = 'index.html?topic=' + moduleId + '&chapter=handbook' + (current ? '&unit='+encodeURIComponent(unit) : '');
+  if (userAction) {
+    if (config) parent.postMessage({type:'grammar-manual-turn',module:moduleId,unitId:current?.dataset.page || null}, '*');
+    else {
+      if (location.hash.slice(1) !== unit) history.pushState(null,'','#'+encodeURIComponent(unit));
+      main.scrollIntoView({block:'start'});
+    }
+    const focus = current?.querySelector('h2,h3') || map.querySelector('h2');
+    focus.tabIndex = -1;
+    focus.focus({preventScroll:true});
+  }
+  requestAnimationFrame(report);
+}
+main.addEventListener('click', event => {
+  const link = event.target.closest('[data-target]');
+  if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  show(link.dataset.target,true);
+});
+function showRequested() {
+  show(config ? config.unitId : location.hash.slice(1),false);
+}
+showRequested();
+if (!config) window.addEventListener('hashchange',showRequested);
+new ResizeObserver(report).observe(main);
+</script>
+</body>
+</html>

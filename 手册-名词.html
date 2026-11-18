@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>名词 · 十环</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="site-editorial.css">
+<script>
+if (window.__GRAMMAR_CARD_EMBED__) document.documentElement.dataset.embedded = 'true';
+</script>
+<style>
+:root{--pen:var(--accent);--edge:var(--rule)}
+[hidden]{display:none!important}
+button,summary{font:inherit;cursor:pointer;color:inherit}
+.manual-page{--manual-inset:28px;min-width:0;padding-block:40px 82px}
+html[data-embedded],html[data-embedded] body{background:transparent}
+html[data-embedded] .manual-page{padding:0 3px 4px}
+html[data-embedded] :is(.site-header,.skip,.standalone){display:none}
+body.prepositions{--pen:#2f6056}
+body.nonfinite{--pen:#68452d}
+.cover{padding:11px var(--manual-inset);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:3px 14px}
+.cover h1{margin:0;font:700 1.18rem/1.45 var(--serif)}
+.standalone{font-size:.83rem;margin-inline-end:auto}
+.turn{color:var(--accent);border:1px solid var(--deep-rule);border-radius:2px;background:transparent;min-height:36px;min-width:0;padding:4px 11px}
+.turn:hover:not(:disabled){background:var(--wash);border-color:var(--accent)}
+.chapter-map{padding:32px var(--manual-inset)}
+.chapter-map h2{color:var(--accent);font:650 1.65rem/1.35 var(--serif);margin:0 0 12px}
+.chapter-map>p{margin:0 0 16px;max-width:56em;line-height:1.7}
+.anchor-example{padding:14px 16px;background:var(--wash);border-inline-start:2px solid var(--pen);overflow-wrap:anywhere}
+.anchor-example p{margin:.55em 0}
+.anchor-example table{width:100%;border-collapse:collapse;text-align:left}
+.anchor-example th,.anchor-example td{padding:7px;border-bottom:1px solid var(--edge)}
+.anchor-example caption{font-weight:600;padding:7px 0;text-align:left}
+.anchor-example td span[lang=en]{display:block;font-family:var(--serif)}
+.outline{border-top:3px double var(--deep-rule);margin-bottom:28px}
+.outline-group{display:grid;grid-template-columns:minmax(170px,30%) 1fr;gap:8px 24px;padding:12px 0;border-bottom:1px solid var(--edge)}
+.outline-group h3{font:650 19px/1.45 var(--serif);margin:0}
+.outline a{text-decoration:none}.outline a:hover{text-decoration:underline}
+.group-number,.section-number{font:550 12px/1.6 var(--sans);color:var(--muted);font-variant-numeric:tabular-nums;display:inline-block}
+.group-number{padding-right:10px;vertical-align:.15em}
+.section-number{min-width:2.4em}
+.outline-links{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px}
+.outline-links a{display:flex;align-items:baseline;color:var(--ink);font-size:14px;line-height:1.5;padding:4px 0}
+.group-nav p{margin:4px 0}
+@media(max-width:780px){.outline-group{grid-template-columns:1fr}.outline-links{padding-inline-start:1.6em}}
+@media(max-width:500px){.outline-links{grid-template-columns:1fr}.outline-group{gap:4px}.outline-links a{padding:5px 0}}
+.group-nav,.group-recall{padding:14px var(--manual-inset)}
+.group-nav{border-bottom:1px solid var(--edge)}
+.group-nav h2{margin:0;color:var(--accent);font:650 1.25rem/1.45 var(--serif)}
+.group-nav p{font-size:14px;color:var(--muted)}
+.group-nav nav{display:flex;flex-wrap:wrap;gap:3px 12px;margin-top:7px}
+.group-nav a{padding:4px 1px;border-bottom:2px solid transparent;text-decoration:none;font:14px/1.45 var(--sans)}
+.group-nav a:hover{text-decoration:underline}
+.group-nav a[aria-current]{color:var(--ink);border-color:var(--accent);background:var(--wash)}
+.group-recall{border-top:3px double var(--deep-rule)}
+.group-recall h3{font:600 19px/1.5 var(--serif);margin:0}
+.group-recall summary{color:var(--pen)}.group-recall p{margin:6px 0}
+.back-map{border:0;background:none;font:14px/1.4 var(--sans);color:var(--accent);text-decoration:underline;text-underline-offset:3px;padding:7px 0}
+article[data-page]{max-width:846px;min-width:0;margin-inline:auto;padding:34px var(--manual-inset);overflow-wrap:break-word}
+article h2,article h3,article h4{font-family:var(--serif);line-height:1.35;text-wrap:balance}
+article h2{font-size:2rem;margin:0 0 .65em}
+article h3{font-size:1.4rem;margin:.65em 0}
+article p{margin:.65em 0}
+article svg{max-width:100%}
+.manual-example,article blockquote{font-family:var(--serif);font-size:1.17em}
+.manual-caption{color:var(--muted);font-size:.9em}
+.manual-note,.manual-reading{border-inline-start:3px solid var(--pen);padding:.3em 1em;margin:1em 0}
+.manual-table, article table{width:100%;border-collapse:collapse;text-align:left;font-size:.96em;line-height:1.55}
+article th,article td{padding:.6em .7em;vertical-align:top;border-bottom:1px solid var(--edge)}
+article th{color:var(--pen);background:var(--wash)}
+article summary{color:var(--pen);font-weight:600}
+.manual-reading blockquote{margin:12px 0}
+footer{border-top:1px solid var(--edge);padding:12px var(--manual-inset);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.counter{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:760px){
+  .manual-page{--manual-inset:0px;padding-block:22px 52px}
+  .chapter-map,article[data-page]{padding-block:24px}
+  .chapter-map h2{font-size:1.45rem}
+  article h2{font-size:1.55rem}
+  article h3{font-size:1.22rem}
+  article td,article th{padding:.45em .38em}
+  .turn{padding-inline:8px}
+}
+@media(min-width:651px){article[data-page].turning{animation:page-in .21s ease-out}@keyframes page-in{from{opacity:.72;transform:translateX(7px)}to{opacity:1;transform:none}}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+body.nouns {--pen:#574072;--noun-ink:#574072;--noun-tint:#eee8f3;--noun-detail:#205e56;--noun-wash:#e9f0e9;--noun-rule:#d5cfc6;--noun-sheet:#f7f4ed}
+.noun-card h2 {font-size:28px;margin:0 0 11px}
+.noun-card h3 {font-size:20px;margin:22px 0 8px}
+.noun-card .noun-lead {max-width:48em;margin:0 0 15px}
+.noun-card [lang=en],.noun-overview [lang=en],.noun-trace [lang=en] {font-family:var(--serif)}
+.noun-en {font-family:var(--serif);font-size:1.15em;line-height:1.55}
+.noun-card figure {margin:16px 0 20px}
+.noun-card figcaption {color:var(--pen);font-weight:650}
+.noun-card mark,.noun-overview mark {background:var(--noun-tint);color:var(--noun-ink);padding:0 .12em}
+.noun-card mark.noun-dependent {background:var(--noun-wash);color:var(--noun-detail)}
+.noun-structure {padding:12px 0 9px;border-block:1px solid var(--noun-rule);min-width:0}
+.noun-pattern {width:fit-content;max-width:100%}
+.noun-phrase {display:flex;flex-wrap:wrap;gap:8px 5px;margin:10px 0;list-style:none;padding:0}
+.noun-phrase li {padding:5px 8px;border-bottom:2px solid var(--noun-rule);background:var(--noun-sheet);min-width:0}
+.noun-phrase li.noun-head {border-color:var(--noun-ink);background:var(--noun-tint);color:var(--noun-ink)}
+.noun-phrase li.noun-tail {border-color:var(--noun-detail);background:var(--noun-wash);color:var(--noun-detail)}
+.noun-phrase span,.noun-phrase small {display:block}
+.noun-phrase span {font:650 21px/1.28 var(--serif)}
+.noun-phrase small,.noun-source {font-size:13px;color:var(--muted)}
+.noun-whole {display:block;border:1px solid var(--noun-ink);border-top:0;color:var(--noun-ink);padding:2px 7px 4px;text-align:center;font-size:14px}
+.noun-note {border-inline-start:3px solid var(--noun-detail);padding:4px 0 4px 12px;margin:13px 0;color:var(--ink)}
+.noun-note p {margin:.25em 0}
+.noun-table {table-layout:fixed;margin:11px 0 17px;overflow-wrap:anywhere}
+.noun-table caption {text-align:start;color:var(--pen);font-weight:650;margin-bottom:5px}
+.noun-card .noun-table td,.noun-card .noun-table th {padding:8px 9px;background:none}
+.noun-card .noun-table thead th {background:var(--noun-sheet)}
+.noun-table th:first-child {width:27%}
+.noun-table.noun-triples th:first-child {width:19%}
+.noun-sides {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px;border-block:1px solid var(--noun-rule);padding:12px 0;margin:12px 0}
+.noun-sides section + section {border-inline-start:1px solid var(--noun-rule);padding-inline-start:20px}
+.noun-sides h3 {margin:0 0 5px;font-size:18px}
+.noun-sides p {margin:.45em 0}
+.noun-count {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:10px}
+.noun-count > div {min-width:0;padding:9px 10px;background:var(--noun-sheet);border-bottom:2px solid var(--noun-rule)}
+.noun-count > div:first-child {background:var(--noun-wash);border-color:var(--noun-detail)}
+.noun-count > div:last-child {background:var(--noun-tint);border-color:var(--noun-ink)}
+.noun-count p {margin:0}
+.noun-count strong {display:block;font-size:14px}
+.noun-example-list {margin:12px 0;display:grid;gap:0}
+.noun-example-list > div {display:grid;grid-template-columns:minmax(5.5em,25%) minmax(0,1fr);gap:7px 11px;padding:7px 0;border-top:1px solid var(--noun-rule)}
+.noun-example-list dt {font-weight:650;color:var(--pen)}
+.noun-example-list dd {margin:0}
+.noun-example-list dd [lang=en] {font-size:1.08em}
+.noun-trace {border-block:1px solid var(--noun-rule);padding:12px 0}
+.noun-trace > p {margin:5px 0}
+.noun-trace b {color:var(--noun-ink)}
+.noun-bit {white-space:normal;display:inline;padding:.05em .17em;background:var(--noun-wash);color:var(--noun-detail)}
+.noun-bank {border-top:1px solid var(--noun-rule);padding-top:10px;margin:18px 0 0}
+.noun-bank .noun-source {margin:0 0 4px}
+.noun-bank .noun-en {margin:4px 0}
+.noun-overview .noun-bank {padding:0;margin:0;border:0}
+.noun-overview .noun-bank summary {color:var(--pen);font-weight:650}
+.noun-blank {display:inline-block;min-width:4ch;border-block-end:1px solid currentColor;margin:0 .1em}
+.noun-options {margin:8px 0;padding-inline-start:1.65em;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 15px;overflow-wrap:anywhere}
+.noun-answer {margin-top:6px;padding:5px 11px;background:var(--noun-wash);border-inline-start:3px solid var(--noun-detail)}
+.noun-answer p {margin:.36em 0}
+.noun-more {margin:13px 0}
+.noun-more > summary {padding:.25em 0}
+@media(max-width:490px) {
+  .noun-card h2 {font-size:23px}
+  .noun-card .noun-table td,.noun-card .noun-table th {padding:6px 4px}
+  .noun-table thead th:first-child {width:22%}
+  .noun-table thead th:nth-child(2) {width:29%}
+  .noun-table.noun-triples thead th:nth-child(2) {width:auto}
+  .noun-sides {gap:8px;grid-template-columns:1fr}
+  .noun-sides section + section {border-inline-start:0;border-top:1px solid var(--noun-rule);padding:8px 0 0}
+  .noun-phrase span {font-size:18px}
+  .noun-phrase li {padding:4px 5px}
+  .noun-count {gap:6px}
+  .noun-example-list > div {gap:5px;grid-template-columns:minmax(4.5em,23%) minmax(0,1fr)}
+}
+
+</style>
+</head>
+<body class="nouns">
+<header class="site-header"><div class="site-inner"><a class="brand" href="index.html" aria-label="十环"><img src="assets/zhang-shihuan-logo.svg" alt="" width="69" height="36"></a><nav class="site-nav" aria-label="主导航"><a href="external-practice.html">每日外刊</a><a href="index.html?view=study" aria-current="page">专题精讲</a><a href="cloze-pages/index.html">完形填空</a><a href="index.html?view=reading&amp;reading_type=comprehension">阅读理解</a></nav></div></header>
+<main id="manual" class="manual-page editorial-page">
+<header class="cover editorial-rail"><h1>名词</h1><a class="standalone" id="course" href="index.html?topic=nouns&amp;chapter=handbook">在本章题卷中查看</a><button type="button" class="back-map" data-target="overview" hidden>返回本章总览</button></header>
+<section class="chapter-map" id="overview"><h2 tabindex="-1">考点目录</h2><nav aria-label="本章考点目录"><div class="outline"><section class="outline-group"><h3><a href="#unit-1" data-target="unit-1"><small class="group-number">01</small>名词短语与语境</a></h3><ol class="outline-links"><li><a href="#unit-1" data-target="unit-1"><small class="section-number">1.1</small>名词短语的中心词与句法功能</a></li><li><a href="#unit-2" data-target="unit-2"><small class="section-number">1.2</small>名词的可数性与计量</a></li><li><a href="#unit-3" data-target="unit-3"><small class="section-number">1.3</small>名词辨义与搭配</a></li><li><a href="#unit-4" data-target="unit-4"><small class="section-number">1.4</small>中心名词与主谓一致</a></li></ol></section><section class="outline-group"><h3><a href="#expanded-nouns-1" data-target="expanded-nouns-1"><small class="group-number">02</small>名词的义项、数与格</a></h3><ol class="outline-links"><li><a href="#expanded-nouns-1" data-target="expanded-nouns-1"><small class="section-number">2.1</small>同一名词的不同义项</a></li><li><a href="#expanded-nouns-2" data-target="expanded-nouns-2"><small class="section-number">2.2</small>不规则复数、集合名词与复合名词</a></li><li><a href="#expanded-nouns-3" data-target="expanded-nouns-3"><small class="section-number">2.3</small>所有格、of 结构与双重所有格</a></li></ol></section><section class="outline-group"><h3><a href="#expanded-nouns-4" data-target="expanded-nouns-4"><small class="group-number">03</small>限定与名词化</a></h3><ol class="outline-links"><li><a href="#expanded-nouns-4" data-target="expanded-nouns-4"><small class="section-number">3.1</small>冠词、零冠词与数量结构</a></li><li><a href="#expanded-nouns-5" data-target="expanded-nouns-5"><small class="section-number">3.2</small>名词派生与名词化</a></li></ol></section></div></nav><h2>典型题精析</h2><p>先认清整组短语在说什么，再根据句中的关系定词。以华兹华斯和湖区这道题为例：四个词都能放在 a great 后，真正决定答案的是湖区与诗歌灵感的关系。</p><div class="anchor-example"><div class="noun-overview">
+      <section class="noun-bank" data-question-id="coverage-nouns-2" aria-label="题库例题">
+        <p class="noun-source">题库原题 · 2023 天津第一次，第 4 题</p>
+        <p class="noun-en" lang="en">The British romantic poet William Wordsworth grew up in the Lake District, which was a great <span class="noun-blank" aria-label="空格"></span> of inspiration for his poems.</p><ol class="noun-options" lang="en" type="A"><li>discovery</li><li>form</li><li>source</li><li>symbol</li></ol>
+        <details><summary>查看答案与区分</summary><div class="noun-answer">
+          <p class="noun-en" lang="en"><strong>C. source</strong></p><p>定语从句中的 <i lang="en">which</i> 指湖区。湖区给华兹华斯的诗歌创作带来灵感，所以是 <i lang="en">a source of inspiration</i>。<i lang="en">form</i> 指灵感的一种形式，<i lang="en">symbol</i> 指代表灵感的象征，<i lang="en">discovery</i> 指发现；这些词都能作名词中心，却说不出湖区怎样影响创作。</p>
+        </div></details>
+      </section>
+    </div></div></section>
+<section class="group-nav" data-g="0" hidden><h2><small class="group-number">01</small>名词短语与语境</h2><p>确定短语的中心词和句中功能，再核对可数性、搭配和谓语。</p><nav aria-label="本组知识点"><a href="#unit-1" data-target="unit-1"><small class="section-number">1.1</small>名词短语的中心词与句法功能</a><a href="#unit-2" data-target="unit-2"><small class="section-number">1.2</small>名词的可数性与计量</a><a href="#unit-3" data-target="unit-3"><small class="section-number">1.3</small>名词辨义与搭配</a><a href="#unit-4" data-target="unit-4"><small class="section-number">1.4</small>中心名词与主谓一致</a></nav></section><section class="group-nav" data-g="1" hidden><h2><small class="group-number">02</small>名词的义项、数与格</h2><p>同一名词换义项后，可数性是否改变？复数和所有格标记应该落在哪里？</p><nav aria-label="本组知识点"><a href="#expanded-nouns-1" data-target="expanded-nouns-1"><small class="section-number">2.1</small>同一名词的不同义项</a><a href="#expanded-nouns-2" data-target="expanded-nouns-2"><small class="section-number">2.2</small>不规则复数、集合名词与复合名词</a><a href="#expanded-nouns-3" data-target="expanded-nouns-3"><small class="section-number">2.3</small>所有格、of 结构与双重所有格</a></nav></section><section class="group-nav" data-g="2" hidden><h2><small class="group-number">03</small>限定与名词化</h2><p>冠词确定所指范围；名词化把动作、变化或性质写成可供陈述的事情。</p><nav aria-label="本组知识点"><a href="#expanded-nouns-4" data-target="expanded-nouns-4"><small class="section-number">3.1</small>冠词、零冠词与数量结构</a><a href="#expanded-nouns-5" data-target="expanded-nouns-5"><small class="section-number">3.2</small>名词派生与名词化</a></nav></section>
+<div id="pages"><article data-page="unit-1" data-g="0" aria-label="名词短语的中心词与句法功能" hidden><section class="noun-card"><h2>名词短语的中心词与句法功能</h2><p class="noun-lead">名词短语的中心词决定整组指哪类人、物或事；整组在句中的位置和关系决定它作什么成分。长句中，两层名词短语常嵌套在一起。</p>
+        <figure class="noun-structure">
+          <figcaption>句法标注 · 2023 天津第一次，第 4 题原句节选</figcaption>
+          <p class="noun-en" lang="en">the Lake District, which was <mark>a great source of inspiration for his poems</mark></p>
+          <div class="noun-pattern">
+            <ul class="noun-phrase">
+              <li><span lang="en">a</span><small>限定词</small></li>
+              <li><span lang="en">great</span><small>前置修饰语</small></li>
+              <li class="noun-head"><span lang="en">source</span><small>中心词：来源</small></li>
+              <li class="noun-tail"><span lang="en">of inspiration for his poems</span><small>后置修饰语：说明湖区带来什么</small></li>
+            </ul>
+            <div class="noun-whole">整组作表语，说明湖区是什么</div>
+          </div>
+          <p><i lang="en">of</i> 的宾语是 <i lang="en">inspiration for his poems</i>，内层中心词是 <i lang="en">inspiration</i>，<i lang="en">for his poems</i> 说明灵感用在诗歌创作上。整组的外层中心仍是 <i lang="en">source</i>。</p>
+        </figure>
+        <table class="noun-table "><caption>名词短语的常见句法功能</caption><thead><tr><th scope="col">功能</th><th scope="col">例句</th><th scope="col">作用</th></tr></thead><tbody><tr><th scope="row">主语</th><td><span lang="en">The students in Class Three have arrived.</span></td><td>谁到了？三班学生。中心词是复数 <i lang="en">students</i>。</td></tr><tr><th scope="row">动词宾语</th><td><span lang="en">The school bought three new printers.</span></td><td>买了什么？整组 <i lang="en">three new printers</i> 是宾语。</td></tr><tr><th scope="row">介词宾语</th><td><span lang="en">We met outside the school gate.</span></td><td><i lang="en">outside</i> 后接整组 <i lang="en">the school gate</i>；<i lang="en">school</i> 是名词作前置修饰语，<i lang="en">gate</i> 才是中心。</td></tr><tr><th scope="row">表语、同位语</th><td><span lang="en">Ms Chen, our coach, is a PE teacher.</span></td><td><i lang="en">our coach</i> 和 <i lang="en">Ms Chen</i> 指同一人，是同位语；<i lang="en">a PE teacher</i> 在系动词后作表语。</td></tr></tbody></table><aside class="noun-note"><p><strong>区分</strong>　词性与句法成分是两回事：<i lang="en">school</i> 是名词，在 <i lang="en">school gate</i> 中修饰 <i lang="en">gate</i>；词类没有变。名词短语也可作状语，如 <i lang="en">last week</i> 在 <i lang="en">We met last week</i> 中说明时间。</p></aside></section></article><article data-page="unit-2" data-g="0" aria-label="名词的可数性与计量" hidden><section class="noun-card"><h2>名词的可数性与计量</h2><p class="noun-lead">可数性属于当前义项。<i lang="en">advice</i> 和 <i lang="en">suggestion</i> 都可译为“建议”，但前者通常把意见当作一类内容，后者可以按具体提议一条条数。</p>
+        <figure><figcaption>同一个数量，两种名词结构</figcaption>
+          <div class="noun-count">
+            <div><strong>计量词承担数量</strong><p class="noun-en" lang="en">two <mark class="noun-dependent">pieces</mark> of advice</p><p>数的是两条；<i lang="en">advice</i> 不加复数词尾。</p></div>
+            <div><strong>名词本身承担数量</strong><p class="noun-en" lang="en">two <mark>suggestions</mark></p><p>直接数两项提议；<i lang="en">suggestion</i> 用复数。</p></div>
+          </div>
+        </figure>
+        <table class="noun-table "><caption>限定词、数量词与可数性</caption><thead><tr><th scope="col">名词形式</th><th scope="col">常见限定方式</th><th scope="col">结构对比</th></tr></thead><tbody><tr><th scope="row">可数单数</th><td><span lang="en">a/an, each, every, this, my</span></td><td><span lang="en">a suggestion / each student / my book</span></td></tr><tr><th scope="row">可数复数</th><td><span lang="en">many, several, (a) few</span></td><td><span lang="en">many suggestions / a few ideas</span></td></tr><tr><th scope="row">不可数</th><td><span lang="en">much, (a) little, an amount of</span></td><td><span lang="en">much advice / a little information</span></td></tr><tr><th scope="row">复数与不可数均可</th><td><span lang="en">some, any, no, enough, a lot of</span></td><td><span lang="en">some books / some information</span></td></tr></tbody></table><aside class="noun-note"><p><strong>区分</strong>　<i lang="en">few/little</i> 往往强调“几乎没有”；<i lang="en">a few/a little</i> 表示“有一些”。<i lang="en">We have little time left</i> 强调时间所剩无几；<i lang="en">We still have a little time</i> 表示还有一点时间可用。<i lang="en">few</i> 和 <i lang="en">little</i> 的选择仍取决于名词的可数性。</p></aside><details class="noun-more"><summary>常见不可数名词与计量搭配</summary><p><i lang="en">advice, information, news, furniture, equipment, luggage, homework, progress</i> 在常见义项中通常不可数。表达数量时选相应单位：<i lang="en">a piece of news</i>（一条消息）、<i lang="en">two items of luggage</i>（两件行李）、<i lang="en">three pieces of equipment</i>（三件设备）。表达“许多项家庭作业”可按具体任务说 <i lang="en">several assignments</i>。</p><p>抽象、具体与可数性没有一一对应关系。<i lang="en">an idea</i> 是可数的想法，<i lang="en">furniture</i> 是不可数的家具总称。</p></details></section></article><article data-page="unit-3" data-g="0" aria-label="名词辨义与搭配" hidden><section class="noun-card"><h2>名词辨义与搭配</h2><p class="noun-lead">四个词都能满足词性和位置时，要按句义取舍。名词后的介词短语常指出对象，句中动作或前后对照才能证明某一个搭配符合题意。</p>
+      <section class="noun-bank" data-question-id="coverage-nouns-4" aria-label="题库例题">
+        <p class="noun-source">题库原题 · 2022 天津第二次，第 8 题</p>
+        <p class="noun-en" lang="en">When people are depressed, some experience a loss of <span class="noun-blank" aria-label="空格"></span> while others can&#x27;t stop eating.</p><ol class="noun-options" lang="en" type="A"><li>appetite</li><li>power</li><li>memory</li><li>sight</li></ol>
+        <details><summary>查看答案与区分</summary><div class="noun-answer">
+          <p class="noun-en" lang="en"><strong>A. appetite</strong></p><p>题干把两种进食反应并列：一组 <i lang="en">can’t stop eating</i>，另一组则没胃口。<i lang="en">loss of appetite</i> 正好表示食欲减退。<i lang="en">loss of memory</i> 和 <i lang="en">loss of sight</i> 本身也成立，但分别表示记忆力下降和失明，解释不了前后围绕进食的对照。</p>
+        </div></details>
+      </section>
+    
+      <section class="noun-bank" data-question-id="coverage-nouns-23" aria-label="题库例题">
+        <p class="noun-source">题库原题 · 2025 天津河东一模，第 9 题</p>
+        <p class="noun-en" lang="en">Thanks to the effort made by the government, farmers in China now have <span class="noun-blank" aria-label="空格"></span> to health care.</p><ol class="noun-options" lang="en" type="A"><li>entrance</li><li>access</li><li>introduction</li><li>devotion</li></ol>
+        <details><summary>查看答案与区分</summary><div class="noun-answer">
+          <p class="noun-en" lang="en"><strong>B. access</strong></p><p>题干说农民如今能获得医疗服务。<i lang="en">access to health care</i> 表示享用服务的机会或条件；<i lang="en">entrance</i> 多指入口、进入，不能用 <i lang="en">entrance to health care</i> 表达这里的服务可及性。<i lang="en">introduction to</i> 可以表示对事物的介绍或初次接触，<i lang="en">devotion to</i> 表示投入或忠诚，都不是“获得服务”。</p>
+        </div></details>
+      </section>
+    
+      <section class="noun-bank" data-question-id="coverage-nouns-22" aria-label="题库例题">
+        <p class="noun-source">题库原题 · 2025 天津红桥二模，第 9 题</p>
+        <p class="noun-en" lang="en">The farmers brought their <span class="noun-blank" aria-label="空格"></span> to town early each morning.</p><ol class="noun-options" lang="en" type="A"><li>product</li><li>produce</li><li>program</li><li>production</li></ol>
+        <details><summary>查看答案与区分</summary><div class="noun-answer">
+          <p class="noun-en" lang="en"><strong>B. produce</strong></p><p>把东西每天一早运进城的情境指向农产品。名词 <i lang="en">produce</i> 可统称农产品，常作不可数名词。<i lang="en">product</i> 强调某种产品，<i lang="en">production</i> 多指生产活动或产量；<i lang="en">program</i> 则是计划、节目等。<i lang="en">their</i> 后可接可数单数、复数或不可数，因此不能只看形式选 <i lang="en">produce</i>。</p>
+        </div></details>
+      </section>
+    <table class="noun-table "><caption>名词和后接成分的关系</caption><thead><tr><th scope="col">关系</th><th scope="col">常见搭配</th><th scope="col">区分</th></tr></thead><tbody><tr><th scope="row">起源</th><td><span lang="en">a source of inspiration</span></td><td>指带来灵感的事物；<i lang="en">a form of</i> 则指类别或表现形式。</td></tr><tr><th scope="row">资格与机会</th><td><span lang="en">gain admission to a university / have access to health care</span></td><td>前者涉及录取或获准进入，后者涉及能否接触资源、使用服务。</td></tr><tr><th scope="row">对象</th><td><span lang="en">sympathy for someone</span></td><td><i lang="en">for</i> 引出同情的对象；<i lang="en">sympathy with a view</i> 可表示对观点的认同。</td></tr><tr><th scope="row">意图</th><td><span lang="en">with the intention of helping others</span></td><td><i lang="en">of</i> 后说明计划做的事，不能据此判断结果是否已实现。</td></tr></tbody></table><aside class="noun-note"><p><strong>区分</strong>　<i lang="en">practice</i> 可指惯常做法，<i lang="en">procedure</i> 强调明确的步骤或规程，<i lang="en">process</i> 强调事情发展的过程。若空格要补整个词组，比如 <i lang="en">keep pace with</i> 与 <i lang="en">take pride in</i> 同列，应比较完整搭配的意思：分别是“跟上”和“以……为傲”。</p></aside></section></article><article data-page="unit-4" data-g="0" aria-label="中心名词与主谓一致" hidden><section class="noun-card"><h2>中心名词与主谓一致</h2><p class="noun-lead">普通 <i lang="en">名词 + of 短语</i> 作主语时，按外层中心词确定谓语数；遇到 <i lang="en">a number of</i> 或表示部分的结构，再按其特定用法判断。</p>
+        <div class="noun-sides">
+          <section><h3>许多个体</h3><p class="noun-en" lang="en">A number of sponsored <mark>places</mark> <mark>are</mark> available for writers on low incomes.</p><p class="noun-source">阅读原句 · 2025 天津春，阅读 A</p><p><i lang="en">a number of</i> 表示“若干”，复数 <i lang="en">places</i> 与 <i lang="en">are</i> 配合。若干个获得资助的参赛名额向低收入写作者开放。</p></section>
+          <section><h3>一个数值</h3><p class="noun-en" lang="en">The <mark>number</mark> of sponsored places <mark>is</mark> limited.</p><p class="noun-source">对照句</p><p>句子给这个“数量”下判断。<i lang="en">places</i> 留在 <i lang="en">of</i> 短语里，谓语与单数 <i lang="en">number</i> 配合。</p></section>
+        </div>
+        <table class="noun-table "><caption>主语中的数量结构</caption><thead><tr><th scope="col">结构</th><th scope="col">例句</th><th scope="col">谓语依据</th></tr></thead><tbody><tr><th scope="row"><span lang="en">one of</span></th><td><span lang="en">One of the applicants is from Tianjin.</span></td><td>主句主语的中心是单数 <i lang="en">one</i>；<i lang="en">of</i> 后是供选取的复数集合。</td></tr><tr><th scope="row"><span lang="en">a pair of</span></th><td><span lang="en">A pair of scissors is missing.</span></td><td>按 <i lang="en">pair</i> 的数；<i lang="en">Two pairs are missing.</i></td></tr><tr><th scope="row"><span lang="en">some / most / all of</span></th><td><span lang="en">Most of the water is safe; most of the bottles are clean.</span></td><td>分取不可数总量用单数，分取复数个体用复数。</td></tr><tr><th scope="row"><span lang="en">each / every</span></th><td><span lang="en">Each candidate has a number. / They each have a number.</span></td><td>前句 <i lang="en">each candidate</i> 作主语；后句主语是 <i lang="en">they</i>。<i lang="en">Every candidate has</i> 也用单数。</td></tr></tbody></table><aside class="noun-note"><p><strong>区分</strong>　<i lang="en">Ten years is a long time.</i> 把十年当作一个时长整体；<i lang="en">Ten years have passed.</i> 则说十年已经过去。同一个数量短语可以有不同的一致方式。</p></aside><details class="noun-more"><summary>主句与定语从句有各自的谓语</summary><p class="noun-en" lang="en">Lin is one of the students <mark>who have signed up</mark>.</p><p><i lang="en">is</i> 与主句主语 <i lang="en">Lin</i> 一致；<i lang="en">who</i> 通常回指复数 <i lang="en">students</i>，从句用 <i lang="en">have</i>。若写 <i lang="en">Lin is the only one of the students who has signed up</i>，后半说明“唯一报名的那个人”，定语从句修饰 <i lang="en">the only one</i>，用 <i lang="en">has</i>。</p></details></section></article><aside class="group-recall" data-g="0" hidden><h3>考点辨析</h3><p>在 A box of old books is blocking the door 和 A number of old books are missing 中，两个 of 后面都是 books，谓语为什么不同？</p><details><summary>查看解析</summary><div class="recall-answer"><p>前句谈一个箱子，<i lang="en">box</i> 控制单数 <i lang="en">is</i>；<i lang="en">of old books</i> 说明箱子里有什么。后句 <i lang="en">a number of</i> 表示“若干”，句子谈许多本书，因此用复数 <i lang="en">are</i>。</p></div></details></aside><article data-page="expanded-nouns-1" data-g="1" aria-label="同一名词的不同义项" hidden><section class="noun-card"><h2>同一名词的不同义项</h2><p class="noun-lead">用句子确定名词的具体义项。同一个词在介绍经验、材料或总量时常用不可数形式，换成一次经历、一份成品或一个独立对象时，可能改用单数或复数。</p>
+        <figure><figcaption>同一个人、同一次志愿服务：两种 experience</figcaption>
+          <div class="noun-sides">
+            <section><h3>积累的经验 · 不可数</h3><p class="noun-en" lang="en">Li Hua gained <mark>a lot of experience</mark> by volunteering at a museum.</p><p>李华在博物馆做志愿者，积累了不少经验。<i lang="en">experience</i> 指做事的能力和实际所得，谈的是积累程度。</p></section>
+            <section><h3>经历的一件事 · 可数</h3><p class="noun-en" lang="en">Volunteering at the museum was <mark>an unforgettable experience</mark> for Li Hua.</p><p>对李华来说，在博物馆做志愿者是一次难忘的经历。整个活动作为一件事，可以说 <i lang="en">an experience</i>。</p></section>
+          </div>
+        </figure>
+        <table class="noun-table noun-triples"><caption>一词两义：形式怎样随句义变化</caption><thead><tr><th scope="col">名词</th><th scope="col">不可数义</th><th scope="col">可数义</th></tr></thead><tbody><tr><th scope="row"><span lang="en">room</span></th><td><span lang="en">make room for another chair</span>：腾出一些空间。</td><td><span lang="en">book two rooms</span>：订两个房间。</td></tr><tr><th scope="row"><span lang="en">time</span></th><td><span lang="en">spend time reading</span>：花时间阅读。</td><td><span lang="en">read it three times</span>：读三遍。另有 <span lang="en">a difficult time</span>，指一段艰难时期。</td></tr><tr><th scope="row"><span lang="en">work</span></th><td><span lang="en">finish the work</span>：完成手头的工作。</td><td><span lang="en">the collected works of Lu Xun</span>：鲁迅作品集。<i lang="en">a work</i> 可指一部作品；一份职业通常说 <i lang="en">a job</i>。</td></tr><tr><th scope="row"><span lang="en">paper</span></th><td><span lang="en">write on paper</span>：写在纸上。</td><td><span lang="en">publish two papers</span>：发表两篇论文。<i lang="en">a paper</i> 在别的语境还可指一份报纸。</td></tr><tr><th scope="row"><span lang="en">coffee / chicken</span></th><td><span lang="en">some coffee / some chicken</span>：咖啡、鸡肉。</td><td><span lang="en">two coffees / two chickens</span>：两杯咖啡、两只鸡。前者按份，后者按个体。</td></tr><tr><th scope="row"><span lang="en">practice</span></th><td><span lang="en">You need more practice.</span>：你需要多练习。</td><td><span lang="en">a common practice</span>：一种惯常做法。此义也可用不可数，如 <i lang="en">It is common practice to …</i>。</td></tr></tbody></table><aside class="noun-note"><p><strong>区分</strong>　组合有词汇限制。点单可以说 <i lang="en">two coffees</i>，但“两条建议”一般用 <i lang="en">two pieces of advice</i> 或 <i lang="en">two suggestions</i>。有些同形词还跨词性：名词 <i lang="en">produce</i> 指农产品，动词 <i lang="en">produce</i> 指生产或产生。</p></aside></section></article><article data-page="expanded-nouns-2" data-g="1" aria-label="不规则复数、集合名词与复合名词" hidden><section class="noun-card"><h2>不规则复数、集合名词与复合名词</h2><p class="noun-lead">先确认当前词是单数、复数还是集合名词，再看这个意义与谓语怎样配合。有无 -s、要在哪个位置加 -s，是两类问题。</p><table class="noun-table "><caption>复数形式与谓语搭配</caption><thead><tr><th scope="col">类型</th><th scope="col">常见词</th><th scope="col">数量与用法</th></tr></thead><tbody><tr><th scope="row">规则复数</th><td><span lang="en">books, boxes, families, days</span></td><td>多数加 <i lang="en">-s</i>；<i lang="en">s, x, sh, ch</i> 结尾一般加 <i lang="en">-es</i>。辅音字母 + <i lang="en">y</i>：<i lang="en">family → families</i>；元音字母 + <i lang="en">y</i>：<i lang="en">day → days</i>。</td></tr><tr><th scope="row">不规则复数</th><td><span lang="en">children, men, women, mice, feet, teeth</span></td><td>这些词不能照一般规则另加 <i lang="en">-s</i>。</td></tr><tr><th scope="row">单复同形</th><td><span lang="en">sheep, deer, species, series</span></td><td><i lang="en">This species is protected.</i> / <i lang="en">These species are protected.</i> 根据限定词和语境确定数。</td></tr><tr><th scope="row">外形有 -s，惯常用单数</th><td><span lang="en">news, physics</span></td><td><i lang="en">The news is encouraging.</i> <i lang="en">news</i> 是不可数名词；<i lang="en">physics</i> 是学科名称。</td></tr><tr><th scope="row">外形无 -s，惯常用复数</th><td><span lang="en">people, police</span></td><td><i lang="en">The police are investigating.</i> 数个体可说 <i lang="en">a police officer</i>。<i lang="en">people</i> 若特指一个民族，另有 <i lang="en">a people / peoples</i>。</td></tr><tr><th scope="row">成对物品</th><td><span lang="en">scissors, trousers, glasses</span></td><td><i lang="en">The scissors are missing.</i> 一件用 <i lang="en">a pair of scissors is</i>，两件用 <i lang="en">two pairs of scissors are</i>。</td></tr></tbody></table><aside class="noun-note"><p><strong>集合名词</strong>　<i lang="en">team, family, class</i> 作主语时，把群体作为整体可用单数：<i lang="en">The team is ready.</i> 英式英语也允许在强调成员时用复数：<i lang="en">The team are taking their seats.</i> 美式英语通常用单数；要突出成员差异，可明确写成 <i lang="en">the team members are …</i>。</p></aside><table class="noun-table "><caption>复合名词：复数加在哪里</caption><thead><tr><th scope="col">结构</th><th scope="col">形式</th><th scope="col">区分</th></tr></thead><tbody><tr><th scope="row">一般复合名词</th><td><span lang="en">school buses / toothbrushes</span></td><td>通常给中心词变复数。</td></tr><tr><th scope="row">中心词在前</th><td><span lang="en">passers-by / mothers-in-law</span></td><td>分别数路人和岳母或婆婆；复数落在 <i lang="en">passer</i>、<i lang="en">mother</i> 上。</td></tr><tr><th scope="row">man/woman 加职业</th><td><span lang="en">men doctors / women teachers</span></td><td>这种组合里两部分都用复数；不能类推为 <i lang="en">schools buses</i>。</td></tr><tr><th scope="row">数词加名词作定语</th><td><span lang="en">a ten-year plan / a five-year-old child</span></td><td>整个连字符结构修饰后面的名词，内部一般用单数。表语说 <i lang="en">The child is five years old.</i></td></tr><tr><th scope="row">惯用复数修饰语</th><td><span lang="en">sports facilities / a sales manager</span></td><td><i lang="en">sports</i>、<i lang="en">sales</i> 是惯用形式。名词作前置修饰语并非一律用单数。</td></tr></tbody></table><details class="noun-more"><summary>词尾相似，复数却不同</summary><p><i lang="en">leaf → leaves</i>、<i lang="en">knife → knives</i>；<i lang="en">roof → roofs</i>、<i lang="en">belief → beliefs</i>。不能见到 <i lang="en">-f/-fe</i> 就改为 <i lang="en">-ves</i>。<i lang="en">tomato → tomatoes</i>，<i lang="en">photo → photos</i>；<i lang="en">-o</i> 结尾也不统一。</p></details></section></article><article data-page="expanded-nouns-3" data-g="1" aria-label="所有格、of 结构与双重所有格" hidden><section class="noun-card"><h2>所有格、of 结构与双重所有格</h2><p class="noun-lead">所有格可以表示人和事物的归属，也常表示时间、度量、组织或对象的关联。选择 ’s 或 of，要看两端是什么关系以及哪一个表达自然。</p><table class="noun-table "><caption>撇号位置与修饰范围</caption><thead><tr><th scope="col">所指</th><th scope="col">形式</th><th scope="col">依据</th></tr></thead><tbody><tr><th scope="row">一位学生</th><td><span lang="en">the student’s report</span></td><td>单数名词后加 <i lang="en">’s</i>。</td></tr><tr><th scope="row">多位学生</th><td><span lang="en">the students’ reports</span></td><td>规则复数已有 <i lang="en">-s</i>，只加撇号。</td></tr><tr><th scope="row">多个孩子</th><td><span lang="en">the children’s reports</span></td><td><i lang="en">children</i> 已是复数，词尾没有 <i lang="en">-s</i>，后加 <i lang="en">’s</i>。</td></tr><tr><th scope="row">共同或分别</th><td><span lang="en">Li Ming and Wang Wei’s project / Li Ming’s and Wang Wei’s projects</span></td><td>末项标记可让所有格修饰并列整体；各项都标记时，分别与两个人相关。</td></tr></tbody></table>
+        <figure><figcaption>a photo：照片内容与归属</figcaption>
+          <div class="noun-sides">
+            <section><h3>照片拍的是谁</h3><p class="noun-en" lang="en">a photo <mark class="noun-dependent">of my father</mark></p><p>我父亲的照片：照片内容是父亲。这张照片可以是别人拍的，也可以归别人所有。</p></section>
+            <section><h3>照片与谁有关</h3><p class="noun-en" lang="en">a photo <mark>of my father’s</mark></p><p>我父亲的照片中的一张：可指他拥有或拍摄的一张，单凭这组词不能确认画面里是谁。</p></section>
+          </div>
+        </figure>
+        <aside class="noun-note"><p><strong>区分</strong>　<i lang="en">a friend of mine</i> 指我的一位朋友，<i lang="en">mine</i> 是独立物主代词；<i lang="en">a friend of my father’s</i> 同理用独立所有格。<i lang="en">my friend</i> 本来就是限定完整的短语，不能叠加 <i lang="en">a my friend</i>。</p></aside><details class="noun-more"><summary>时间、度量与事件关系</summary><dl class="noun-example-list"><div><dt>时间与度量</dt><dd><i lang="en">today’s news / an hour’s exercise</i>：今天的消息；一小时的锻炼。’s 不限于有生命者。</dd></div><div><dt>部位与事件</dt><dd><i lang="en">the roof of the building / the morning of my departure</i>：建筑物的屋顶；我出发那天的早晨。后者的 <i lang="en">of</i> 把时间和事件联系起来。</dd></div><div><dt>省略名词</dt><dd><i lang="en">at the doctor’s</i> 常指在医生的诊所；在语境能确定所指时，所有格后可以省略名词。</dd></div></dl></details></section></article><aside class="group-recall" data-g="1" hidden><h3>考点辨析</h3><p>Children’s books 里，哪个词决定整组的数？children’s 里的 ’s 表示复数还是所有格？</p><details><summary>查看解析</summary><div class="recall-answer"><p>中心词 <i lang="en">books</i> 是复数。<i lang="en">children</i> 已经是 <i lang="en">child</i> 的不规则复数；附加的 <i lang="en">’s</i> 是所有格标记。脱离语境，<i lang="en">children’s books</i> 可以指儿童读物，也可以指孩子们拥有的书。</p></div></details></aside><article data-page="expanded-nouns-4" data-g="2" aria-label="冠词、零冠词与数量结构" hidden><section class="noun-card"><h2>冠词、零冠词与数量结构</h2><p class="noun-lead">决定冠词之前，先判断名词的数，再判断读者是否能识别所指。泛指一类、介绍一个对象、指明双方都能识别的对象，是不同的指称方式。</p><table class="noun-table "><caption>同一个词在四种语境中的限定</caption><thead><tr><th scope="col">句中结构</th><th scope="col">所指</th><th scope="col">依据</th></tr></thead><tbody><tr><th scope="row"><span lang="en">She borrowed a book.</span></th><td>借了一本书。</td><td>可数单数，用 <i lang="en">a</i> 引入同类中的一本。</td></tr><tr><th scope="row"><span lang="en">She returned the book.</span></th><td>还了那本书。</td><td>谈话双方能确定是哪本。例如它在前文已经出现。</td></tr><tr><th scope="row"><span lang="en">Books take up space.</span></th><td>书占地方。</td><td>复数泛指，不限定某一组；具体到一组可以说 <i lang="en">the books on the shelf</i>。</td></tr><tr><th scope="row"><span lang="en">She returned my book.</span></th><td>还了我的书。</td><td><i lang="en">my</i> 已承担限定作用，不能再在前面叠 <i lang="en">a</i> 或 <i lang="en">the</i>。</td></tr></tbody></table>
+      <section class="noun-bank" data-question-id="coverage-pronouns-2" aria-label="题库例题">
+        <p class="noun-source">题库原题 · 2026 天津红桥一模，第 2 题</p>
+        <p class="noun-en" lang="en">All the changes will lead to <span class="noun-blank" aria-label="空格"></span> better Peking University, <span class="noun-blank" aria-label="空格"></span> that can surprise and inspire all the alumni.</p><ol class="noun-options" lang="en" type="A"><li>a, the one</li><li>a, one</li><li>the, one</li><li>the, the one</li></ol>
+        <details><summary>查看答案与区分</summary><div class="noun-answer">
+          <p class="noun-en" lang="en"><strong>B. a, one</strong></p><p>第一空用 <i lang="en">a</i>，<i lang="en">a better Peking University</i> 引入的是尚在设想中的、更完善的北大。第二空的 <i lang="en">one</i> 连同 <i lang="en">that</i> 从句作同位语，进一步解释这样的北大会是什么样。<i lang="en">the one</i> 会把它说成从特定范围中能识别的那个版本，题干没给出这个范围。</p>
+        </div></details>
+      </section>
+    <aside class="noun-note"><p><strong>区分</strong>　<i lang="en">a/an</i> 要听冠词后紧接的音：<i lang="en">a university</i> 中 <i lang="en">university</i> 以 /j/ 开始，<i lang="en">an hour</i> 中 <i lang="en">hour</i> 的 <i lang="en">h</i> 不发音。<i lang="en">the</i> 可用于首次提到却能从语境中确定的人或物，比如教室里唯一的一扇门。</p></aside><details class="noun-more"><summary>泛指、零冠词与数量词组</summary><dl class="noun-example-list"><div><dt>泛指一类</dt><dd><i lang="en">A bicycle has two wheels</i> 用任意一辆代表这一类；<i lang="en">Bicycles have two wheels</i> 用复数泛指。<i lang="en">the violin</i> 在 <i lang="en">The violin is a string instrument</i> 中整体指一种乐器。<i lang="en">the elderly</i> 指老年人这一群体，作主语时用复数谓语。</dd></div><div><dt>不可数泛指</dt><dd><i lang="en">Water is essential</i> 泛指水；<i lang="en">The water in this bottle is safe to drink</i> 给出了能识别的范围。</dd></div><div><dt>制度性活动</dt><dd><i lang="en">go to school</i> 常指去上学，<i lang="en">go to the school</i> 指到那所学校去。零冠词是特定搭配，不能因此省略所有地点名词的冠词。</dd></div><div><dt>数量词组</dt><dd><i lang="en">a lot of advice / a lot of suggestions</i> 中的 <i lang="en">a</i> 属于 <i lang="en">a lot of</i>；后面的 <i lang="en">advice</i> 与 <i lang="en">suggestions</i> 各保持自己的数。<i lang="en">the number of books</i> 则谈书的数目。</dd></div></dl></details></section></article><article data-page="expanded-nouns-5" data-g="2" aria-label="名词派生与名词化" hidden><section class="noun-card"><h2>名词派生与名词化</h2><p class="noun-lead">名词派生说明词怎么构成；名词化说明句子把哪个动作、过程或性质作为一件事来谈。阅读中遇到长名词短语，可以还原相应的动词关系，找出原句有没有交代做事的人。</p>
+        <figure class="noun-trace"><figcaption>从名词结构还原动词关系 · 2024 天津部分区上学期期末，第 13 题节选</figcaption>
+          <p class="noun-en" lang="en">an <mark>adaptation</mark> <span class="noun-bit">of Hamlet</span> <span class="noun-bit">into Peking Opera</span> <span class="noun-bit">by Shanghai Jingju Theatre Company</span></p>
+          <p class="noun-en" lang="en">Shanghai Jingju Theatre Company <b>adapted</b> Hamlet into Peking Opera.</p>
+          <p>上海京剧院把《哈姆雷特》改编成京剧。<i lang="en">of</i> 引出原作，<i lang="en">into</i> 引出改编结果，<i lang="en">by</i> 引出实施者。<i lang="en">an adaptation</i> 在题库原句中指一部改编作品，整组作表语。</p>
+        </figure>
+        <table class="noun-table "><caption>名词化后，原来的句法关系怎样表达</caption><thead><tr><th scope="col">名词短语</th><th scope="col">动词或形容词表达</th><th scope="col">阅读时保留的关系</th></tr></thead><tbody><tr><th scope="row"><span lang="en">the resolution of the difficulties</span></th><td><span lang="en">someone resolved the difficulties</span></td><td>困难是被解决的对象；词组自身没说谁解决。</td></tr><tr><th scope="row"><span lang="en">a drop in gasoline consumption</span></th><td><span lang="en">people used less gasoline</span></td><td>下降的是消耗量，不是汽油品质；<i lang="en">in</i> 说明变化发生在哪项指标。</td></tr><tr><th scope="row"><span lang="en">her departure for Beijing</span></th><td><span lang="en">she left for Beijing</span></td><td><i lang="en">her</i> 是出发的人，<i lang="en">for Beijing</i> 指目的地。</td></tr><tr><th scope="row"><span lang="en">the effectiveness of the treatment</span></th><td><span lang="en">how effective the treatment is</span></td><td>谈的是疗法的有效程度，<i lang="en">of</i> 后是具有这种性质的对象。</td></tr></tbody></table><aside class="noun-note"><p><strong>区分</strong>　<i lang="en">adaptation</i> 指改编、适应或其结果；<i lang="en">adoption</i> 指采纳、采用或收养，<i lang="en">admission</i> 可指准入或承认。<i lang="en">Hamlet into Peking Opera</i> 表示由原作到改编形式的转换，这才是区分依据。</p></aside><details class="noun-more"><summary>常见名词后缀及其限度</summary><dl class="noun-example-list"><div><dt lang="en">-tion / -sion</dt><dd><i lang="en">adaptation, decision, consumption</i>：多见于动作、过程或结果名词；<i lang="en">a decision</i> 是可数的决定，<i lang="en">consumption</i> 表消耗量时不可数。</dd></div><div><dt lang="en">-ment / -ness / -ity</dt><dd><i lang="en">development, awareness, stability</i>：可表示过程、状态或性质。<i lang="en">development</i> 指发展进程时常不可数，指新进展时可以说 <i lang="en">a recent development</i>。</dd></div><div><dt lang="en">-er / -or</dt><dd><i lang="en">writer</i> 指人，<i lang="en">printer</i> 可指机器，<i lang="en">calculator</i> 常指工具。后缀只能提示构词类别，具体义项看句子。</dd></div></dl></details></section></article><aside class="group-recall" data-g="2" hidden><h3>考点辨析</h3><p>为什么 a rise in ticket prices 和 the rise in ticket prices 都可以？哪部分指出究竟什么上涨？</p><details><summary>查看解析</summary><div class="recall-answer"><p><i lang="en">a rise</i> 引入一次上涨，<i lang="en">the rise</i> 指语境能识别的那次上涨。<i lang="en">in ticket prices</i> 指明变动指标：<i lang="en">Ticket prices rose.</i> 原短语没有交代是谁提高了票价。</p></div></details></aside></div>
+<footer hidden><button class="turn" data-prev></button><span class="counter"></span><button class="turn" data-next></button></footer>
+</main>
+<script>
+const moduleId = 'nouns';
+const config = window.__GRAMMAR_CARD_EMBED__;
+const pages = Array.from(document.querySelectorAll('article[data-page]'));
+const groups = Array.from(document.querySelectorAll('.group-nav'));
+const main = document.querySelector('#manual');
+const map = document.querySelector('#overview');
+const back = document.querySelector('.back-map');
+const previous = document.querySelector('[data-prev]');
+const next = document.querySelector('[data-next]');
+let current;
+
+function report() {
+  if (config) parent.postMessage({type:'grammar-cards-state', module:moduleId, unitId:current?.dataset.page || null, manualOverview: !current, height:Math.ceil(main.getBoundingClientRect().height)}, '*');
+}
+
+function show(target, userAction) {
+  current = pages.find(p => p.dataset.page === target);
+  const groupId = current?.dataset.g;
+  const unit = current?.dataset.page || 'overview';
+  const inGroup = pages.filter(p => p.dataset.g === groupId);
+  const i = pages.indexOf(current);
+  const lastInGroup = current && current === inGroup[inGroup.length-1];
+  map.hidden = Boolean(current);
+  document.querySelector('footer').hidden = back.hidden = !current;
+  pages.forEach(p => { p.hidden = current !== p; });
+  groups.forEach(g => { g.hidden = g.dataset.g !== groupId; });
+  document.querySelectorAll('.group-recall').forEach(r => { r.hidden = !lastInGroup || r.dataset.g !== groupId; });
+  document.querySelectorAll('.group-nav a').forEach(a => {
+    if (a.dataset.target === unit) a.setAttribute('aria-current','page');
+    else a.removeAttribute('aria-current');
+  });
+  if (current) {
+    previous.dataset.target = pages[i-1]?.dataset.page || 'overview';
+    previous.textContent = i === 0 ? '‹ 本章总览' : '‹ 上一张';
+    next.dataset.target = pages[i+1]?.dataset.page || 'overview';
+    next.textContent = i === pages.length-1 ? '回到本章总览' : lastInGroup ? '下一组 ›' : '下一张 ›';
+    document.querySelector('.counter').textContent = '本组 ' + (inGroup.indexOf(current)+1) + ' / ' + inGroup.length;
+  }
+  document.querySelector('#course').href = 'index.html?topic=' + moduleId + '&chapter=handbook' + (current ? '&unit='+encodeURIComponent(unit) : '');
+  if (userAction) {
+    if (config) parent.postMessage({type:'grammar-manual-turn',module:moduleId,unitId:current?.dataset.page || null}, '*');
+    else {
+      if (location.hash.slice(1) !== unit) history.pushState(null,'','#'+encodeURIComponent(unit));
+      main.scrollIntoView({block:'start'});
+    }
+    const focus = current?.querySelector('h2,h3') || map.querySelector('h2');
+    focus.tabIndex = -1;
+    focus.focus({preventScroll:true});
+  }
+  requestAnimationFrame(report);
+}
+main.addEventListener('click', event => {
+  const link = event.target.closest('[data-target]');
+  if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  show(link.dataset.target,true);
+});
+function showRequested() {
+  show(config ? config.unitId : location.hash.slice(1),false);
+}
+showRequested();
+if (!config) window.addEventListener('hashchange',showRequested);
+new ResizeObserver(report).observe(main);
+</script>
+</body>
+</html>

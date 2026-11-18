@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>非谓语动词 · 十环</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="site-editorial.css">
+<script>
+if (window.__GRAMMAR_CARD_EMBED__) document.documentElement.dataset.embedded = 'true';
+</script>
+<style>
+:root{--pen:var(--accent);--edge:var(--rule)}
+[hidden]{display:none!important}
+button,summary{font:inherit;cursor:pointer;color:inherit}
+.manual-page{--manual-inset:28px;min-width:0;padding-block:40px 82px}
+html[data-embedded],html[data-embedded] body{background:transparent}
+html[data-embedded] .manual-page{padding:0 3px 4px}
+html[data-embedded] :is(.site-header,.skip,.standalone){display:none}
+body.prepositions{--pen:#2f6056}
+body.nonfinite{--pen:#68452d}
+.cover{padding:11px var(--manual-inset);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:3px 14px}
+.cover h1{margin:0;font:700 1.18rem/1.45 var(--serif)}
+.standalone{font-size:.83rem;margin-inline-end:auto}
+.turn{color:var(--accent);border:1px solid var(--deep-rule);border-radius:2px;background:transparent;min-height:36px;min-width:0;padding:4px 11px}
+.turn:hover:not(:disabled){background:var(--wash);border-color:var(--accent)}
+.chapter-map{padding:32px var(--manual-inset)}
+.chapter-map h2{color:var(--accent);font:650 1.65rem/1.35 var(--serif);margin:0 0 12px}
+.chapter-map>p{margin:0 0 16px;max-width:56em;line-height:1.7}
+.anchor-example{padding:14px 16px;background:var(--wash);border-inline-start:2px solid var(--pen);overflow-wrap:anywhere}
+.anchor-example p{margin:.55em 0}
+.anchor-example table{width:100%;border-collapse:collapse;text-align:left}
+.anchor-example th,.anchor-example td{padding:7px;border-bottom:1px solid var(--edge)}
+.anchor-example caption{font-weight:600;padding:7px 0;text-align:left}
+.anchor-example td span[lang=en]{display:block;font-family:var(--serif)}
+.outline{border-top:3px double var(--deep-rule);margin-bottom:28px}
+.outline-group{display:grid;grid-template-columns:minmax(170px,30%) 1fr;gap:8px 24px;padding:12px 0;border-bottom:1px solid var(--edge)}
+.outline-group h3{font:650 19px/1.45 var(--serif);margin:0}
+.outline a{text-decoration:none}.outline a:hover{text-decoration:underline}
+.group-number,.section-number{font:550 12px/1.6 var(--sans);color:var(--muted);font-variant-numeric:tabular-nums;display:inline-block}
+.group-number{padding-right:10px;vertical-align:.15em}
+.section-number{min-width:2.4em}
+.outline-links{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px}
+.outline-links a{display:flex;align-items:baseline;color:var(--ink);font-size:14px;line-height:1.5;padding:4px 0}
+.group-nav p{margin:4px 0}
+@media(max-width:780px){.outline-group{grid-template-columns:1fr}.outline-links{padding-inline-start:1.6em}}
+@media(max-width:500px){.outline-links{grid-template-columns:1fr}.outline-group{gap:4px}.outline-links a{padding:5px 0}}
+.group-nav,.group-recall{padding:14px var(--manual-inset)}
+.group-nav{border-bottom:1px solid var(--edge)}
+.group-nav h2{margin:0;color:var(--accent);font:650 1.25rem/1.45 var(--serif)}
+.group-nav p{font-size:14px;color:var(--muted)}
+.group-nav nav{display:flex;flex-wrap:wrap;gap:3px 12px;margin-top:7px}
+.group-nav a{padding:4px 1px;border-bottom:2px solid transparent;text-decoration:none;font:14px/1.45 var(--sans)}
+.group-nav a:hover{text-decoration:underline}
+.group-nav a[aria-current]{color:var(--ink);border-color:var(--accent);background:var(--wash)}
+.group-recall{border-top:3px double var(--deep-rule)}
+.group-recall h3{font:600 19px/1.5 var(--serif);margin:0}
+.group-recall summary{color:var(--pen)}.group-recall p{margin:6px 0}
+.back-map{border:0;background:none;font:14px/1.4 var(--sans);color:var(--accent);text-decoration:underline;text-underline-offset:3px;padding:7px 0}
+article[data-page]{max-width:846px;min-width:0;margin-inline:auto;padding:34px var(--manual-inset);overflow-wrap:break-word}
+article h2,article h3,article h4{font-family:var(--serif);line-height:1.35;text-wrap:balance}
+article h2{font-size:2rem;margin:0 0 .65em}
+article h3{font-size:1.4rem;margin:.65em 0}
+article p{margin:.65em 0}
+article svg{max-width:100%}
+.manual-example,article blockquote{font-family:var(--serif);font-size:1.17em}
+.manual-caption{color:var(--muted);font-size:.9em}
+.manual-note,.manual-reading{border-inline-start:3px solid var(--pen);padding:.3em 1em;margin:1em 0}
+.manual-table, article table{width:100%;border-collapse:collapse;text-align:left;font-size:.96em;line-height:1.55}
+article th,article td{padding:.6em .7em;vertical-align:top;border-bottom:1px solid var(--edge)}
+article th{color:var(--pen);background:var(--wash)}
+article summary{color:var(--pen);font-weight:600}
+.manual-reading blockquote{margin:12px 0}
+footer{border-top:1px solid var(--edge);padding:12px var(--manual-inset);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.counter{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:760px){
+  .manual-page{--manual-inset:0px;padding-block:22px 52px}
+  .chapter-map,article[data-page]{padding-block:24px}
+  .chapter-map h2{font-size:1.45rem}
+  article h2{font-size:1.55rem}
+  article h3{font-size:1.22rem}
+  article td,article th{padding:.45em .38em}
+  .turn{padding-inline:8px}
+}
+@media(min-width:651px){article[data-page].turning{animation:page-in .21s ease-out}@keyframes page-in{from{opacity:.72;transform:translateX(7px)}to{opacity:1;transform:none}}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+.nonfinite-manual {
+  --nf-ink:#253338;
+  --nf-paper:#f6f5ed;
+  --nf-violet:#4e437a;
+  --nf-sage:#dce8e3;
+  --nf-lilac:#e9e4f1;
+  --nf-line:#d8d5c7;
+  color:var(--nf-ink);
+  background:var(--nf-paper);
+  padding:clamp(19px,4vw,41px) clamp(14px,4vw,42px);
+  font:16px/1.66 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  overflow-wrap:anywhere;
+}
+.nonfinite-manual * { box-sizing:border-box; }
+.nonfinite-manual h3,.nonfinite-manual h4 { color:var(--nf-ink); line-height:1.34; }
+.nonfinite-manual h3 {
+  font-size:clamp(24px,3.5vw,36px);
+  font-weight:650;
+  margin:0 0 7px;
+  text-wrap:balance;
+}
+.nonfinite-manual h4 { margin:0 0 6px; font-size:1.06rem; }
+.nonfinite-manual p { margin:0; }
+.nonfinite-manual.nf-overview { padding:0; background:transparent; }
+.nonfinite-manual.nf-overview .nf-drill { margin:0; }
+.nonfinite-manual .nf-lead { max-width:64ch; margin:0 0 19px; color:#485358; }
+.nonfinite-manual .nf-section { margin:19px 0; }
+.nonfinite-manual .nf-layout {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr));
+  gap:12px;
+}
+.nonfinite-manual .nf-frame {
+  margin:0;
+  min-width:0;
+  padding:13px 15px;
+  background:#fcfbf6;
+  border:1px solid var(--nf-line);
+  border-top:3px solid var(--nf-violet);
+}
+.nonfinite-manual .nf-frame:nth-child(even) { border-top-style:dashed; }
+.nonfinite-manual .nf-caption {
+  margin:0 0 9px;
+  color:#4d5660;
+  font-size:.82rem;
+  font-weight:670;
+}
+.nonfinite-manual .nf-sentence {
+  font:1.23rem/1.5 "Iowan Old Style","Palatino Linotype",Georgia,serif;
+  color:var(--nf-ink);
+  hyphens:manual;
+}
+.nonfinite-manual [lang=en] strong {
+  color:var(--nf-violet);
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  text-underline-offset:.14em;
+}
+.nonfinite-manual .nf-frame .nf-explain { margin:9px 0 0; font-size:.91rem; }
+.nonfinite-manual .nf-frames-note { padding-top:8px; font-size:.78rem; color:#505a60; }
+.nonfinite-manual .nf-film {
+  position:relative;
+  padding:16px;
+  background:#e3ebe7;
+  background-image:repeating-linear-gradient(90deg,transparent 0 24px,rgba(40,67,57,.04) 24px 25px);
+  border:1px solid #c7d4cb;
+}
+.nonfinite-manual .nf-film .nf-frame { background:#fbfaf4; }
+.nonfinite-manual .nf-picture {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:3px;
+  margin-top:12px;
+  margin-bottom:3px;
+}
+.nonfinite-manual .nf-picture b {
+  height:20px;
+  border:1px solid #9d95b5;
+  background:var(--nf-lilac);
+}
+.nonfinite-manual .nf-picture.nf-moment b { border-style:dotted; background:transparent; }
+.nonfinite-manual .nf-picture.nf-moment b:nth-child(3) {
+  background:var(--nf-violet);
+  border-style:solid;
+}
+.nonfinite-manual .nf-shot-details {
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+  color:#4d5660;
+  font-size:.76rem;
+}
+.nonfinite-manual .nf-scripts {
+  display:grid;
+  margin:0;
+  border-block:1px solid var(--nf-line);
+}
+.nonfinite-manual .nf-row {
+  display:grid;
+  align-items:start;
+  grid-template-columns:minmax(75px,.35fr) minmax(0,1.12fr) minmax(0,1fr);
+  gap:12px;
+  padding:10px 0;
+}
+.nonfinite-manual .nf-row + .nf-row { border-top:1px solid var(--nf-line); }
+.nonfinite-manual .nf-row dt { color:var(--nf-violet); font-size:.86rem; font-weight:700; }
+.nonfinite-manual .nf-row dd { margin:0; }
+.nonfinite-manual .nf-note {
+  padding:11px 13px;
+  font-size:.94rem;
+  border-left:3px solid var(--nf-violet);
+  background:var(--nf-lilac);
+}
+.nonfinite-manual .nf-note p + p { margin-top:7px; }
+.nonfinite-manual .nf-mark {
+  padding:.03em .25em;
+  background:var(--nf-sage);
+  border-bottom:2px solid #52796a;
+  border-radius:2px 2px 0 0;
+}
+.nonfinite-manual .nf-repair {
+  padding:11px 13px;
+  border:1px dashed #9d92ad;
+  background:#fbf9f2;
+}
+.nonfinite-manual .nf-repair .nf-sentence + p { margin-top:5px; }
+.nonfinite-manual .nf-lookup,.nonfinite-manual .nf-drill-answer {
+  padding:10px 0 2px;
+}
+.nonfinite-manual summary {
+  color:#45386d;
+  cursor:pointer;
+  font-size:.94rem;
+  font-weight:700;
+  line-height:1.45;
+}
+.nonfinite-manual summary:focus-visible,.nonfinite-manual a:focus-visible {
+  outline:2px solid var(--nf-violet);
+  outline-offset:3px;
+}
+.nonfinite-manual details[open] summary { margin-bottom:9px; }
+.nonfinite-manual .nf-reading a { color:#403770; text-underline-offset:3px; }
+.nonfinite-manual .nf-drill {
+  margin:23px 0 0;
+  padding:15px clamp(11px,3vw,22px);
+  border:1px solid var(--nf-line);
+  background:#fffdf6;
+}
+.nonfinite-manual .nf-drill .nf-caption { margin-bottom:5px; }
+.nonfinite-manual .nf-drill-options {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));
+  gap:4px 12px;
+  list-style:none;
+  padding:0;
+  margin:8px 0 0;
+  font:1.03rem/1.55 "Iowan Old Style","Palatino Linotype",Georgia,serif;
+}
+.nonfinite-manual .nf-drill-options span {
+  color:#44535a;
+  padding-right:5px;
+}
+.nonfinite-manual .nf-blank {
+  display:inline-block;
+  min-width:2.7rem;
+  padding:0 .15em;
+  border-bottom:1px solid #485358;
+  text-align:center;
+}
+.nonfinite-manual .nf-answer {
+  border-top:1px solid var(--nf-line);
+  padding:10px 0 1px;
+  font-size:.94rem;
+}
+.nonfinite-manual .nf-answer > strong {
+  color:#403770;
+  text-decoration:double underline;
+  text-underline-offset:3px;
+}
+.nonfinite-manual .nf-answer p { margin-top:6px; }
+@media(max-width:600px) {
+  .nonfinite-manual .nf-row { grid-template-columns:minmax(0,1fr); gap:3px; }
+  .nonfinite-manual .nf-frame { padding:11px 12px; }
+  .nonfinite-manual .nf-film { padding:10px; }
+}
+
+</style>
+</head>
+<body class="nonfinite">
+<header class="site-header"><div class="site-inner"><a class="brand" href="index.html" aria-label="十环"><img src="assets/zhang-shihuan-logo.svg" alt="" width="69" height="36"></a><nav class="site-nav" aria-label="主导航"><a href="external-practice.html">每日外刊</a><a href="index.html?view=study" aria-current="page">专题精讲</a><a href="cloze-pages/index.html">完形填空</a><a href="index.html?view=reading&amp;reading_type=comprehension">阅读理解</a></nav></div></header>
+<main id="manual" class="manual-page editorial-page">
+<header class="cover editorial-rail"><h1>非谓语动词</h1><a class="standalone" id="course" href="index.html?topic=nonfinite&amp;chapter=handbook">在本章题卷中查看</a><button type="button" class="back-map" data-target="overview" hidden>返回本章总览</button></header>
+<section class="chapter-map" id="overview"><h2 tabindex="-1">考点目录</h2><nav aria-label="本章考点目录"><div class="outline"><section class="outline-group"><h3><a href="#unit-1" data-target="unit-1"><small class="group-number">01</small>非谓语形式与句法功能</a></h3><ol class="outline-links"><li><a href="#unit-1" data-target="unit-1"><small class="section-number">1.1</small>谓语与非谓语的判定</a></li><li><a href="#to-do" data-target="to-do"><small class="section-number">1.2</small>不定式的句法功能</a></li><li><a href="#doing" data-target="doing"><small class="section-number">1.3</small>动名词与现在分词</a></li><li><a href="#done" data-target="done"><small class="section-number">1.4</small>过去分词：被动与状态</a></li></ol></section><section class="outline-group"><h3><a href="#expanded-nonfinite-1" data-target="expanded-nonfinite-1"><small class="group-number">02</small>逻辑主语与动词搭配</a></h3><ol class="outline-links"><li><a href="#expanded-nonfinite-1" data-target="expanded-nonfinite-1"><small class="section-number">2.1</small>逻辑主语与独立主格</a></li><li><a href="#expanded-nonfinite-2" data-target="expanded-nonfinite-2"><small class="section-number">2.2</small>非谓语动词作宾语补足语</a></li><li><a href="#expanded-nonfinite-3" data-target="expanded-nonfinite-3"><small class="section-number">2.3</small>动词后接 to do 与 doing</a></li></ol></section><section class="outline-group"><h3><a href="#expanded-nonfinite-4" data-target="expanded-nonfinite-4"><small class="group-number">03</small>相对时间、目的与结果</a></h3><ol class="outline-links"><li><a href="#expanded-nonfinite-4" data-target="expanded-nonfinite-4"><small class="section-number">3.1</small>非谓语动词作定语</a></li><li><a href="#expanded-nonfinite-5" data-target="expanded-nonfinite-5"><small class="section-number">3.2</small>相对时间与主被动关系</a></li><li><a href="#expanded-nonfinite-6" data-target="expanded-nonfinite-6"><small class="section-number">3.3</small>目的、结果与主动形式表被动意义</a></li></ol></section></div></nav><h2>典型题精析</h2><p>先确定设空处的句法功能，再判断逻辑主语和语态；遇到几种形式都能表示被动时，还要比较动作的时间和状态。</p><div class="anchor-example"><div class="nonfinite-manual nf-overview">
+    <section class="nf-drill manual-prompt">
+      <p class="nf-caption">题库原题 · 2025天津第二次 第6题</p>
+      <p class="nf-sentence" lang="en">Engineers in the UK are going to build a new satellite <span class="nf-blank" aria-label="空格">&nbsp;</span> to track solar storms.</p>
+      <ul class="nf-drill-options" lang="en"><li><span>A.</span> designed</li><li><span>B.</span> designing</li><li><span>C.</span> to design</li><li><span>D.</span> having designed</li></ul>
+      <details class="nf-drill-answer">
+        <summary>核对原题</summary>
+        <div class="nf-answer"><strong>A. designed</strong><p><b>句法功能。</b><span lang="en">Engineers in the UK / are going to build / a new satellite [designed to track solar storms]</span>。主句谓语是 <span lang="en">are going to build</span>；方括号内是修饰 <span lang="en">satellite</span> 的后置定语，其中 <span lang="en">to track solar storms</span> 说明设计用途。<br><b>动作关系。</b>卫星是 <span lang="en">design</span> 的对象，故用过去分词 <span lang="en">designed</span>。<span lang="en">designing / having designed</span> 如果作后置定语，就把卫星误当成设计者。<br><b>易误判处。</b><span lang="en">are going to build</span> 说的是“计划建造”，不能因此把修饰成分也一律选成不定式。选 <span lang="en">to design</span>，句子就成了要建卫星来设计某种东西，或把卫星说成尚待设计的对象。两种读法都不合题意。</p></div>
+      </details>
+    </section>
+    </div></div></section>
+<section class="group-nav" data-g="0" hidden><h2><small class="group-number">01</small>非谓语形式与句法功能</h2><p>同一形式可以承担不同句法功能。例如 to do 作主语时是主干成分，作目的状语时说明主句动作的意图。</p><nav aria-label="本组知识点"><a href="#unit-1" data-target="unit-1"><small class="section-number">1.1</small>谓语与非谓语的判定</a><a href="#to-do" data-target="to-do"><small class="section-number">1.2</small>不定式的句法功能</a><a href="#doing" data-target="doing"><small class="section-number">1.3</small>动名词与现在分词</a><a href="#done" data-target="done"><small class="section-number">1.4</small>过去分词：被动与状态</a></nav></section><section class="group-nav" data-g="1" hidden><h2><small class="group-number">02</small>逻辑主语与动词搭配</h2><p>分词状语通常与主句共用主语；with 复合结构和独立主格则有自己的逻辑主语。宾补还受前面动词所用句型的限制。</p><nav aria-label="本组知识点"><a href="#expanded-nonfinite-1" data-target="expanded-nonfinite-1"><small class="section-number">2.1</small>逻辑主语与独立主格</a><a href="#expanded-nonfinite-2" data-target="expanded-nonfinite-2"><small class="section-number">2.2</small>非谓语动词作宾语补足语</a><a href="#expanded-nonfinite-3" data-target="expanded-nonfinite-3"><small class="section-number">2.3</small>动词后接 to do 与 doing</a></nav></section><section class="group-nav" data-g="2" hidden><h2><small class="group-number">03</small>相对时间、目的与结果</h2><p>非谓语动作的先后要结合谓语和时间状语判断；不定式作目的状语只说明意图，作结果状语则交代实际发生的事。</p><nav aria-label="本组知识点"><a href="#expanded-nonfinite-4" data-target="expanded-nonfinite-4"><small class="section-number">3.1</small>非谓语动词作定语</a><a href="#expanded-nonfinite-5" data-target="expanded-nonfinite-5"><small class="section-number">3.2</small>相对时间与主被动关系</a><a href="#expanded-nonfinite-6" data-target="expanded-nonfinite-6"><small class="section-number">3.3</small>目的、结果与主动形式表被动意义</a></nav></section>
+<div id="pages"><article data-page="unit-1" data-g="0" aria-label="谓语与非谓语的判定" hidden><article class="nonfinite-manual"><h3>谓语与非谓语：限定动词的识别</h3><p class="nf-lead">先分清主句和从句，再找各自的限定谓语。下列两句的限定谓语都是 watched；test the filter 和 testing the filter 补充说明 Mia 的动作。</p><div class="nf-section nf-film"><div class="nf-layout"><figure class="nf-frame manual-scene"><figcaption class="nf-caption">动词原形：动作整体</figcaption><p class="nf-sentence" lang="en">Leo watched Mia <strong>test</strong> the filter.</p><div aria-hidden="true" class="nf-picture"><b></b><b></b><b></b><b></b><b></b></div><div aria-hidden="true" class="nf-shot-details"><span>开始</span><span>测试中</span><span>结束</span></div><p class="nf-explain">把看到的那次测试作为一个完整动作来叙述。</p></figure><figure class="nf-frame manual-scene"><figcaption class="nf-caption">-ing 形式：动作过程</figcaption><p class="nf-sentence" lang="en">Leo watched Mia <strong>testing</strong> the filter.</p><div aria-hidden="true" class="nf-picture nf-moment"><b></b><b></b><b></b><b></b><b></b></div><div aria-hidden="true" class="nf-shot-details"><span>开始</span><span>测试中</span><span>结束</span></div><p class="nf-explain">着眼于正在进行的测试，单凭这句无法判断 Leo 是否看到了测试结束。</p></figure></div><p class="nf-frames-note">滤水器实验 · 教学对照</p></div><aside class="nf-note nf-section manual-note"><h4>一个分句内部的非谓语与独立的从句谓语</h4><p><em lang="en">Leo watched while Mia was testing the filter</em> 有主从两个分句。主句的限定谓语是 <em lang="en">watched</em>，从句的限定谓语是 <em lang="en">was testing</em>。同样写作 <em lang="en">testing</em>，在原对照句中单独作宾补，在 <em lang="en">was testing</em> 中则属于整个谓语结构。</p></aside>
+    <section class="nf-drill manual-prompt">
+      <p class="nf-caption">题库原题 · 2025天津河东一模 第6题</p>
+      <p class="nf-sentence" lang="en">It was reported that a 90-year-old woman <span class="nf-blank" aria-label="空格">&nbsp;</span> under a destroyed house in the earthquake was saved alive at last.</p>
+      <ul class="nf-drill-options" lang="en"><li><span>A.</span> had been trapped</li><li><span>B.</span> being trapped</li><li><span>C.</span> was trapped</li><li><span>D.</span> trapped</li></ul>
+      <details class="nf-drill-answer">
+        <summary>核对原题</summary>
+        <div class="nf-answer"><strong>D. trapped</strong><p>主句谓语是 was reported，that 从句的谓语是 was saved。空格所在的部分修饰 woman：a 90-year-old woman [trapped under a destroyed house in the earthquake] / was saved alive。填 had been trapped 或 was trapped 会给 that 从句再加一个限定谓语；若要用限定形式，须另加关系词 who。being trapped 突出正在发生的被困过程，题中只需用 trapped 交代获救者当时的处境。</p></div>
+      </details>
+    </section>
+    </article></article><article data-page="to-do" data-g="0" aria-label="不定式的句法功能" hidden><article class="nonfinite-manual"><h3>不定式的句法功能：主语、补语、定语与状语</h3><p class="nf-lead">同在句首，to test the filter 可以作主语，也可以作目的状语。能否去掉这一段而保留完整的主干，是两句的关键区别。</p><div class="nf-section"><div class="nf-layout"><figure class="nf-frame manual-scene"><figcaption class="nf-caption">目的状语</figcaption><p class="nf-sentence" lang="en"><strong>To test the filter</strong>, Mia stayed after class.</p><p class="nf-explain">Mia stayed after class 已有主语和谓语，不定式交代留下的目的，也可以放在句末。</p></figure><figure class="nf-frame manual-scene"><figcaption class="nf-caption">主语</figcaption><p class="nf-sentence" lang="en"><strong>To test the filter</strong> took Mia ten minutes.</p><p class="nf-explain">不定式作 took 的主语，表示这项测试花了她十分钟。也可用形式主语：It took Mia ten minutes to test the filter.</p></figure></div><p class="nf-frames-note">滤水器实验 · 教学对照</p></div><details class="nf-lookup"><summary>不定式作动词补语、表语、宾补与定语</summary><div class="nf-section"><dl class="nf-scripts"><div class="nf-row"><dt>动词补语</dt><dd><p class="nf-sentence" lang="en">Mia planned <strong>to test the filter</strong>.</p></dd><dd>不定式补足 plan 的意思，说明计划的内容。</dd></div><div class="nf-row"><dt>表语</dt><dd><p class="nf-sentence" lang="en">Her plan was <strong>to test the filter</strong>.</p></dd><dd>系词后的整段说明计划内容，作表语。</dd></div><div class="nf-row"><dt>宾语补足语</dt><dd><p class="nf-sentence" lang="en">Leo asked Mia <strong>to test the filter</strong>.</p></dd><dd>Leo 提出请求；不定式说明被请求者 Mia 要做的事，尚不能据此判断她是否测试了。</dd></div><div class="nf-row"><dt>后置定语</dt><dd><p class="nf-sentence" lang="en">Mia still had a filter <strong>to test</strong>.</p></dd><dd>a filter 是待测的东西，可还原为 a filter that she still had to test。</dd></div></dl><p class="nf-frames-note">滤水器实验 · 教学对照</p></div></details>
+    <section class="nf-drill manual-prompt">
+      <p class="nf-caption">题库原题 · 2025天津第一次 第5题</p>
+      <p class="nf-sentence" lang="en"><span class="nf-blank" aria-label="空格">&nbsp;</span> the audience, the speaker prepared a detailed and engaging presentation.</p>
+      <ul class="nf-drill-options" lang="en"><li><span>A.</span> Impressing</li><li><span>B.</span> To impress</li><li><span>C.</span> Being impressed</li><li><span>D.</span> Impressed</li></ul>
+      <details class="nf-drill-answer">
+        <summary>核对原题</summary>
+        <div class="nf-answer"><strong>B. To impress</strong><p>演讲者准备展示内容，是为了给听众留下好印象。把句首短语读成 in order to impress the audience，目的和实施者都接得上。</p></div>
+      </details>
+    </section>
+    </article></article><article data-page="doing" data-g="0" aria-label="动名词与现在分词" hidden><article class="nonfinite-manual"><h3>-ing 形式的句法功能：主语、宾语、定语与状语</h3><p class="nf-lead">-ing 形式作主语或宾语时，可以指一项活动；作定语或状语时，需分析修饰对象或逻辑主语，再判断它是否表示进行。</p><div class="nf-section"><dl class="nf-scripts"><div class="nf-row"><dt>动名词作主语</dt><dd><p class="nf-sentence" lang="en"><strong>Testing the filter</strong> takes ten minutes.</p></dd><dd>整段作 takes 的主语。句子陈述测试所需的时间，不说明此刻有人在测试。</dd></div><div class="nf-row"><dt>动名词作宾语</dt><dd><p class="nf-sentence" lang="en">Mia avoided <strong>testing the filter</strong> indoors.</p></dd><dd>avoid 后接 -ing 形式作宾语；试验是她避免在室内做的事。</dd></div><div class="nf-row"><dt>分词作状语</dt><dd><p class="nf-sentence" lang="en"><strong>Testing the filter</strong>, Mia took notes.</p></dd><dd>逻辑主语是 Mia；测试与记录同时发生，此处可还原为 while she was testing the filter。</dd></div><div class="nf-row"><dt>分词作定语</dt><dd><p class="nf-sentence" lang="en">The student <strong>testing the filter</strong> is Mia.</p></dd><dd>分词短语修饰 student，限定所指的学生；相当于 who is testing the filter。</dd></div></dl><p class="nf-frames-note">滤水器实验 · 教学对照</p></div><aside class="nf-note nf-section manual-note"><p>以逗号隔开的 -ing 片段，也可能补原因、伴随或结果。例如 <em lang="en">Knowing the lab would close soon, Mia hurried</em> 中，知道实验室快关门是 Mia 加快动作的原因，属于原因状语。</p></aside>
+    <section class="nf-drill manual-prompt">
+      <p class="nf-caption">题库原题 · 2025天津河东质量调查二 第6题</p>
+      <p class="nf-sentence" lang="en">It is said that <span class="nf-blank" aria-label="空格">&nbsp;</span> hometown products through live streaming helps many villagers become richer than before.</p>
+      <ul class="nf-drill-options" lang="en"><li><span>A.</span> being sold</li><li><span>B.</span> sell</li><li><span>C.</span> selling</li><li><span>D.</span> having been sold</li></ul>
+      <details class="nf-drill-answer">
+        <summary>核对原题</summary>
+        <div class="nf-answer"><strong>C. selling</strong><p>空格属于 that 从句。在这个从句里，helps 是谓语，Selling hometown products through live streaming 整体作主语。当地居民通过直播卖家乡产品，products 是 selling 的宾语。</p></div>
+      </details>
+    </section>
+    </article></article><article data-page="done" data-g="0" aria-label="过去分词：被动与状态" hidden><article class="nonfinite-manual"><h3>过去分词的语义：被动动作与结果状态</h3><p class="nf-lead">及物动词的过去分词可表示被动关系，也可描述动作结束后的状态。少数不及物动词的过去分词可表示主动发生后的状态，如 fallen leaves。</p><div class="nf-section"><div class="nf-layout"><figure class="nf-frame manual-scene"><figcaption class="nf-caption">动作的承受者</figcaption><p class="nf-sentence" lang="en">The filter <strong>tested</strong> by Mia is on the bench.</p><p class="nf-explain">tested by Mia 是被动的后置定语，明确谁测试、什么被测试，相当于 that was tested by Mia。</p></figure><figure class="nf-frame manual-scene"><figcaption class="nf-caption">此时的状态</figcaption><p class="nf-sentence" lang="en">The lid stayed <strong>closed</strong> during the test.</p><p class="nf-explain">closed 在系动词 stayed 后作表语，叙述盖子在测试期间保持关闭的状态；句中没交代关盖子的动作。</p></figure></div><p class="nf-frames-note">滤水器实验 · 教学对照</p></div><details class="nf-lookup"><summary>不及物动词的过去分词与时间判断</summary><p class="nf-repair">可先说 <em lang="en">The leaves fell</em>。这里的 fall 不接宾语，<em lang="en">fallen leaves</em> 指已经落下的叶子，<em lang="en">risen dough</em> 指已经发起来的面团。回到滤水器实验，<em lang="en">water filtered here every day</em> 里的 filtered 有被动关系，every day 说明反复发生。一个词是过去分词，时间仍要由句子交代。</p></details>
+    <section class="nf-drill manual-prompt">
+      <p class="nf-caption">题库原题 · 2025天津河北质量检测一 第13题</p>
+      <p class="nf-sentence" lang="en"><span class="nf-blank" aria-label="空格">&nbsp;</span> in a sealed cave for centuries, thousands of manuscripts, paintings, and scrolls were discovered in what is now known as the Library Cave, offering a glimpse into Dunhuang&#x27;s past.</p>
+      <ul class="nf-drill-options" lang="en"><li><span>A.</span> Hiding</li><li><span>B.</span> Hidden</li><li><span>C.</span> To be hidden</li><li><span>D.</span> Having hidden</li></ul>
+      <details class="nf-drill-answer">
+        <summary>核对原题</summary>
+        <div class="nf-answer"><strong>B. Hidden</strong><p>句首短语的逻辑主语是后面的手稿、绘画和卷轴。这些物品是被藏起来的，用过去分词 Hidden。for centuries 说明藏匿状态持续了几个世纪；were discovered 才是主句谓语。这一段写的是物品被发现前一直处于什么状态。</p></div>
+      </details>
+    </section>
+    </article></article><aside class="group-recall" data-g="0" hidden><h3>考点辨析</h3><p>2024 年天津第二次第 11 题（答案已代入）：Coffee may cause sleep disturbance, especially when consumed in large amounts or after 2 pm. 区分 may cause 与 consumed，并还原 when 后省略的部分。</p><details><summary>查看解析</summary><div class="recall-answer"><span lang="en">may cause</span> 是主句的限定谓语。<span lang="en">when consumed</span> 相当于 <span lang="en">when it is consumed</span>；<span lang="en">it</span> 指咖啡，咖啡是饮用的对象，省去主语和 <span lang="en">is</span> 后保留过去分词。</div></details></aside><article data-page="expanded-nonfinite-1" data-g="1" aria-label="逻辑主语与独立主格" hidden><article class="nonfinite-manual"><h3>逻辑主语：分词状语、with 复合结构与独立主格</h3><p class="nf-lead">一般的分词状语没有明说的主语，通常由主句主语承担该动作。若两个动作各有自己的主语，可采用 with 复合结构、独立主格或完整的状语从句。</p><div class="nf-section"><dl class="nf-scripts"><div class="nf-row"><dt>分词作状语</dt><dd><p class="nf-sentence" lang="en"><strong>Testing the filter</strong>, <span class='nf-mark'>Mia</span> took notes.</p></dd><dd>测试、记录的逻辑主语都是 Mia。</dd></div><div class="nf-row"><dt>with 复合结构</dt><dd><p class="nf-sentence" lang="en">With <strong>Mia testing the filter</strong>, <span class='nf-mark'>Leo</span> took notes.</p></dd><dd>with 后的 Mia 承担测试动作；Leo 是主句的主语，负责记录。</dd></div><div class="nf-row"><dt>独立主格</dt><dd><p class="nf-sentence" lang="en"><strong>Mia having tested the filter</strong>, <span class='nf-mark'>Leo</span> filed the notes.</p></dd><dd>正式书面语中，这段自带逻辑主语，叫独立主格。Mia 测完之后，Leo 归档记录。</dd></div></dl><p class="nf-frames-note">滤水器实验 · 教学对照</p></div><aside class="nf-note nf-section manual-note"><h4>分词状语的逻辑主语错位</h4><p>写 <em lang="en">Testing the filter, Leo took notes</em> 时，读者会把测试的人理解为 Leo。若原意是 Mia 在测，写成 <em lang="en">While Mia was testing the filter, Leo took notes</em> 就能把两人分开。</p><p><a href="https://learnenglish.britishcouncil.org/free-resources/grammar/c1/participle-clauses" target="_blank" rel="noopener">British Council 对分词状语的说明</a></p></aside><details class="nf-lookup"><summary>阅读辨析：when used 的逻辑主语</summary><div class="nf-reading nf-repair"><p class="nf-sentence" lang="en">… music and art, <strong>when used in hospitals</strong>, help to improve the conditions of patients …</p><p>完整形式为 <em lang="en">when music and art are used in hospitals</em>。这里省去的主语是 <em lang="en">music and art</em>，它们是使用的对象，故保留过去分词 <em lang="en">used</em>。这段说明音乐和艺术在什么情况下能改善病人的状况，作状语。<a href="reading-pages/reading-comprehension/reading-0031.html" target="_parent">查看 2021 天津夏阅读 D</a></p></div></details>
+    <section class="nf-drill manual-prompt">
+      <p class="nf-caption">题库原题 · 2025天津红桥质量调查二 第6题</p>
+      <p class="nf-sentence" lang="en">With the guide <span class="nf-blank" aria-label="空格">&nbsp;</span> the way, we set off on foot into the dark night.</p>
+      <ul class="nf-drill-options" lang="en"><li><span>A.</span> leading</li><li><span>B.</span> led</li><li><span>C.</span> leads</li><li><span>D.</span> to lead</li></ul>
+      <details class="nf-drill-answer">
+        <summary>核对原题</summary>
+        <div class="nf-answer"><strong>A. leading</strong><p>the guide 是 leading 的逻辑主语；向导主动带路。we 是主句谓语 set off 的主语。空格不能用限定谓语，也不能按 we 来判断主动或被动。</p></div>
+      </details>
+    </section>
+    </article></article><article data-page="expanded-nonfinite-2" data-g="1" aria-label="非谓语动词作宾语补足语" hidden><article class="nonfinite-manual"><h3>宾语补足语：感官动词、使役动词与主动被动</h3><p class="nf-lead">先确定动词允许的句型，再看宾语和补足语之间的关系。watch 和 get 后，Mia 都是动作的发出者；have the filter tested 中，宾语是测试的对象。</p><div class="nf-section"><div class="nf-layout"><figure class="nf-frame manual-scene"><figcaption class="nf-caption">感官动词：watch + 宾语 + do</figcaption><p class="nf-sentence" lang="en">Leo watched Mia <strong>test</strong> the filter.</p><p class="nf-explain">强调观察到的动作整体。换成 testing，则描述在测试过程中看到的情形。</p></figure><figure class="nf-frame manual-scene"><figcaption class="nf-caption">使役结构：get + 宾语 + to do</figcaption><p class="nf-sentence" lang="en">Leo got Mia <strong>to test</strong> the filter.</p><p class="nf-explain">get 表示促成某事发生，Mia 执行测试。</p></figure><figure class="nf-frame manual-scene"><figcaption class="nf-caption">使役结构：have + 宾语 + done</figcaption><p class="nf-sentence" lang="en">Leo had the filter <strong>tested</strong>.</p><p class="nf-explain">have + 物 + done。这里说 Leo 找人检测滤水器，谁测试并未明说。</p></figure></div><p class="nf-frames-note">滤水器实验 · 教学对照</p></div><details class="nf-lookup"><summary>被动转换中的 to；have + 宾语 + done 的另一种用法</summary><div class="nf-section"><dl class="nf-scripts"><div class="nf-row"><dt>使役</dt><dd><p class="nf-sentence" lang="en">The teacher made Mia <strong>test</strong> the filter.</p></dd><dd>主动的 make + 人 + 原形。被动形式为 Mia was made to test the filter。</dd></div><div class="nf-row"><dt>感官</dt><dd><p class="nf-sentence" lang="en">Mia was seen <strong>to test</strong> the filter.</p></dd><dd>see + 人 + 原形改成被动时要加 to。原来用 -ing 时，可以改成 Mia was seen testing the filter。</dd></div><div class="nf-row"><dt>遭遇</dt><dd><p class="nf-sentence" lang="en">Mia had a sample <strong>stolen</strong>.</p></dd><dd>have + 物 + done 在失窃语境说的是遭遇。读到动作内容再判断是不是安排别人做。</dd></div></dl><p class="nf-frames-note">滤水器实验 · 教学对照</p></div></details>
+    <section class="nf-drill manual-prompt">
+      <p class="nf-caption">题库原题 · 2025天津和平质量调查二 第8题</p>
+      <p class="nf-sentence" lang="en">She was furious when she found her younger sister <span class="nf-blank" aria-label="空格">&nbsp;</span> on her clothes.</p>
+      <ul class="nf-drill-options" lang="en"><li><span>A.</span> try</li><li><span>B.</span> being tried</li><li><span>C.</span> having tried</li><li><span>D.</span> trying</li></ul>
+      <details class="nf-drill-answer">
+        <summary>核对原题</summary>
+        <div class="nf-answer"><strong>D. trying</strong><p>前面是 found her younger sister，空格补充被发现时妹妹正在做的事。妹妹自己在试穿，所以选 trying。这里的 find 不能照搬 watch + 人 + 原形。</p></div>
+      </details>
+    </section>
+    </article></article><article data-page="expanded-nonfinite-3" data-g="1" aria-label="动词后接 to do 与 doing" hidden><article class="nonfinite-manual"><h3>动词后的不定式与 -ing：补语形式改变词义</h3><p class="nf-lead">remember to do 是记得去做，remember doing 是记得做过。这里的 -ing 指回已发生的事，与 <a href="#unit-1" data-target="unit-1" lang="en">watch + 宾语 + -ing</a> 中表示所见过程的用法不同。</p><div class="nf-section"><div class="nf-layout"><figure class="nf-frame manual-scene"><figcaption class="nf-caption">先想起，再去测</figcaption><p class="nf-sentence" lang="en">Mia remembered <strong>to test</strong> the filter.</p><p class="nf-explain">她记得去做这项任务，这里通常表示她没有漏做。先想起要测，随后去测。</p></figure><figure class="nf-frame manual-scene"><figcaption class="nf-caption">先测，再回想起</figcaption><p class="nf-sentence" lang="en">Mia remembered <strong>testing</strong> the filter.</p><p class="nf-explain">她回想起了测试滤水器的经历。测试发生在回想之前。</p></figure></div><p class="nf-frames-note">滤水器实验 · 教学对照</p></div><details class="nf-lookup"><summary>易混对照：stop、try、regret、mean、go on</summary><div class="nf-section"><dl class="nf-scripts"><div class="nf-row"><dt>stop</dt><dd><p class="nf-sentence" lang="en">Mia stopped <strong>testing</strong> the filter. / Mia stopped <strong>to test</strong> the filter.</p></dd><dd>前句停止测试，后句停下原来在做的事，以便去测试。</dd></div><div class="nf-row"><dt>try</dt><dd><p class="nf-sentence" lang="en">Mia tried <strong>testing</strong> the filter. / Mia tried <strong>to test</strong> the filter.</p></dd><dd>前句把测试当办法试一试。后句是想办法把测试做成，至于做成了没有，这句话没说。</dd></div><div class="nf-row"><dt>regret</dt><dd><p class="nf-sentence" lang="en">Mia regretted <strong>testing</strong> the filter indoors. / I regret <strong>to say</strong> that the test failed.</p></dd><dd>前句为做过的行为后悔，后句表示遗憾地告知坏消息。</dd></div><div class="nf-row"><dt>mean</dt><dd><p class="nf-sentence" lang="en">Mia meant <strong>to test</strong> the filter. / The repair meant <strong>testing</strong> the filter again.</p></dd><dd>前句有这项打算，后句表示维修带来必须重测的后果。</dd></div><div class="nf-row"><dt>go on</dt><dd><p class="nf-sentence" lang="en">Mia went on <strong>testing</strong> the filter. / Mia went on <strong>to test</strong> the filter.</p></dd><dd>前句继续原来的测试，后句完成另一项工作后接着开始测试。</dd></div></dl><p class="nf-frames-note">滤水器实验 · 教学对照</p></div></details><details class="nf-lookup"><summary>常考动词搭配与不定式省略</summary><aside class="nf-note nf-section manual-note"><p><em lang="en">plan / decide / hope</em> 常接不定式，<em lang="en">enjoy / avoid / finish</em> 常接 -ing。<em lang="en">start / begin / continue</em> 常允许两种形式。想说愿意或想要，常用 <em lang="en">would like to test</em> 或 <em lang="en">would prefer to test</em>。<em lang="en">forget to test</em> 是忘记去测，<em lang="en">forget testing</em> 是忘了以前测过。对方问 “Did you test it?” 可以回答 “I meant to.”，省去双方已经知道的 test it。</p></aside></details></article></article><aside class="group-recall" data-g="1" hidden><h3>考点辨析</h3><p>2025 天津第二次第 9 题：With robots _____ various industrial tasks, factories have increased production efficiency. robots 与 factories 分别对应哪个动作？比较 performing、being performed 与 to perform。</p><details><summary>查看解析</summary><div class="recall-answer"><span lang="en">factories</span> 是主句谓语 <span lang="en">have increased</span> 的主语；<span lang="en">robots</span> 是 <span lang="en">perform</span> 的逻辑主语。机器人执行任务，因此排除被动形式 <span lang="en">being performed</span>。此处说明工厂已经提高效率所依托的实际情况，而 <span lang="en">to perform</span> 会把执行任务写成尚待发生的事。因此填 <span lang="en">performing</span>。</div></details></aside><article data-page="expanded-nonfinite-4" data-g="2" aria-label="非谓语动词作定语" hidden><article class="nonfinite-manual"><h3>非谓语作后置定语：done、being done、to be done</h3><p class="nf-lead">同一个名词作动作承受者时，过去分词本身不标明具体时间；being done 着眼于正在发生的被动动作；to be done 可表示有待实施的安排。具体时点结合时间状语和上下文判断。</p><div class="nf-section"><div class="nf-layout"><figure class="nf-frame manual-scene"><figcaption class="nf-caption">测试已发生</figcaption><p class="nf-sentence" lang="en">the filter <strong>tested</strong> by Mia yesterday</p><p class="nf-explain">可展开为 the filter that Mia tested yesterday。yesterday 提供过去时间。</p></figure><figure class="nf-frame manual-scene"><figcaption class="nf-caption">测试进行中</figcaption><p class="nf-sentence" lang="en">the filter <strong>being tested</strong> by Mia now</p><p class="nf-explain">可展开为 the filter that Mia is testing now，说明这台滤水器此刻正在接受测试。</p></figure><figure class="nf-frame manual-scene"><figcaption class="nf-caption">按安排待测</figcaption><p class="nf-sentence" lang="en">the filter <strong>to be tested</strong> by Mia tomorrow</p><p class="nf-explain">可理解为 the filter that Mia is going to test tomorrow，说明计划明天测试的是哪台滤水器。</p></figure></div><p class="nf-frames-note">滤水器实验 · 教学对照</p></div><aside class="nf-note nf-section manual-note"><p><em lang="en">the student testing the filter</em> 换了被修饰的对象。学生执行测试，滤水器承受测试。若用过去分词直接修饰名词，也不必然表示已结束。<em lang="en">water filtered here every day</em> 指每天在这里过滤的水。</p></aside>
+    <section class="nf-drill manual-prompt">
+      <p class="nf-caption">题库原题 · 2025天津河北质量调查二 第10题</p>
+      <p class="nf-sentence" lang="en">We&#x27;d better put off interviewing the athlete, for he is busy preparing for an international contest <span class="nf-blank" aria-label="空格">&nbsp;</span> in Beijing soon.</p>
+      <ul class="nf-drill-options" lang="en"><li><span>A.</span> held</li><li><span>B.</span> to hold</li><li><span>C.</span> being held</li><li><span>D.</span> to be held</li></ul>
+      <details class="nf-drill-answer">
+        <summary>核对原题</summary>
+        <div class="nf-answer"><strong>D. to be held</strong><p>空格紧跟 an international contest。比赛由人举办，题干的 soon 表示即将举行。还原成 a contest that is to be held in Beijing soon，就能同时看清被动和将来安排。</p></div>
+      </details>
+    </section>
+    </article></article><article data-page="expanded-nonfinite-5" data-g="2" aria-label="相对时间与主被动关系" hidden><article class="nonfinite-manual"><h3>非谓语的相对时间：一般式、进行式与完成式</h3><p class="nf-lead">三种形式可接在同一个 seems 后。进行式表示测试在判断时正在发生，完成式表示测试在判断之前已经发生；若测试由主语承受，还须用被动式。</p><div class="nf-section"><dl class="nf-scripts"><div class="nf-row"><dt>一般形式</dt><dd><p class="nf-sentence" lang="en">Mia seems <strong>to test</strong> the filter every morning.</p></dd><dd>every morning 明确说日常习惯。</dd></div><div class="nf-row"><dt>过程形式</dt><dd><p class="nf-sentence" lang="en">Mia seems <strong>to be testing</strong> the filter.</p></dd><dd>根据现在的情况推测 Mia 此刻正在测试。</dd></div><div class="nf-row"><dt>完成形式</dt><dd><p class="nf-sentence" lang="en">Mia seems <strong>to have tested</strong> the filter.</p></dd><dd>现在作判断，推测此前已经完成了测试。</dd></div><div class="nf-row"><dt>完成与被动</dt><dd><p class="nf-sentence" lang="en">The filter seems <strong>to have been tested</strong>.</p></dd><dd>把滤水器放到句首。have 表示相对的先后关系，been tested 交代谁承受动作。</dd></div></dl><p class="nf-frames-note">滤水器实验 · 教学对照</p></div><aside class="nf-note nf-section manual-note"><p><em lang="en">Mia hopes to have tested the filter by Friday</em> 中，她现在希望，测试可以还没开始。换到这个语境，完成形式从周五这个界点往前看。</p></aside><details class="nf-lookup"><summary>分词的完成式、被动式与否定式</summary><div class="nf-section"><dl class="nf-scripts"><div class="nf-row"><dt>完成式</dt><dd><p class="nf-sentence" lang="en"><strong>Having tested</strong> the filter, Mia wrote her report.</p></dd><dd>测试完成 → Mia 写报告。两件事都是 Mia 做的。</dd></div><div class="nf-row"><dt>完成式的被动形式</dt><dd><p class="nf-sentence" lang="en"><strong>Having been tested</strong>, the filter was ready for the science fair.</p></dd><dd>滤水器先被测试，之后可拿去参展。</dd></div><div class="nf-row"><dt>-ing 形式的被动</dt><dd><p class="nf-sentence" lang="en"><strong>Being tested</strong> at the time of the leak, the filter could not be moved.</p></dd><dd>滤水器在漏水时正接受测试。being tested 作状语，逻辑主语是 the filter。</dd></div><div class="nf-row"><dt>完成式的否定形式</dt><dd><p class="nf-sentence" lang="en"><strong>Not having tested</strong> the filter, Mia could not report the results.</p></dd><dd>not 否定 having tested 整段，即此前尚未测试。</dd></div></dl><p class="nf-frames-note">滤水器实验 · 教学对照</p></div></details>
+    <section class="nf-drill manual-prompt">
+      <p class="nf-caption">题库原题 · 2022天津第一次 第15题</p>
+      <p class="nf-sentence" lang="en">This old castle is said <span class="nf-blank" aria-label="空格">&nbsp;</span> from designs by a famous architect in the 16th century.</p>
+      <ul class="nf-drill-options" lang="en"><li><span>A.</span> to have been built</li><li><span>B.</span> to have built</li><li><span>C.</span> to be built</li><li><span>D.</span> to build</li></ul>
+      <details class="nf-drill-answer">
+        <summary>核对原题</summary>
+        <div class="nf-answer"><strong>A. to have been built</strong><p>is said 是现在所说，in the 16th century 把建造放到这个说法之前。城堡是被建造的，填完成式的被动形式 to have been built。to be built 虽然也是被动形式，却没有表示建造早于当前说法的完成层。</p></div>
+      </details>
+    </section>
+    </article></article><article data-page="expanded-nonfinite-6" data-g="2" aria-label="目的、结果与主动形式表被动意义" hidden><article class="nonfinite-manual"><h3>目的状语与结果状语：to do、doing 与 only to do</h3><p class="nf-lead">目的状语交代行动的意图，不保证目的达成。结果状语交代后来发生的情况；only to do 常引出与预期不同的结果。</p><div class="nf-section"><div class="nf-layout"><figure class="nf-frame manual-scene"><figcaption class="nf-caption">不定式作目的状语</figcaption><p class="nf-sentence" lang="en">Mia went back to the lab <strong>to test</strong> the filter.</p><p class="nf-explain">表示回去的目的。句子还没说测试到底做成了没有。</p></figure><figure class="nf-frame manual-scene"><figcaption class="nf-caption">不定式作结果状语</figcaption><p class="nf-sentence" lang="en">Mia went back to the lab, <strong>only to find</strong> the filter missing.</p><p class="nf-explain">Mia 回去后意外发现滤水器不见了。主句发生了，后面叙述实际发现。</p></figure></div><p class="nf-frames-note">滤水器实验 · 教学对照</p></div><aside class="nf-note nf-section manual-note"><p>自然发生的后果可以读作 <em lang="en">and as a result …</em>。例如 <em lang="en">The filter cracked, spilling water onto the bench</em>，开裂造成水洒到工作台。<em lang="en">spilling</em> 交代结果。</p></aside><details class="nf-lookup"><summary>程度结构与主动形式表被动含义</summary><div class="nf-section"><dl class="nf-scripts"><div class="nf-row"><dt>too … to do</dt><dd><p class="nf-sentence" lang="en">The filter was too fragile <strong>to carry</strong>.</p></dd><dd>这个滤水器太脆弱，按本句语境不能拿着搬。</dd></div><div class="nf-row"><dt>enough to do</dt><dd><p class="nf-sentence" lang="en">The filter was light enough <strong>to carry</strong>.</p></dd><dd>它够轻，可以拿着走。没有表示实际搬了。</dd></div><div class="nf-row"><dt>形容词 + 不定式</dt><dd><p class="nf-sentence" lang="en">The filter is easy <strong>to test</strong>.</p></dd><dd>展开为 It is easy for Mia to test the filter。filter 是 test 的对象，形式仍用主动的 to test。</dd></div><div class="nf-row"><dt>need doing</dt><dd><p class="nf-sentence" lang="en">The filter needs <strong>testing</strong>.</p></dd><dd>可改成 needs to be tested。testing 的逻辑对象是这个滤水器。</dd></div><div class="nf-row"><dt>不定式作后置定语</dt><dd><p class="nf-sentence" lang="en">Mia has a filter <strong>to test</strong>.</p></dd><dd>Mia 有一台滤水器要测，filter 是 test 的宾语。同样，写 The lab has a bench to test it on 时，bench 是 on 的宾语。</dd></div></dl><p class="nf-frames-note">滤水器实验 · 教学对照</p></div></details>
+    <section class="nf-drill manual-prompt">
+      <p class="nf-caption">题库原题 · 2025天津和平质量调查一 第11题</p>
+      <p class="nf-sentence" lang="en">She searched the entire house for her keys, only <span class="nf-blank" aria-label="空格">&nbsp;</span> them resting on the kitchen counter where she had left them.</p>
+      <ul class="nf-drill-options" lang="en"><li><span>A.</span> finding</li><li><span>B.</span> to have found</li><li><span>C.</span> to find</li><li><span>D.</span> found</li></ul>
+      <details class="nf-drill-answer">
+        <summary>核对原题</summary>
+        <div class="nf-answer"><strong>C. to find</strong><p>她把整屋找了一遍，最后才发现钥匙就在自己放下的厨房台面。only to find 交代找完才发现的意外结果。空格前的 only 已在原句里，选项只填 to find。</p></div>
+      </details>
+    </section>
+    </article></article><aside class="group-recall" data-g="2" hidden><h3>考点辨析</h3><p>2024 天津第一次第 14 题：The organizers had to cancel the outdoor concert due to the sudden thunderstorm, _____ many eager fans who had been waiting for hours. 比较 disappointing 与 to disappoint。</p><details><summary>查看解析</summary><div class="recall-answer">户外音乐会因雷暴取消，歌迷因此感到失望。<span lang="en">disappointing</span> 引出取消演出的实际后果。若用 <span lang="en">to disappoint</span> 作目的状语，就把“让歌迷失望”写成了主办方取消演出的意图，与 <span lang="en">due to the sudden thunderstorm</span> 说明的语境不符。</div></details></aside></div>
+<footer hidden><button class="turn" data-prev></button><span class="counter"></span><button class="turn" data-next></button></footer>
+</main>
+<script>
+const moduleId = 'nonfinite';
+const config = window.__GRAMMAR_CARD_EMBED__;
+const pages = Array.from(document.querySelectorAll('article[data-page]'));
+const groups = Array.from(document.querySelectorAll('.group-nav'));
+const main = document.querySelector('#manual');
+const map = document.querySelector('#overview');
+const back = document.querySelector('.back-map');
+const previous = document.querySelector('[data-prev]');
+const next = document.querySelector('[data-next]');
+let current;
+
+function report() {
+  if (config) parent.postMessage({type:'grammar-cards-state', module:moduleId, unitId:current?.dataset.page || null, manualOverview: !current, height:Math.ceil(main.getBoundingClientRect().height)}, '*');
+}
+
+function show(target, userAction) {
+  current = pages.find(p => p.dataset.page === target);
+  const groupId = current?.dataset.g;
+  const unit = current?.dataset.page || 'overview';
+  const inGroup = pages.filter(p => p.dataset.g === groupId);
+  const i = pages.indexOf(current);
+  const lastInGroup = current && current === inGroup[inGroup.length-1];
+  map.hidden = Boolean(current);
+  document.querySelector('footer').hidden = back.hidden = !current;
+  pages.forEach(p => { p.hidden = current !== p; });
+  groups.forEach(g => { g.hidden = g.dataset.g !== groupId; });
+  document.querySelectorAll('.group-recall').forEach(r => { r.hidden = !lastInGroup || r.dataset.g !== groupId; });
+  document.querySelectorAll('.group-nav a').forEach(a => {
+    if (a.dataset.target === unit) a.setAttribute('aria-current','page');
+    else a.removeAttribute('aria-current');
+  });
+  if (current) {
+    previous.dataset.target = pages[i-1]?.dataset.page || 'overview';
+    previous.textContent = i === 0 ? '‹ 本章总览' : '‹ 上一张';
+    next.dataset.target = pages[i+1]?.dataset.page || 'overview';
+    next.textContent = i === pages.length-1 ? '回到本章总览' : lastInGroup ? '下一组 ›' : '下一张 ›';
+    document.querySelector('.counter').textContent = '本组 ' + (inGroup.indexOf(current)+1) + ' / ' + inGroup.length;
+  }
+  document.querySelector('#course').href = 'index.html?topic=' + moduleId + '&chapter=handbook' + (current ? '&unit='+encodeURIComponent(unit) : '');
+  if (userAction) {
+    if (config) parent.postMessage({type:'grammar-manual-turn',module:moduleId,unitId:current?.dataset.page || null}, '*');
+    else {
+      if (location.hash.slice(1) !== unit) history.pushState(null,'','#'+encodeURIComponent(unit));
+      main.scrollIntoView({block:'start'});
+    }
+    const focus = current?.querySelector('h2,h3') || map.querySelector('h2');
+    focus.tabIndex = -1;
+    focus.focus({preventScroll:true});
+  }
+  requestAnimationFrame(report);
+}
+main.addEventListener('click', event => {
+  const link = event.target.closest('[data-target]');
+  if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  show(link.dataset.target,true);
+});
+function showRequested() {
+  show(config ? config.unitId : location.hash.slice(1),false);
+}
+showRequested();
+if (!config) window.addEventListener('hashchange',showRequested);
+new ResizeObserver(report).observe(main);
+</script>
+</body>
+</html>

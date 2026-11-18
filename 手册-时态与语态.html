@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>时态与语态 · 十环</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="site-editorial.css">
+<script>
+if (window.__GRAMMAR_CARD_EMBED__) document.documentElement.dataset.embedded = 'true';
+</script>
+<style>
+:root{--pen:var(--accent);--edge:var(--rule)}
+[hidden]{display:none!important}
+button,summary{font:inherit;cursor:pointer;color:inherit}
+.manual-page{--manual-inset:28px;min-width:0;padding-block:40px 82px}
+html[data-embedded],html[data-embedded] body{background:transparent}
+html[data-embedded] .manual-page{padding:0 3px 4px}
+html[data-embedded] :is(.site-header,.skip,.standalone){display:none}
+body.prepositions{--pen:#2f6056}
+body.nonfinite{--pen:#68452d}
+.cover{padding:11px var(--manual-inset);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:3px 14px}
+.cover h1{margin:0;font:700 1.18rem/1.45 var(--serif)}
+.standalone{font-size:.83rem;margin-inline-end:auto}
+.turn{color:var(--accent);border:1px solid var(--deep-rule);border-radius:2px;background:transparent;min-height:36px;min-width:0;padding:4px 11px}
+.turn:hover:not(:disabled){background:var(--wash);border-color:var(--accent)}
+.chapter-map{padding:32px var(--manual-inset)}
+.chapter-map h2{color:var(--accent);font:650 1.65rem/1.35 var(--serif);margin:0 0 12px}
+.chapter-map>p{margin:0 0 16px;max-width:56em;line-height:1.7}
+.anchor-example{padding:14px 16px;background:var(--wash);border-inline-start:2px solid var(--pen);overflow-wrap:anywhere}
+.anchor-example p{margin:.55em 0}
+.anchor-example table{width:100%;border-collapse:collapse;text-align:left}
+.anchor-example th,.anchor-example td{padding:7px;border-bottom:1px solid var(--edge)}
+.anchor-example caption{font-weight:600;padding:7px 0;text-align:left}
+.anchor-example td span[lang=en]{display:block;font-family:var(--serif)}
+.outline{border-top:3px double var(--deep-rule);margin-bottom:28px}
+.outline-group{display:grid;grid-template-columns:minmax(170px,30%) 1fr;gap:8px 24px;padding:12px 0;border-bottom:1px solid var(--edge)}
+.outline-group h3{font:650 19px/1.45 var(--serif);margin:0}
+.outline a{text-decoration:none}.outline a:hover{text-decoration:underline}
+.group-number,.section-number{font:550 12px/1.6 var(--sans);color:var(--muted);font-variant-numeric:tabular-nums;display:inline-block}
+.group-number{padding-right:10px;vertical-align:.15em}
+.section-number{min-width:2.4em}
+.outline-links{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px}
+.outline-links a{display:flex;align-items:baseline;color:var(--ink);font-size:14px;line-height:1.5;padding:4px 0}
+.group-nav p{margin:4px 0}
+@media(max-width:780px){.outline-group{grid-template-columns:1fr}.outline-links{padding-inline-start:1.6em}}
+@media(max-width:500px){.outline-links{grid-template-columns:1fr}.outline-group{gap:4px}.outline-links a{padding:5px 0}}
+.group-nav,.group-recall{padding:14px var(--manual-inset)}
+.group-nav{border-bottom:1px solid var(--edge)}
+.group-nav h2{margin:0;color:var(--accent);font:650 1.25rem/1.45 var(--serif)}
+.group-nav p{font-size:14px;color:var(--muted)}
+.group-nav nav{display:flex;flex-wrap:wrap;gap:3px 12px;margin-top:7px}
+.group-nav a{padding:4px 1px;border-bottom:2px solid transparent;text-decoration:none;font:14px/1.45 var(--sans)}
+.group-nav a:hover{text-decoration:underline}
+.group-nav a[aria-current]{color:var(--ink);border-color:var(--accent);background:var(--wash)}
+.group-recall{border-top:3px double var(--deep-rule)}
+.group-recall h3{font:600 19px/1.5 var(--serif);margin:0}
+.group-recall summary{color:var(--pen)}.group-recall p{margin:6px 0}
+.back-map{border:0;background:none;font:14px/1.4 var(--sans);color:var(--accent);text-decoration:underline;text-underline-offset:3px;padding:7px 0}
+article[data-page]{max-width:846px;min-width:0;margin-inline:auto;padding:34px var(--manual-inset);overflow-wrap:break-word}
+article h2,article h3,article h4{font-family:var(--serif);line-height:1.35;text-wrap:balance}
+article h2{font-size:2rem;margin:0 0 .65em}
+article h3{font-size:1.4rem;margin:.65em 0}
+article p{margin:.65em 0}
+article svg{max-width:100%}
+.manual-example,article blockquote{font-family:var(--serif);font-size:1.17em}
+.manual-caption{color:var(--muted);font-size:.9em}
+.manual-note,.manual-reading{border-inline-start:3px solid var(--pen);padding:.3em 1em;margin:1em 0}
+.manual-table, article table{width:100%;border-collapse:collapse;text-align:left;font-size:.96em;line-height:1.55}
+article th,article td{padding:.6em .7em;vertical-align:top;border-bottom:1px solid var(--edge)}
+article th{color:var(--pen);background:var(--wash)}
+article summary{color:var(--pen);font-weight:600}
+.manual-reading blockquote{margin:12px 0}
+footer{border-top:1px solid var(--edge);padding:12px var(--manual-inset);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.counter{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:760px){
+  .manual-page{--manual-inset:0px;padding-block:22px 52px}
+  .chapter-map,article[data-page]{padding-block:24px}
+  .chapter-map h2{font-size:1.45rem}
+  article h2{font-size:1.55rem}
+  article h3{font-size:1.22rem}
+  article td,article th{padding:.45em .38em}
+  .turn{padding-inline:8px}
+}
+@media(min-width:651px){article[data-page].turning{animation:page-in .21s ease-out}@keyframes page-in{from{opacity:.72;transform:translateX(7px)}to{opacity:1;transform:none}}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+body.tenses {--pen:#274a67;--t-action:#255d69;--t-anchor:#915316;--t-line:#cbd5d3;--t-graph:#edf3f1;--t-rule:#deded2}
+.tense-intro {max-width:48em}
+.tense-intro p {margin:.35em 0}
+.t-ref {color:var(--t-anchor);font-weight:650}
+.t-forms {margin:1.1em 0;padding:0;border:0;min-inline-size:0}
+.t-forms legend {font-weight:650;padding:0;margin-bottom:6px}
+.t-forms input {position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%)}
+.t-periods {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-block:1px solid var(--t-line)}
+.t-periods label {padding:9px 4px;text-align:center;cursor:pointer;border-bottom:3px solid transparent}
+.t-periods label:hover {background:var(--t-graph)}
+#tense-past:checked ~ .t-periods [for=tense-past],#tense-present:checked ~ .t-periods [for=tense-present],#tense-future:checked ~ .t-periods [for=tense-future] {background:var(--t-graph);border-color:var(--pen);color:var(--pen);font-weight:650}
+#tense-past:focus-visible ~ .t-periods [for=tense-past],#tense-present:focus-visible ~ .t-periods [for=tense-present],#tense-future:focus-visible ~ .t-periods [for=tense-future] {outline:2px solid var(--pen);outline-offset:2px;z-index:1}
+.t-period {display:none}
+#tense-past:checked ~ [data-tense-period=past],#tense-present:checked ~ [data-tense-period=present],#tense-future:checked ~ [data-tense-period=future] {display:block}
+.t-plot {margin:13px 0;padding:7px 10px 2px;background:var(--t-graph);border-block:1px solid var(--t-line)}
+.t-plot svg {display:block;width:100%;max-width:540px;height:auto;margin-inline:auto;color:var(--t-action)}
+.t-plot .t-track {stroke:#aec0bd;stroke-width:1;stroke-dasharray:3 4}
+.t-plot .t-axis {stroke:#637a7b;stroke-width:1.5}
+.t-plot .t-point {stroke:var(--t-anchor);stroke-width:1.5;stroke-dasharray:5 3}
+.t-plot .t-span {stroke:currentColor;stroke-width:5;stroke-linecap:round}
+.t-plot .t-run {stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:7 6}
+.t-plot .t-outline {stroke:currentColor;stroke-width:1.5;fill:var(--t-graph)}
+.t-plot .t-done {fill:currentColor}
+.t-plot .t-svg-label {fill:var(--ink);font:14px var(--sans);dominant-baseline:middle}
+.t-plot .t-svg-time {fill:var(--muted);font:12px var(--sans);text-anchor:middle}
+.t-plot .t-svg-ref {fill:var(--t-anchor);font-weight:650}
+.t-plot figcaption {margin:2px 0 3px;color:var(--muted);font-size:13px}
+.t-comparison {margin:0;border-block:1px solid var(--t-line)}
+.t-comparison>div {display:grid;grid-template-columns:6.3rem minmax(0,1fr);gap:2px 12px;padding:7px 9px}
+.t-comparison>div+div {border-top:1px solid var(--t-rule)}
+.t-comparison dt {font-weight:650;color:var(--pen)}
+.t-comparison dd {margin:0}
+.t-comparison .t-english,.t-bank [lang=en] {font-family:var(--serif);font-size:1.14em}
+.t-comparison strong {color:var(--t-action)}
+.t-comparison .t-meaning {display:block;color:var(--muted);font-size:.9em}
+.t-bank {margin-top:1.35em;padding-top:.65em;border-top:1px solid var(--t-line)}
+.t-bank .t-source {color:var(--muted);font-size:.85em;margin:0}
+.t-bank .t-question {white-space:pre-line}
+.t-bank ol {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;padding-inline-start:1.8em;margin:.35em 0 .65em}
+.t-blank {display:inline-block;width:4em;border-bottom:1px solid currentColor}
+.t-bank details {margin-bottom:.4em}
+.t-bank .manual-note {background:var(--t-graph)}
+@media(max-width:480px) {
+  .t-plot {padding-inline:4px}
+  .t-plot .t-svg-label {font-size:12px}
+  .t-comparison>div {grid-template-columns:minmax(0,1fr);gap:0}
+  .t-bank ol {grid-template-columns:minmax(0,1fr)}
+}
+
+.tense-aspect {--aspect-teal:#265f56;--aspect-teal-wash:#e6eee5;--aspect-rule:#d1d3c3;--aspect-rust:#873e2a;--aspect-rust-wash:#f4e7dc}
+.tense-aspect .aspect-lead {max-width:48em;margin-bottom:1em}
+.tense-aspect [lang=en] {font-family:var(--serif)}
+.tense-aspect .aspect-sample {display:block;font:1.14em/1.55 var(--serif)}
+.tense-aspect mark {background:var(--aspect-teal-wash);color:var(--aspect-teal);padding:0 .14em}
+.tense-aspect mark.aspect-anchor {background:var(--aspect-rust-wash);color:var(--aspect-rust)}
+.tense-aspect .aspect-rule {padding:.58em .85em;margin:1em 0;border-inline-start:3px solid var(--aspect-teal);background:var(--aspect-teal-wash)}
+.tense-aspect .aspect-rule p {margin:0}
+.tense-aspect .aspect-rule strong {color:var(--aspect-teal)}
+.tense-aspect .aspect-pair {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px;margin:1.2em 0}
+.tense-aspect .aspect-pair figcaption {grid-column:1/-1}
+.tense-aspect .aspect-pair>div {padding:.5em 0;border-block:1px solid var(--aspect-rule)}
+.tense-aspect .aspect-pair h3 {font:650 1em/1.45 var(--sans);color:var(--aspect-teal);margin:0 0 .35em}
+.tense-aspect .aspect-pair p {margin:.24em 0}
+.tense-aspect figcaption,.tense-aspect caption {font-weight:650;color:var(--aspect-teal);text-align:left;margin-bottom:.45em}
+.tense-aspect table {table-layout:fixed;margin:1em 0}
+.tense-aspect th[scope=row] {width:24%;background:transparent}
+.tense-aspect td .aspect-sample {margin-bottom:.2em}
+.tense-aspect .aspect-timeline {margin:1.25em 0}
+.tense-aspect .aspect-axis {position:relative;margin:.7em 0 1em;padding-top:28px}
+.tense-aspect .aspect-axis::before {content:"";position:absolute;inset:22px 6px auto 6px;border-top:1px solid var(--aspect-rule)}
+.tense-aspect .aspect-band {position:absolute;inset:18px 10% auto;height:9px;background:var(--aspect-teal);border-radius:5px}
+.tense-aspect .aspect-prior-event {position:absolute;inset:21px 50% auto 20%;border-top:2px dashed var(--aspect-teal)}
+.tense-aspect .aspect-prior-event::before {content:"";position:absolute;top:-5px;left:-4px;width:8px;height:8px;background:var(--aspect-teal);border-radius:50%}
+.tense-aspect .aspect-tick {display:block;width:2px;height:24px;background:var(--aspect-rust);margin:-23px auto 5px}
+.tense-aspect .aspect-axis div {position:relative;max-width:60%;margin:auto;text-align:center;font-size:.93em;line-height:1.45}
+.tense-aspect .aspect-axis b {color:var(--aspect-rust)}
+.tense-aspect .aspect-steps {display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;list-style:none;padding:0;margin:0}
+.tense-aspect .aspect-steps li {padding:.45em 0;border-top:1px solid var(--aspect-rule)}
+.tense-aspect .aspect-steps b {display:block;color:var(--aspect-teal);font-size:.92em}
+.tense-aspect .aspect-steps li:last-child b {color:var(--aspect-rust)}
+.tense-aspect details.aspect-fold {margin:.85em 0}
+.tense-aspect .aspect-fold summary {font-size:.94em}
+@media(max-width:560px) {
+  .tense-aspect .aspect-pair {grid-template-columns:1fr}
+  .tense-aspect .aspect-pair>div+div {border-top:0}
+  .tense-aspect th[scope=row] {width:25%}
+}
+
+.tense-time [lang=en] {font-family:var(--serif)}
+.tense-time mark {background:#e3efeb;color:#214e49;padding:0 .12em}
+.tense-time .manual-note {background:#efeee4}
+.ft-agenda {margin:1.1em 0}
+.ft-agenda caption {text-align:left;font-weight:650;color:var(--pen);margin-bottom:.4em}
+.ft-agenda .ft-form {width:24%;min-width:6em;background:transparent}
+.ft-agenda .ft-example {display:block;font-size:1.12em}
+.ft-agenda .ft-meaning {display:block;margin-top:.18em;color:var(--muted)}
+.ft-axis {margin:1.2em 0;border-block:1px solid var(--edge);padding:.6em 0}
+.ft-clock {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+.ft-clock span:nth-child(2) {text-align:center;color:var(--pen);font-weight:650}
+.ft-clock span:last-child {text-align:right}
+.ft-track {height:21px;margin:0 4px .35em;position:relative;border-bottom:1px solid var(--edge)}
+.ft-track::after {content:"";position:absolute;inset-block:1px -1px;left:50%;border-left:2px dashed var(--pen)}
+.ft-track span {position:absolute;top:9px;height:5px;background:#2d685e;border-radius:4px}
+.ft-track .ft-running {left:0;right:0}
+.ft-track .ft-count {height:9px;width:9px;top:7px;border-radius:100%;left:20%}
+.ft-track .ft-count+.ft-count {left:43%}
+.ft-track .ft-duration {left:0;right:50%;background:#9f542e}
+.ft-axis-row {margin-bottom:.65em}
+.ft-axis-row+.ft-axis-row {border-top:1px solid var(--edge);padding-top:.55em}
+.ft-axis-row p {margin:.18em 0}
+.ft-axis .ft-label {color:var(--pen);font-size:14px;font-weight:650}
+.ft-lines {margin:1em 0;border-block:1px solid var(--edge)}
+.ft-lines>div {display:grid;grid-template-columns:minmax(7em,22%) minmax(0,1fr);gap:6px 14px;padding:.65em 0}
+.ft-lines>div+div {border-top:1px solid var(--edge)}
+.ft-lines dt {font-weight:650;color:var(--pen)}
+.ft-lines dd {margin:0}
+.ft-lines dd p {margin:0 0 .18em}
+.ft-nesting {margin:1em 0;background:#eff1ea;border-left:3px solid var(--pen);padding:.6em .9em}
+.ft-nesting p {margin:.4em 0}
+.ft-nesting .ft-inside {color:#7d3f24;background:#f5e7d5;padding:0 .12em}
+@media(max-width:480px) {
+  .ft-agenda .ft-form {min-width:4.5em;width:26%}
+  .ft-lines>div {grid-template-columns:minmax(0,1fr);gap:3px}
+}
+
+.tv-card {
+  --tv-ruling:#cbd2cd; --tv-time:#1a506b; --tv-time-wash:#e7eff2;
+  --tv-role:#74452e; --tv-role-wash:#f0e7dd;
+}
+.tv-card h2 { margin-bottom:.5em }
+.tv-card h3 { margin:1.1em 0 .36em }
+.tv-card > p { max-width:49em }
+.tv-en { font:1.09em/1.5 var(--serif) }
+.tv-chain,.tv-head,.tv-verb { color:var(--tv-time); background:var(--tv-time-wash); padding:0 .12em }
+.tv-part,.tv-plural { color:var(--tv-role); background:var(--tv-role-wash); padding:0 .12em }
+.tv-attach { color:var(--muted) }
+.tv-ledger { margin:1.1em 0 }
+.tv-ledger caption,.tv-register figcaption { color:var(--ink); font-weight:650;text-align:left;margin-bottom:.38em }
+.tv-ledger th { background:#eef1eb }
+.tv-ledger tbody th { background:none; font-weight:650; min-width:5.4em }
+.tv-matrix td { width:37% }
+.tv-matrix td,.tv-matrix th { padding-top:.63em;padding-bottom:.63em;overflow-wrap:anywhere }
+.tv-key { display:flex;flex-wrap:wrap;gap:.25em 1.1em;color:var(--muted);font-size:.88em }
+.tv-note { margin:1.06em 0;padding:.52em .8em;background:#f1f2eb;border-inline-start:3px solid var(--tv-time) }
+.tv-note > p { margin:.3em 0 }
+.tv-register { margin:1.1em 0 }
+.tv-trace { border-block-start:1px solid var(--tv-ruling);padding:.62em .12em }
+.tv-trace:last-child { border-block-end:1px solid var(--tv-ruling) }
+.tv-trace p { margin:.18em 0 }
+.tv-trace .tv-en { font-size:1.23em }
+.tv-trace .tv-attach { color:#57686e }
+.tv-pairs { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 1.2em;margin:.75em 0 1.1em }
+.tv-pairs > div { border-top:1px solid var(--tv-ruling);padding:.58em 0 .24em }
+.tv-pairs dt { color:var(--tv-time);font-weight:650 }
+.tv-pairs dd { margin:.25em 0 .4em }
+.tv-more { margin:1em 0;border-block-start:1px solid var(--tv-ruling);padding:.65em 0 0 }
+.tv-more > summary { width:fit-content }
+.tv-reference { color:var(--muted);font-size:13px;margin-top:.85em }
+@media(max-width:540px) {
+  .tv-matrix td { width:auto }
+  .tv-matrix tbody th { min-width:3.5em;font-size:.9em }
+  .tv-matrix td,.tv-matrix th { padding-inline:.38em }
+  .tv-pairs { grid-template-columns:minmax(0,1fr);gap:0 }
+}
+
+</style>
+</head>
+<body class="tenses">
+<header class="site-header"><div class="site-inner"><a class="brand" href="index.html" aria-label="十环"><img src="assets/zhang-shihuan-logo.svg" alt="" width="69" height="36"></a><nav class="site-nav" aria-label="主导航"><a href="external-practice.html">每日外刊</a><a href="index.html?view=study" aria-current="page">专题精讲</a><a href="cloze-pages/index.html">完形填空</a><a href="index.html?view=reading&amp;reading_type=comprehension">阅读理解</a></nav></div></header>
+<main id="manual" class="manual-page editorial-page">
+<header class="cover editorial-rail"><h1>时态与语态</h1><a class="standalone" id="course" href="index.html?topic=tenses&amp;chapter=handbook">在本章题卷中查看</a><button type="button" class="back-map" data-target="overview" hidden>返回本章总览</button></header>
+<section class="chapter-map" id="overview"><h2 tabindex="-1">考点目录</h2><nav aria-label="本章考点目录"><div class="outline"><section class="outline-group"><h3><a href="#time-aspect-framework" data-target="time-aspect-framework"><small class="group-number">01</small>时态用法与对比</a></h3><ol class="outline-links"><li><a href="#time-aspect-framework" data-target="time-aspect-framework"><small class="section-number">1.1</small>时态总览</a></li><li><a href="#simple-present-past" data-target="simple-present-past"><small class="section-number">1.2</small>一般现在与一般过去</a></li><li><a href="#progressive-now-past" data-target="progressive-now-past"><small class="section-number">1.3</small>现在进行与过去进行</a></li><li><a href="#present-perfect-now" data-target="present-perfect-now"><small class="section-number">1.4</small>现在完成：结果、次数与延续</a></li><li><a href="#past-perfect-reference" data-target="past-perfect-reference"><small class="section-number">1.5</small>过去完成：从过去回看</a></li><li><a href="#perfect-progressive-verb-meaning" data-target="perfect-progressive-verb-meaning"><small class="section-number">1.6</small>完成进行：时长、次数与动词意义</a></li></ol></section><section class="outline-group"><h3><a href="#future-choices" data-target="future-choices"><small class="group-number">02</small>将来表达与从句时间</a></h3><ol class="outline-links"><li><a href="#future-choices" data-target="future-choices"><small class="section-number">2.1</small>将来表达：预测、计划与日程</a></li><li><a href="#future-progressive-perfect" data-target="future-progressive-perfect"><small class="section-number">2.2</small>将来进行、完成与完成进行</a></li><li><a href="#future-in-past" data-target="future-in-past"><small class="section-number">2.3</small>过去将来：从过去看后来的事</a></li><li><a href="#time-condition-clauses" data-target="time-condition-clauses"><small class="section-number">2.4</small>时间和条件从句的将来指向</a></li><li><a href="#time-adverb-scope" data-target="time-adverb-scope"><small class="section-number">2.5</small>时间词修饰哪个谓语</a></li></ol></section><section class="outline-group"><h3><a href="#passive-form-matrix" data-target="passive-form-matrix"><small class="group-number">03</small>主动与被动</a></h3><ol class="outline-links"><li><a href="#passive-form-matrix" data-target="passive-form-matrix"><small class="section-number">3.1</small>被动语态的形式与时态</a></li><li><a href="#voice-boundaries" data-target="voice-boundaries"><small class="section-number">3.2</small>被动、系表与主动形式表被动</a></li></ol></section><section class="outline-group"><h3><a href="#agreement-head-coordination" data-target="agreement-head-coordination"><small class="group-number">04</small>主谓一致</a></h3><ol class="outline-links"><li><a href="#agreement-head-coordination" data-target="agreement-head-coordination"><small class="section-number">4.1</small>主语中心词与并列结构</a></li><li><a href="#agreement-quantity-collective-relative" data-target="agreement-quantity-collective-relative"><small class="section-number">4.2</small>数量短语、集合名词与从句</a></li></ol></section></div></nav><h2>时态、语态与主谓一致</h2><p>确定时态后，还要看主语与动作的关系，以及谓语用单数还是复数。</p><div class="anchor-example"><p lang="en"><b>Leo was writing the article.</b>　/　<b>The article was being written.</b></p><p>两句都说过去某时正在写同一篇报道。第二句由报道作主语，所以在进行框架中加被动，用 <em lang="en">was being written</em>。主语换成多篇报道时，<em lang="en">was</em> 再改为 <em lang="en">were</em>。</p></div></section>
+<section class="group-nav" data-g="0" hidden><h2><small class="group-number">01</small>时态用法与对比</h2><p>比较事件发生的时间，以及句子是否着重过程、结果或累计时长。</p><nav aria-label="本组知识点"><a href="#time-aspect-framework" data-target="time-aspect-framework"><small class="section-number">1.1</small>时态总览</a><a href="#simple-present-past" data-target="simple-present-past"><small class="section-number">1.2</small>一般现在与一般过去</a><a href="#progressive-now-past" data-target="progressive-now-past"><small class="section-number">1.3</small>现在进行与过去进行</a><a href="#present-perfect-now" data-target="present-perfect-now"><small class="section-number">1.4</small>现在完成：结果、次数与延续</a><a href="#past-perfect-reference" data-target="past-perfect-reference"><small class="section-number">1.5</small>过去完成：从过去回看</a><a href="#perfect-progressive-verb-meaning" data-target="perfect-progressive-verb-meaning"><small class="section-number">1.6</small>完成进行：时长、次数与动词意义</a></nav></section><section class="group-nav" data-g="1" hidden><h2><small class="group-number">02</small>将来表达与从句时间</h2><p>区分日程、意图和预测，并判断时间词或从句修饰哪个谓语。</p><nav aria-label="本组知识点"><a href="#future-choices" data-target="future-choices"><small class="section-number">2.1</small>将来表达：预测、计划与日程</a><a href="#future-progressive-perfect" data-target="future-progressive-perfect"><small class="section-number">2.2</small>将来进行、完成与完成进行</a><a href="#future-in-past" data-target="future-in-past"><small class="section-number">2.3</small>过去将来：从过去看后来的事</a><a href="#time-condition-clauses" data-target="time-condition-clauses"><small class="section-number">2.4</small>时间和条件从句的将来指向</a><a href="#time-adverb-scope" data-target="time-adverb-scope"><small class="section-number">2.5</small>时间词修饰哪个谓语</a></nav></section><section class="group-nav" data-g="2" hidden><h2><small class="group-number">03</small>主动与被动</h2><p>先确认主语是动作的发出者还是承受者，再用相应时态的被动形式。</p><nav aria-label="本组知识点"><a href="#passive-form-matrix" data-target="passive-form-matrix"><small class="section-number">3.1</small>被动语态的形式与时态</a><a href="#voice-boundaries" data-target="voice-boundaries"><small class="section-number">3.2</small>被动、系表与主动形式表被动</a></nav></section><section class="group-nav" data-g="3" hidden><h2><small class="group-number">04</small>主谓一致</h2><p>长主语先划中心词；遇到并列、数量短语或定语从句，再核对局部结构。</p><nav aria-label="本组知识点"><a href="#agreement-head-coordination" data-target="agreement-head-coordination"><small class="section-number">4.1</small>主语中心词与并列结构</a><a href="#agreement-quantity-collective-relative" data-target="agreement-quantity-collective-relative"><small class="section-number">4.2</small>数量短语、集合名词与从句</a></nav></section>
+<div id="pages"><article data-page="time-aspect-framework" data-g="0" aria-label="时态总览" hidden>
+    <h2>时态总览</h2>
+    <div class="tense-intro"><p>校刊记者 Leo 要写一篇报道。保持动作 <b lang="en">write an article</b> 不变，以 <b class="t-ref">9 点</b> 为参照，比较四种说法各交代了什么。每一行是同一任务的一种独立情境。</p></div>
+    <fieldset class="t-forms"><legend>参照时间</legend><input type="radio" id="tense-past" name="tense-period" ><input type="radio" id="tense-present" name="tense-period" checked><input type="radio" id="tense-future" name="tense-period" ><div class="t-periods"><label for="tense-past">过去</label><label for="tense-present">现在</label><label for="tense-future">将来</label></div><div class="t-period" data-tense-period="past">
+    <figure class="t-plot">
+      <svg viewBox="0 0 360 218" role="img" aria-label="昨天 9:00参照线：进行跨过该点，成稿已在该点之前出现，写作时长累计到该点">
+        <path class="t-axis" fill="none" d="M112 29H344m-6-4 6 4-6 4"/>
+        <text class="t-svg-time" x="112" y="17">较早</text>
+        <text class="t-svg-time t-svg-ref" x="228" y="17">昨天 9:00</text>
+        <text class="t-svg-time" x="344" y="17">较晚</text>
+        <line class="t-track" x1="112" y1="59" x2="344" y2="59"/><line class="t-track" x1="112" y1="102" x2="344" y2="102"/><line class="t-track" x1="112" y1="145" x2="344" y2="145"/><line class="t-track" x1="112" y1="188" x2="344" y2="188"/><text class="t-svg-label" x="8" y="59">一般</text><text class="t-svg-label" x="8" y="102">进行</text><text class="t-svg-label" x="8" y="145">完成</text><text class="t-svg-label" x="8" y="188">完成进行</text>
+        <line class="t-point" x1="228" y1="24" x2="228" y2="204"/>
+        <rect x="148" y="47" width="160" height="24" fill="var(--t-graph)"/><text class="t-svg-time" x="228" y="63">只交代昨天，未给钟点</text>
+        <line class="t-run" x1="174" y1="102" x2="282" y2="102"/>
+        <circle class="t-outline" cx="228" cy="102" r="5"/>
+        <line class="t-track" x1="195" y1="145" x2="228" y2="145"/>
+        <circle class="t-done" cx="195" cy="145" r="6"/>
+        <line class="t-run" x1="112" y1="188" x2="228" y2="188"/>
+        <text class="t-svg-time" x="151" y="209">已持续一小时</text>
+      </svg>
+      <figcaption>竖线标参照时刻，虚线段标过程，实心点标已形成的结果。图示不按实际钟点比例绘制。</figcaption>
+    </figure><dl class="t-comparison"><div><dt>一般过去</dt><dd><span class="t-english" lang="en">Leo <strong>wrote</strong> the article yesterday.</span><span class="t-meaning">把写完报道作为昨天发生的一件事；句子不交代 9 点时写到哪儿。</span></dd></div><div><dt>过去进行</dt><dd><span class="t-english" lang="en">At nine yesterday, Leo <strong>was writing</strong> the article.</span><span class="t-meaning">昨天 9 点写作正在进行，不交代后来写没写完。</span></dd></div><div><dt>过去完成</dt><dd><span class="t-english" lang="en">By nine yesterday, Leo <strong>had written</strong> the article.</span><span class="t-meaning">把视线放在昨天 9 点：到这时，报道已经写完。</span></dd></div><div><dt>过去完成进行</dt><dd><span class="t-english" lang="en">At nine yesterday, Leo <strong>had been writing</strong> the article for an hour.</span><span class="t-meaning">到昨天 9 点，写作过程已持续一小时；写完与否不在句意里。</span></dd></div></dl></div><div class="t-period" data-tense-period="present">
+    <figure class="t-plot">
+      <svg viewBox="0 0 360 218" role="img" aria-label="现在 9:00参照线：进行跨过该点，成稿已在该点之前出现，写作时长累计到该点">
+        <path class="t-axis" fill="none" d="M112 29H344m-6-4 6 4-6 4"/>
+        <text class="t-svg-time" x="112" y="17">较早</text>
+        <text class="t-svg-time t-svg-ref" x="228" y="17">现在 9:00</text>
+        <text class="t-svg-time" x="344" y="17">较晚</text>
+        <line class="t-track" x1="112" y1="59" x2="344" y2="59"/><line class="t-track" x1="112" y1="102" x2="344" y2="102"/><line class="t-track" x1="112" y1="145" x2="344" y2="145"/><line class="t-track" x1="112" y1="188" x2="344" y2="188"/><text class="t-svg-label" x="8" y="59">一般</text><text class="t-svg-label" x="8" y="102">进行</text><text class="t-svg-label" x="8" y="145">完成</text><text class="t-svg-label" x="8" y="188">完成进行</text>
+        <line class="t-point" x1="228" y1="24" x2="228" y2="204"/>
+        <circle class="t-outline" cx="147" cy="59" r="5"/><circle class="t-outline" cx="207" cy="59" r="5"/><circle class="t-outline" cx="267" cy="59" r="5"/><circle class="t-outline" cx="327" cy="59" r="5"/><text class="t-svg-time" x="228" y="46">规律重复 · 不定位此刻</text>
+        <line class="t-run" x1="174" y1="102" x2="282" y2="102"/>
+        <circle class="t-outline" cx="228" cy="102" r="5"/>
+        <line class="t-track" x1="195" y1="145" x2="228" y2="145"/>
+        <circle class="t-done" cx="195" cy="145" r="6"/>
+        <line class="t-run" x1="112" y1="188" x2="228" y2="188"/>
+        <text class="t-svg-time" x="151" y="209">已持续一小时</text>
+      </svg>
+      <figcaption>竖线标参照时刻，虚线段标过程，实心点标已形成的结果。图示不按实际钟点比例绘制。</figcaption>
+    </figure><dl class="t-comparison"><div><dt>一般现在</dt><dd><span class="t-english" lang="en">Leo <strong>writes</strong> an article for the school paper every Friday.</span><span class="t-meaning">交代每周五的惯例；他此刻做什么，要另看上下文。</span></dd></div><div><dt>现在进行</dt><dd><span class="t-english" lang="en">Leo <strong>is writing</strong> the article now.</span><span class="t-meaning">此刻正在写；不说明已经写了多久。</span></dd></div><div><dt>现在完成</dt><dd><span class="t-english" lang="en">Leo <strong>has written</strong> the article. It’s ready for review.</span><span class="t-meaning">现在已经有一篇可以审阅的稿件。</span></dd></div><div><dt>现在完成进行</dt><dd><span class="t-english" lang="en">Leo <strong>has been writing</strong> the article for an hour.</span><span class="t-meaning">从 8 点写到现在，重点是这一小时的写作过程；不保证稿件已完成。</span></dd></div></dl></div><div class="t-period" data-tense-period="future">
+    <figure class="t-plot">
+      <svg viewBox="0 0 360 218" role="img" aria-label="明天 9:00参照线：进行跨过该点，成稿已在该点之前出现，写作时长累计到该点">
+        <path class="t-axis" fill="none" d="M112 29H344m-6-4 6 4-6 4"/>
+        <text class="t-svg-time" x="112" y="17">较早</text>
+        <text class="t-svg-time t-svg-ref" x="228" y="17">明天 9:00</text>
+        <text class="t-svg-time" x="344" y="17">较晚</text>
+        <line class="t-track" x1="112" y1="59" x2="344" y2="59"/><line class="t-track" x1="112" y1="102" x2="344" y2="102"/><line class="t-track" x1="112" y1="145" x2="344" y2="145"/><line class="t-track" x1="112" y1="188" x2="344" y2="188"/><text class="t-svg-label" x="8" y="59">一般</text><text class="t-svg-label" x="8" y="102">进行</text><text class="t-svg-label" x="8" y="145">完成</text><text class="t-svg-label" x="8" y="188">完成进行</text>
+        <line class="t-point" x1="228" y1="24" x2="228" y2="204"/>
+        <rect x="148" y="47" width="160" height="24" fill="var(--t-graph)"/><text class="t-svg-time" x="228" y="63">只交代明天，未给钟点</text>
+        <line class="t-run" x1="174" y1="102" x2="282" y2="102"/>
+        <circle class="t-outline" cx="228" cy="102" r="5"/>
+        <line class="t-track" x1="195" y1="145" x2="228" y2="145"/>
+        <circle class="t-done" cx="195" cy="145" r="6"/>
+        <line class="t-run" x1="112" y1="188" x2="228" y2="188"/>
+        <text class="t-svg-time" x="151" y="209">已持续一小时</text>
+      </svg>
+      <figcaption>竖线标参照时刻，虚线段标过程，实心点标已形成的结果。图示不按实际钟点比例绘制。</figcaption>
+    </figure><dl class="t-comparison"><div><dt>一般将来</dt><dd><span class="t-english" lang="en">Leo <strong>will write</strong> the article tomorrow.</span><span class="t-meaning">说的是明天要做的事；没有说明具体几点，也没有给出截止时间。</span></dd></div><div><dt>将来进行</dt><dd><span class="t-english" lang="en">At nine tomorrow, Leo <strong>will be writing</strong> the article.</span><span class="t-meaning">预计明天 9 点正处在写作过程中。</span></dd></div><div><dt>将来完成</dt><dd><span class="t-english" lang="en">By nine tomorrow, Leo <strong>will have written</strong> the article.</span><span class="t-meaning">以明天 9 点为界，预计届时已有成稿。</span></dd></div><div><dt>将来完成进行</dt><dd><span class="t-english" lang="en">At nine tomorrow, Leo <strong>will have been writing</strong> the article for an hour.</span><span class="t-meaning">到明天 9 点，预计写作过程已经持续一小时。</span></dd></div></dl></div></fieldset>
+    <aside class="manual-note"><b>区分</b>　<em lang="en">at nine</em> 定位在 9 点，<em lang="en">by nine</em> 表示最迟到 9 点；<em lang="en">for an hour</em> 只给时长。<em lang="en">Leo wrote for an hour yesterday.</em> 也有时长，但整件事放在昨天，因此用一般过去。</aside>
+    <p>这条轴回答「从何时看这件事、看的是过程还是结果」。如果把主语从 <em lang="en">Leo</em> 换成 <em lang="en">the article</em>，再判断是否用<a href="#passive-form-matrix" data-target="passive-form-matrix">被动语态</a>。如果主语变复数，则另核对<a href="#agreement-head-coordination" data-target="agreement-head-coordination">谓语的数</a>。</p>
+    </article><article data-page="simple-present-past" data-g="0" aria-label="一般现在与一般过去" hidden><section class="tense-aspect">
+<h2>一般现在与一般过去</h2>
+<figure class="aspect-pair"><figcaption>同一个动作，两种时间范围</figcaption><div><h3>一般现在 · 习惯</h3><p class="aspect-sample" lang="en">Lin <mark>writes</mark> a column for the school paper <mark class="aspect-anchor">every week</mark>.</p><p>每周都写一篇。句子概括目前的习惯，没有交代这一周写了没有。</p></div><div><h3>一般过去 · 一次事件</h3><p class="aspect-sample" lang="en">Lin <mark>wrote</mark> a column for the school paper <mark class="aspect-anchor">last week</mark>.</p><p>上周写了一篇。这句话没有交代她现在是否还在写专栏。</p></div></figure>
+<table><caption>一般时也能描述状态和规律</caption><tbody><tr><th scope="row">现在的状态</th><td><span class="aspect-sample" lang="en">Mia <mark>is</mark> the editor now.</span>Mia 现在是编辑。用一般现在时直接说明身份。</td></tr><tr><th scope="row">过去的状态</th><td><span class="aspect-sample" lang="en">Mia <mark>was</mark> the editor last year.</span>说的是她去年的身份，单凭这句话还不能确定她今年的身份。</td></tr><tr><th scope="row">惯例</th><td><span class="aspect-sample" lang="en">The paper <mark>comes</mark> out on Fridays.</span>现在每周五发行。过去的惯例也可用一般过去时：<span lang="en">Last year it <mark>came</mark> out on Mondays.</span></td></tr></tbody></table>
+<aside class="aspect-rule"><p><strong>区分：疑问句和否定句中的动词形式</strong>　<span lang="en">Does Lin <mark>write</mark> …? / Did Lin <mark>write</mark> …?</span> 第三人称单数或过去时间已经体现在 <i>does / did</i> 上，后面的实义动词用原形；否定式 <i>doesn’t write / didn’t write</i> 同理。若谓语本身是 <i>be</i>，直接用 <i>Is Mia …? / Was Mia …?</i>。</p></aside>
+<section class="t-bank" data-question-id="bank-tense-2026-heping-apple-09" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2026 天津和平质量调查一，第 9 题</p><p class="t-question" lang="en">An apple tree <span class="t-blank" aria-label="待填空"></span> fruit until it is five to eight years old.</p><ol lang="en" type="A"><li>didn&#x27;t bear</li><li>was not bearing</li><li>has not borne</li><li>does not bear</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>D. does not bear</b></p><p><i>An apple tree</i> 在这里泛指苹果树；从句 <i>is five to eight years old</i> 说明开始结果的大致树龄。题目说树木的一般生长规律，选 <i>does not bear</i>。<i>does</i> 已与单数主语一致，后面用原形 <i>bear</i>。</p></div></details>
+    </section>
+<section class="t-bank" data-question-id="tj-2025-second-08" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2025 天津第二次，第 8 题</p><p class="t-question" lang="en">The Song Dynasty <span class="t-blank" aria-label="待填空"></span> the introduction of jiaozi, which is supposedly the world&#x27;s first paper money.</p><ol lang="en" type="A"><li>has seen</li><li>had seen</li><li>sees</li><li>saw</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>D. saw</b></p><p><i>The Song Dynasty</i> 界定了交子出现的历史时期，用 <i>saw</i>。这里的 <i>see</i> 是“见证、经历”，朝代可以作主语。逗号后的 <i>which is supposedly …</i> 是现在对交子地位的判断，不改变主句的叙事时间。</p></div></details>
+    </section>
+</section></article><article data-page="progressive-now-past" data-g="0" aria-label="现在进行与过去进行" hidden><section class="tense-aspect">
+<h2>现在进行与过去进行</h2>
+<p class="aspect-lead"><i>am / is / are doing</i> 和 <i>was / were doing</i> 都把观察点放在活动过程中。前者看现在或当前阶段，后者看某个过去的时刻或时段。</p>
+<figure class="aspect-timeline">
+  <figcaption>昨天九点，来电落在写稿过程中</figcaption>
+  <div class="aspect-axis" aria-hidden="true"><span class="aspect-band"></span><div><span class="aspect-tick"></span><b>昨天 09:00</b>　Mia 来电</div></div>
+  <p class="aspect-sample" lang="en">Lin <mark>was writing</mark> the article when Mia <mark class="aspect-anchor">called</mark> at nine yesterday.</p>
+  <p>电话响的时候，稿子正在写。句子没交代稿件后来写完没有，也没说电话打断了写作。</p>
+</figure>
+<figure class="aspect-pair"><figcaption>区分：来电时已在写，还是才动笔？</figcaption><div><h3>来电时已经在写</h3><p class="aspect-sample" lang="en">When Mia called, Lin <mark>was writing</mark> the article.</p><p>写稿在来电之前开始；来电时仍在写。</p></div><div><h3>来电时开始写</h3><p class="aspect-sample" lang="en">When Mia called, Lin <mark>started writing</mark> the article.</p><p>两个一般过去式报告打电话和动笔这两件事。<i>when</i> 本身并不要求进行时。</p></div></figure>
+<table><caption>进行时可以覆盖一个阶段</caption><tbody><tr><th scope="row">当前阶段</th><td><span class="aspect-sample" lang="en">Lin usually writes at home, but this week she <mark>is working</mark> in the library.</span>“这周在图书馆写”是当前的临时情况，不能据此认定她此刻就在写。</td></tr><tr><th scope="row">变化过程</th><td><span class="aspect-sample" lang="en">The paper <mark>is attracting</mark> more and more readers.</span>读者人数在增长，关注的是变化过程。</td></tr><tr><th scope="row">反复出现</th><td><span class="aspect-sample" lang="en">Lin <mark>is always checking</mark> the figures before she sends a draft. That’s why I trust her work.</span><i>always</i> 也可与进行时连用，使反复出现的行为更突出；这里后一句给出的是肯定评价。</td></tr></tbody></table>
+<section class="t-bank" data-question-id="bank-tense-2026-tanggu-meeting-03" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2026 天津塘沽第一中学等十二校联考一，第 3 题</p><p class="t-question" lang="en">Yesterday Mr. Smith spoke at the meeting in place of the manager, who <span class="t-blank" aria-label="待填空"></span> a more important meeting.</p><ol lang="en" type="A"><li>had attended</li><li>will be attending</li><li>has attended</li><li>was attending</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>D. was attending</b></p><p>史密斯先生代经理发言；经理缺席是因为同一时段正在参加另一场更重要的会议。<i>was attending</i> 提供当时的背景。<i>had attended</i> 表示届时已经参加过，不能说明两场会议同时占用他的时间。</p></div></details>
+    </section>
+</section></article><article data-page="present-perfect-now" data-g="0" aria-label="现在完成：结果、次数与延续" hidden><section class="tense-aspect">
+<h2>现在完成：结果、次数与延续</h2>
+<p class="aspect-lead"><i>have / has + 过去分词</i> 从现在回看此前。读句子时要区分：截至现在有了什么结果、发生过几次，还是某种状态一直持续到现在。</p>
+<table><caption>现在完成时所交代的三种信息</caption><tbody><tr><th scope="row">当前结果</th><td><span class="aspect-sample" lang="en">Lin <mark>has sent</mark> the draft, so Mia can start editing <mark class="aspect-anchor">now</mark>.</span>稿子已经发出，所以现在可以开始编辑。</td></tr><tr><th scope="row">次数或经历</th><td><span class="aspect-sample" lang="en">Lin <mark>has written</mark> three reviews for the school paper <mark class="aspect-anchor">so far</mark>.</span>截至现在写过三篇，未交代分别写于哪天。问有无经历时同理：<span lang="en">Has Lin ever written a review?</span></td></tr><tr><th scope="row">延续状态</th><td><span class="aspect-sample" lang="en">Lin <mark>has known</mark> Mia <mark class="aspect-anchor">since September</mark>.</span>从九月认识她，到现在仍认识。<i>since</i> 引出起点，<i>for</i> 引出一段时长。</td></tr></tbody></table>
+<figure class="aspect-pair"><figcaption>区分：同样是 this morning，上午还算在统计期内吗？</figcaption><div><h3>上午已过 · 回顾往事</h3><p class="aspect-sample" lang="en">Lin <mark>sent</mark> two drafts <mark class="aspect-anchor">this morning</mark>.</p><p>例如下午回顾上午的工作，发稿发生在已经结束的时段。</p></div><div><h3>还在上午 · 截至现在统计</h3><p class="aspect-sample" lang="en">Lin <mark>has sent</mark> two drafts <mark class="aspect-anchor">so far this morning</mark>.</p><p>统计从上午开始到现在已经发了几份。</p></div></figure>
+<aside class="aspect-rule"><p><strong>区分：明确的过去时间修饰哪一个动作？</strong>　<span lang="en">I <mark>wrote</mark> to Mia <mark class="aspect-anchor">yesterday</mark>, and she <mark>has already replied</mark>.</span> <i>yesterday</i> 只说明写信的时间；<i>has already replied</i> 交代现在已经收到回复。<i>since yesterday</i> 则把昨天标为一段时间的起点，可以跟现在完成时连用。</p></aside>
+<section class="t-bank" data-question-id="tj-2021-first-03" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2021 天津第一次，第 3 题</p><p class="t-question" lang="en">We <span class="t-blank" aria-label="待填空"></span> quite enough work for the morning;now let&#x27;s take a break.</p><ol lang="en" type="A"><li>have done</li><li>will do</li><li>had done</li><li>were doing</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>A. have done</b></p><p><i>now let’s take a break</i> 表示现在可以休息。这个决定建立在截至现在已完成的工作量上，所以用 <i>have done</i>。<i>enough</i> 只表明工作做得够多，不等于全部做完。</p></div></details>
+    </section>
+<section class="t-bank" data-question-id="tj-2020-first-09" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2020 天津第一次，第 9 题</p><p class="t-question" lang="en">—The machine is working again!
+—Yes, it broke down yesterday, but it <span class="t-blank" aria-label="待填空"></span>.</p><ol lang="en" type="A"><li>has been fixed</li><li>is being fixed</li><li>had been fixed</li><li>would be fixed</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>A. has been fixed</b></p><p>坏掉和修好是两个事件。<i>yesterday</i> 修饰发生故障；<i>is working again</i> 表明机器现在恢复运转，空格交代修复结果。机器接受修理，因此选现在完成时的被动 <i>has been fixed</i>。</p></div></details>
+    </section>
+</section></article><article data-page="past-perfect-reference" data-g="0" aria-label="过去完成：从过去回看" hidden><section class="tense-aspect">
+<h2>过去完成：从过去回看</h2>
+<p class="aspect-lead"><i>had + 过去分词</i> 需要一个过去参照点。从那个时间看，此前的动作已经发生，或者某个状态已持续了一段时间。</p>
+<figure class="aspect-timeline">
+  <figcaption>从 Mia 到场的那一刻，回看已经发出的稿子</figcaption>
+  <div class="aspect-axis" aria-hidden="true"><span class="aspect-prior-event"></span><div><span class="aspect-tick"></span><b>昨天 09:00</b>　过去参照点</div></div>
+  <ol class="aspect-steps">
+    <li><b>此前 · 08:45</b>Lin 发出了稿子。</li>
+    <li><b>到场 · 09:00</b>Mia 来时，稿子已经发出。</li>
+  </ol>
+  <p class="aspect-sample" lang="en">When Mia <mark class="aspect-anchor">arrived</mark> at nine, Lin <mark>had already sent</mark> the draft.</p>
+</figure>
+<figure class="aspect-pair"><figcaption>同样有先后，叙述方式不同</figcaption><div><h3>顺着事件讲</h3><p class="aspect-sample" lang="en">Lin <mark>sent</mark> the draft. Mia <mark>arrived</mark> a few minutes later and started editing.</p><p>叙述顺序本身已经交代了先后。三件事均可用一般过去时。</p></div><div><h3>从后一个事件回看</h3><p class="aspect-sample" lang="en">Mia <mark class="aspect-anchor">arrived</mark> at nine. Lin <mark>had sent</mark> the draft by then.</p><p>先定位 Mia 到场，再补充那时已经具备的条件。<i>by then</i> 回指上句的九点。</p></div></figure>
+<aside class="aspect-rule"><p><strong>区分：before / after 交代先后，不自动指定过去完成时</strong>　<span lang="en">Lin <mark>sent</mark> the draft before Mia arrived.</span> <i>before</i> 已经排好先后，过去式也成立。<span lang="en">Lin <mark>had already sent</mark> the draft before Mia arrived.</span> 进一步突出 Mia 来以前稿子就发出去了。</p></aside>
+<details class="aspect-fold"><summary>时长和落空的打算</summary>
+  <p><span lang="en">By the time Mia arrived, Lin <mark>had worked</mark> on the article for two hours.</span> 两小时累计到 Mia 来的时候；<i>for</i> 只说明时长，参照点才决定用 <i>had</i> 还是 <i>have / has</i>。</p>
+  <p><span lang="en">Lin <mark>had hoped</mark> to submit the article by nine, but she missed the deadline.</span> <i>had hoped</i> 交代较早的愿望；愿望落空是 <i>but</i> 后明确说出来的。</p>
+</details>
+<section class="t-bank" data-question-id="tj-2022-second-07" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2022 天津第二次，第 7 题</p><p class="t-question" lang="en">The children failed to hide their disappointment when they found out the school <span class="t-blank" aria-label="待填空"></span> the party.</p><ol lang="en" type="A"><li>cancels</li><li>will cancel</li><li>has cancelled</li><li>had cancelled</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>D. had cancelled</b></p><p>孩子们得知消息、产生失望是题目已经建立的过去时刻；学校作出取消决定在那之前。<i>the school</i> 是作决定的一方，因此选择主动的 <i>had cancelled</i>。</p></div></details>
+    </section>
+</section></article><article data-page="perfect-progressive-verb-meaning" data-g="0" aria-label="完成进行：时长、次数与动词意义" hidden><section class="tense-aspect">
+<h2>完成进行：时长、次数与动词意义</h2>
+<p class="aspect-lead"><i>have / has been doing</i> 强调从此前持续或反复发生的活动。它可以一直做到现在，也可以刚停；是否取得结果，要看句子有没有另行交代。</p>
+<figure class="aspect-pair"><figcaption>同样在核对数字：报次数，还是报做了多久？</figcaption><div><h3>已有三次 · 现在完成</h3><p class="aspect-sample" lang="en">Lin <mark>has checked</mark> the figures <mark class="aspect-anchor">three times</mark>.</p><p>截至现在已经核对三次。可能还会再核对。</p></div><div><h3>持续一小时 · 现在完成进行</h3><p class="aspect-sample" lang="en">Lin <mark>has been checking</mark> the figures <mark class="aspect-anchor">for an hour</mark>.</p><p>核对这项活动持续了一个小时。句子没交代核对完没有，也没给出核对次数。</p></div></figure>
+<table><caption>能不能用进行式，取决于动词在本句里的意义</caption><tbody><tr><th scope="row">持续的状态</th><td><span class="aspect-sample" lang="en">Lin <mark>has known</mark> Mia for a year.</span>“认识”是一直成立的状态，通常不用 <i>has been knowing</i>。<i>has lived</i> 和 <i>has been living</i> 则都可表示住了一段时间。</td></tr><tr><th scope="row">同词换义</th><td><span class="aspect-sample" lang="en">Lin <mark>thinks</mark> one figure is wrong. / Lin <mark>has been thinking</mark> about how to check it.</span>前者说“认为”，后者说一段时间以来反复或持续“在想办法”。</td></tr><tr><th scope="row">单次到达</th><td><span class="aspect-sample" lang="en">Lin <mark>has arrived</mark>. / Lin <mark>has been here</mark> for an hour.</span>一次到达是一个事件；到达后“在这里”的状态才持续了一小时。</td></tr><tr><th scope="row">反复发生或不发生</th><td><span class="aspect-sample" lang="en">The buses <mark>have been arriving</mark> late all week. / Lin <mark>hasn’t received</mark> a reply for three days.</span>可以反复到达，也可以整段时间都没发生某件事；两句都带时段，不必用同一个时态形式。</td></tr></tbody></table>
+<aside class="aspect-rule"><p><strong>区分：been 后面接 -ing 还是过去分词？</strong>　<span lang="en">Lin has been <mark>checking</mark> the figures.</span> 完成进行，Lin 在做检查；<span lang="en">The figures have been <mark>checked</mark>.</span> 完成被动，数字是检查对象。</p></aside>
+<details class="aspect-fold"><summary>同一过程，终点从现在挪到过去</summary>
+  <p><span lang="en">When Mia came in, Lin <mark>had been checking</mark> the figures for an hour.</span> “已核对一小时”是截至 Mia 进门时的情况，和现在是否还在核对无关。</p>
+</details>
+<section class="t-bank" data-question-id="bank-tense-2026-hongqiao-tickets-03" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2026 天津红桥一模，第 3 题</p><p class="t-question" lang="en">—You haven&#x27;t got the tickets for the concert.
+—I know, and we <span class="t-blank" aria-label="待填空"></span> to get some for the last five weeks.</p><ol lang="en" type="A"><li>had tried</li><li>will be trying</li><li>have been trying</li><li>were trying</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>C. have been trying</b></p><p>开头说到现在还没拿到票；答语的 <i>for the last five weeks</i> 把买票的尝试延伸到现在。<i>have been trying</i> 表示这五周一直或反复在想办法，不意味着买到了。<i>had tried</i> 需要另一个过去参照点。</p></div></details>
+    </section>
+<section class="t-bank" data-question-id="tj-2024-first-03" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2024 天津第一次，第 3 题</p><p class="t-question" lang="en">The Smiths <span class="t-blank" aria-label="待填空"></span> the online shopping experience in China since they moved back to New Zealand two years ago.</p><ol lang="en" type="A"><li>had been missing</li><li>were missing</li><li>have been missing</li><li>will be missing</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>C. have been missing</b></p><p><i>since they moved back</i> 标出开始怀念的时间，句子描述的是回去以来持续到现在的感受，选 <i>have been missing</i>。这里 <i>miss</i> 是“想念”，进行式可以突出这段时间的感受，不能靠“感情动词都不用进行式”排除。</p></div></details>
+    </section>
+</section></article><aside class="group-recall" data-g="0" hidden><h3>考点辨析</h3><p>「昨天她练了两小时」和「到现在她已经练了两小时」都有 for two hours，谓语形式一样吗？</p><details><summary>查看解析</summary><div class="recall-answer">第一句是 <em lang="en">She practised for two hours yesterday.</em>；第二句若突出持续到现在的练习，用 <em lang="en">She has been practising for two hours.</em>。时长一样，时间范围不同。</div></details></aside><article data-page="future-choices" data-g="1" aria-label="将来表达：预测、计划与日程" hidden>
+<section class="tense-time">
+  <h2>将来表达：预测、计划与日程</h2>
+  <p>同样是明天坐火车去采访，临时改票、已经约好同行、按时刻表开车，说的是三件不同的事。英语会用不同的形式把这层信息说出来。</p>
+  <table class="ft-agenda">
+    <caption>同一趟车：决定是谁作出的，时间由什么确定？</caption>
+    <tbody>
+      <tr><th scope="row" class="ft-form"><span lang="en">will</span><br>决定、承诺、预测</th><td><span class="ft-example" lang="en">The bus is full. <mark>I'll take</mark> the train, then.</span><span class="ft-meaning">发现大巴没座后，当场决定改坐火车。也可以是承诺（<i lang="en">I'll let you know.</i>）或预测（<i lang="en">I think the train will be busy.</i>）。</span></td></tr>
+      <tr><th scope="row" class="ft-form"><span lang="en">be going to</span><br>已有意图、现有迹象</th><td><span class="ft-example" lang="en"><mark>I'm going to take</mark> the train tomorrow. I haven't booked a ticket yet.</span><span class="ft-meaning">说话前已有打算，未必订好了。也可据眼前迹象作判断，如望着长队说 <i lang="en">We're going to miss the train.</i></span></td></tr>
+      <tr><th scope="row" class="ft-form">现在进行<br>已安排的行动</th><td><span class="ft-example" lang="en"><mark>I'm taking</mark> the eight o'clock train with Lin tomorrow.</span><span class="ft-meaning">说的是说话人与同伴已有的安排。将来时间或对话语境使读者知道这趟车还没坐。</span></td></tr>
+      <tr><th scope="row" class="ft-form">一般现在<br>固定日程</th><td><span class="ft-example" lang="en">The train <mark>leaves</mark> at eight tomorrow.</span><span class="ft-meaning">八点这个信息来自时刻表；说的是列车的发车时间。</span></td></tr>
+      <tr><th scope="row" class="ft-form"><span lang="en">be due to</span><br>预定、预计</th><td><span class="ft-example" lang="en">The train <mark>is due to leave</mark> at eight.</span><span class="ft-meaning">按计划应在八点发车。车站可以在实际发车时间尚未确认时这样说。</span></td></tr>
+      <tr><th scope="row" class="ft-form"><span lang="en">be to</span><br>正式安排、指令</th><td><span class="ft-example" lang="en">All reporters <mark>are to meet</mark> at the ticket office at 7:40.</span><span class="ft-meaning">集合时间和地点由组织者规定，说法较正式。主语是动作承受者时可用 <i lang="en">be to be done</i>。</span></td></tr>
+      <tr><th scope="row" class="ft-form"><span lang="en">be about to</span><br>马上发生</th><td><span class="ft-example" lang="en">Hurry up! The train <mark>is about to leave</mark>.</span><span class="ft-meaning">人在站台，车马上要开了。若是在播报“还有五分钟发车”，用 <i lang="en">The train leaves in five minutes.</i></span></td></tr>
+    </tbody>
+  </table>
+  <aside class="manual-note"><strong>区分</strong>　<i lang="en">will</i> 和 <i lang="en">be going to</i> 都能谈明天或明年；作预测时，后者常把眼前迹象摆在前面。<i lang="en">be about to</i> 本身已表“马上”，通常不与 <i lang="en">in five minutes</i> 或 <i lang="en">at eight tomorrow</i> 这类明确的未来时间搭配。</aside>
+  <section class="t-bank" data-question-id="tj-2024-first-10" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2024 天津第一次，第 10 题</p><p class="t-question" lang="en">The fence between the two tennis courts <span class="t-blank" aria-label="待填空"></span>. Soon children will have enough space for football games.</p><ol lang="en" type="A"><li>are removed</li><li>is to be removed</li><li>were to be removed</li><li>was being removed</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>B. is to be removed</b></p><p><i lang="en">Soon children will have enough space</i> 把腾出场地说成接下来的事。中心主语 <i lang="en">the fence</i> 是单数，也是 <i lang="en">remove</i> 的承受者；<i lang="en">is to be removed</i> 表示已有拆除安排。<i lang="en">are removed</i> 的数不对；其余两项都把安排或过程放到了题干没有交代的过去。</p></div></details>
+    </section>
+</section></article><article data-page="future-progressive-perfect" data-g="1" aria-label="将来进行、完成与完成进行" hidden>
+<section class="tense-time">
+  <h2>将来进行、完成与完成进行</h2>
+  <p>校报记者 Lin 计划明早八点到十点采访参展同学。把明早九点定为同一个参照点，可以说九点正在做什么、截至九点完成了多少轮，或者到那时累计做了多久。</p>
+  <figure class="ft-axis" aria-label="以明早九点为参照的三种观察角度">
+    <div class="ft-clock" aria-hidden="true"><span>08:00</span><span>09:00 · 参照点</span><span>10:00</span></div>
+    <div class="ft-axis-row">
+      <div class="ft-track" aria-hidden="true"><span class="ft-running"></span></div>
+      <p class="ft-label">将来进行：九点落在采访过程中</p>
+      <p class="manual-example" lang="en">At nine tomorrow, Lin <mark>will be interviewing</mark> students.</p>
+    </div>
+    <div class="ft-axis-row">
+      <div class="ft-track" aria-hidden="true"><span class="ft-count"></span><span class="ft-count"></span></div>
+      <p class="ft-label">将来完成：截至九点，预计已有两轮采访完成</p>
+      <p class="manual-example" lang="en">By nine tomorrow, Lin <mark>will have interviewed</mark> two teams.</p>
+    </div>
+    <div class="ft-axis-row">
+      <div class="ft-track" aria-hidden="true"><span class="ft-duration"></span></div>
+      <p class="ft-label">将来完成进行：截至九点，采访共进行了一小时</p>
+      <p class="manual-example" lang="en">By nine tomorrow, Lin <mark>will have been interviewing</mark> students for an hour.</p>
+    </div>
+    <figcaption class="manual-caption">九点既可以是正在采访的时刻，也可以是回头数采访次数或累计时长的界点。三句话可以同时为真。</figcaption>
+  </figure>
+  <aside class="manual-note"><strong>区分</strong>　<i lang="en">I'll send the report by ten.</i> 是答应不晚于十点发出；<i lang="en">By ten, I'll have sent the report.</i> 是站在十点回看，到时这件事已办妥。<i lang="en">by</i> 只给界点，两种形式都可搭配。<i lang="en">will have been doing</i> 突出累计时长，单靠这个形式无法断定九点后还做不做。</aside>
+  <section class="t-bank" data-question-id="bank-tense-2024-nankai-platform-04" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2024 天津南开中学上学期月考三，第 4 题</p><p class="t-question" lang="en">—Mom, is Dad coming to pick us up?
+—Yes. I am sure he <span class="t-blank" aria-label="待填空"></span> on the platform when we pull into the station.</p><ol lang="en" type="A"><li>stands</li><li>stood</li><li>has stood</li><li>will be standing</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>D. will be standing</b></p><p>问的是列车进站那一刻，爸爸会在做什么。<i lang="en">when we pull into the station</i> 把观察点放到将来，<i lang="en">will be standing</i> 写爸爸当时正在站台上等人。这里没有在清点到那时完成的事。</p></div></details>
+    </section><section class="t-bank" data-question-id="bank-tense-2025-twelve-schools-driving-15" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2025 天津十二区重点学校联考二，第 15 题</p><p class="t-question" lang="en">—Will you take over when we exit the highway? I feel a little tired.
+—Certainly. You <span class="t-blank" aria-label="待填空"></span> for about three hours by that time.</p><ol lang="en" type="A"><li>have driven</li><li>have been driving</li><li>will have been driving</li><li>will be driving</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>C. will have been driving</b></p><p><i lang="en">by that time</i> 回指驶出高速、准备换司机的时刻；那是将来。<i lang="en">for about three hours</i> 给出到那时为止的驾驶时长，也解释了前一句为什么说累。用 <i lang="en">will have been driving</i>，把驾驶过程向前累计到那个界点。</p></div></details>
+    </section>
+</section></article><article data-page="future-in-past" data-g="1" aria-label="过去将来：从过去看后来的事" hidden>
+<section class="tense-time">
+  <h2>过去将来：从过去看后来的事</h2>
+  <p>周一，Lin 说周二去采访。周三转述时，周二相对于今天已经过去；但这句话转述的是她<strong>周一</strong>的打算。</p>
+  <dl class="ft-lines">
+    <div><dt>周一的原话</dt><dd><p class="manual-example" lang="en">Lin: “I <mark>will interview</mark> the coach tomorrow.”</p><span>说话当时，“明天”指周二。</span></dd></div>
+    <div><dt>周三的转述</dt><dd><p class="manual-example" lang="en">On Monday, Lin said she <mark>would interview</mark> the coach the following day.</p><span>先找到过去的 <i lang="en">said</i>，再从那一天往后算。<i lang="en">the following day</i> 保留了“周一之后一天”的意思。</span></dd></div>
+    <div><dt>后来究竟如何</dt><dd><p class="manual-example" lang="en">Lin <mark>interviewed</mark> the coach on Tuesday.</p><span>这是另说的一件事实；仅凭 <i lang="en">said she would interview</i> 尚不能确定采访成行。</span></dd></div>
+  </dl>
+  <p>过去的意图可写 <i lang="en">She was going to interview the coach.</i>；当时已约好，可写 <i lang="en">She said she was interviewing the coach the next day.</i>；过去某一刻马上就要发生，可写 <i lang="en">She was about to ask her first question when the lights went out.</i>。最后一句由“灯灭了”引出中断，<i lang="en">was about to</i> 本身只表示当时即将开始。</p>
+  <aside class="manual-note"><strong>区分</strong>　<i lang="en">would interview</i> 在这句中是从周一往后看；<i lang="en">When she was at school, she would interview a different team every week.</i> 中同一个 <i lang="en">would</i> 表示过去反复发生的习惯。带假设条件时还可表示设想的结果，须结合上下文判断。</aside>
+</section></article><article data-page="time-condition-clauses" data-g="1" aria-label="时间和条件从句的将来指向" hidden>
+<section class="tense-time">
+  <h2>时间和条件从句的将来指向</h2>
+  <dl class="ft-lines">
+    <div><dt>时间：列车到站时</dt><dd><p class="manual-example" lang="en">I'll text you <mark>when the train arrives</mark>.</p><span>从句给主句的“发消息”定时间。列车还没到，<i lang="en">arrives</i> 仍指将来。</span></dd></div>
+    <div><dt>询问：列车何时到站</dt><dd><p class="manual-example" lang="en">I don't know <mark>when the train will arrive</mark>.</p><span>从句是 <i lang="en">know</i> 的宾语，说明“不知道”的具体内容，<i lang="en">will arrive</i> 可以指将来。</span></dd></div>
+    <div><dt>条件：如果晚点</dt><dd><p class="manual-example" lang="en">Call the editor <mark>if the train is late</mark>.</p><span>晚点是打电话的条件。主句也可用祈使句、<i lang="en">can</i> 或 <i lang="en">might</i> 等；不要求有 <i lang="en">will</i>。</span></dd></div>
+    <div><dt>询问：是否晚点</dt><dd><p class="manual-example" lang="en">Ask the attendant <mark>if the train will be late</mark>.</p><span>从句是“问什么”，<i lang="en">if</i> 相当于“是否”。</span></dd></div>
+  </dl>
+  <div class="ft-nesting">
+    <p class="manual-caption">题库原题填回 · 2023 天津第一次，第 13 题</p>
+    <p class="manual-example" lang="en">Some restaurants are happy to provide a free cake / <mark>[if you let them know in advance / <span class="ft-inside">that you will be bringing a group for a birthday party</span>]</mark>.</p>
+    <p>绿色的 <i lang="en">if</i> 从句给“提供免费蛋糕”设条件，谓语是 <i lang="en">let</i>；棕色的 <i lang="en">that</i> 从句嵌在其中，说明要告知的内容。<i lang="en">will be bringing</i> 属于内层，不受外层时态选择限制。</p>
+  </div>
+  <aside class="manual-note"><strong>区分</strong>　<i lang="en">When you have finished the report, send it to me.</i>　用现在完成写将来“写完再发”；<i lang="en">If you're still working at six, call me.</i> 用现在进行写六点可能仍在持续的情况。条件句里也可能见到表意愿的 <i lang="en">will</i>，如 <i lang="en">If Lin will take the first interview, we can start on time.</i>，意为“如果她肯负责第一场”。</aside>
+</section></article><article data-page="time-adverb-scope" data-g="1" aria-label="时间词修饰哪个谓语" hidden>
+<section class="tense-time">
+  <h2>时间词修饰哪个谓语</h2>
+  <p>机器检修完成后的对话里，故障发生、修理完成和恢复运行可以落在不同时间。时间词说明的是对应的那件事。</p>
+  <div class="ft-nesting">
+    <p class="manual-example" lang="en">The machine broke down <mark>yesterday</mark> / but it has <mark>now</mark> been fixed / and will be back in service <mark>soon</mark>.</p>
+  </div>
+  <dl class="ft-lines">
+    <div><dt lang="en">yesterday → broke down</dt><dd>昨天坏的；这并不说明昨天就修好了。</dd></div>
+    <div><dt lang="en">now → has been fixed</dt><dd>现在已经修好；<i lang="en">now</i> 提示当前结果，不能据此认定修理正在进行。</dd></div>
+    <div><dt lang="en">soon → will be back in service</dt><dd>机器不久后会重新投入使用。修好是一件事，投入使用是另一件事。</dd></div>
+  </dl>
+  <aside class="manual-note"><strong>区分</strong>　<i lang="en">for twenty minutes</i> 只给时长：<i lang="en">They worked for twenty minutes yesterday</i> 写昨天那一段，<i lang="en">They have been working for twenty minutes</i> 从现在往回算。<i lang="en">since eight</i> 标出起点，句子还要交代延续到何时；<i lang="en">by eight</i> 给界点，须根据上下文确定是过去还是将来的八点。<i lang="en">since</i> 引出理由时译为“既然”，不再是时间线索。</aside>
+  <section class="t-bank" data-question-id="tj-2023-second-08" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2023 天津第二次，第 8 题</p><p class="t-question" lang="en">The wooden tower that <span class="t-blank" aria-label="待填空"></span> will be open to tourists soon, and the work is almost finished.</p><ol lang="en" type="A"><li>is being restored</li><li>is restored</li><li>is restoring</li><li>restores</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>A. is being restored</b></p><p><i lang="en">soon</i> 修饰主句 <i lang="en">will be open</i>，指不久将对游客开放。空格在修饰 <i lang="en">the wooden tower</i> 的定语从句中；<i lang="en">the work is almost finished</i> 说明修复快收尾但还没有完成，塔接受修复，所以选 <i lang="en">is being restored</i>。</p></div></details>
+    </section>
+</section></article><aside class="group-recall" data-g="1" hidden><h3>考点辨析</h3><p>I’ll call you when she arrives. 对照 I’ll tell you when she will arrive. 两个 when 从句各起什么作用？</p><details><summary>查看解析</summary><div class="recall-answer">前者给 <em lang="en">call</em> 定时间：她一到，我就打电话给你。后者是 <em lang="en">tell</em> 所告知的内容：我会告诉你她几点到。只有前者是时间状语从句。</div></details></aside><article data-page="passive-form-matrix" data-g="2" aria-label="被动语态的形式与时态" hidden><section class="tv-card"><h2>被动语态的形式与叙述焦点</h2><p>通知全班“合照拍好了”，可以让照片作主语。主动句与被动句讲的是同一次拍摄：改变的是叙述焦点，时间和动作阶段不变。</p><table class="tv-ledger tv-matrix"><caption>同一张班级合照：主动与被动</caption><thead><tr><th scope="col">时间关系</th><th scope="col">主动：摄影师作主语</th><th scope="col">被动：照片作主语</th></tr></thead><tbody><tr><th scope="row">报道往事</th><td><span class="tv-en" lang="en">Last Friday, the photographer took the class photo.</span></td><td><span class="tv-en" lang="en">Last Friday, the class photo <mark class="tv-chain">was</mark> <mark class="tv-part">taken</mark>.</span></td></tr><tr><th scope="row">当时正在进行</th><td><span class="tv-en" lang="en">At ten, the photographer <mark class="tv-chain">was</mark> taking the class photo.</span></td><td><span class="tv-en" lang="en">At ten, the class photo <mark class="tv-chain">was being</mark> <mark class="tv-part">taken</mark>.</span></td></tr><tr><th scope="row">结果连到现在</th><td><span class="tv-en" lang="en">The photographer <mark class="tv-chain">has</mark> taken the class photo.</span></td><td><span class="tv-en" lang="en">The class photo <mark class="tv-chain">has been</mark> <mark class="tv-part">taken</mark>.</span></td></tr><tr><th scope="row">到过去某时已完成</th><td><span class="tv-en" lang="en">By the time Mia arrived, the photographer <mark class="tv-chain">had</mark> taken the class photo.</span></td><td><span class="tv-en" lang="en">By the time Mia arrived, the class photo <mark class="tv-chain">had been</mark> <mark class="tv-part">taken</mark>.</span></td></tr></tbody></table><div class="tv-key"><span><mark class="tv-chain">was being</mark> 助动词链</span><span><mark class="tv-part">taken</mark> 被动结构的过去分词</span></div><aside class="tv-note"><p><b>区分：</b><span class="tv-en" lang="en">was being taken</span> 表示观察时拍摄正在进行；<span class="tv-en" lang="en">had been taken</span> 表示观察之前已经拍完。<span class="tv-en" lang="en">has been printing</span> 中 <span class="tv-en" lang="en">been + printing</span> 表示持续或反复的打印过程；<span class="tv-en" lang="en">has been printed</span> 中 <span class="tv-en" lang="en">been + printed</span> 表示某物已经被印出。</p></aside><section class="t-bank" data-question-id="tj-2021-second-04" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2021 天津第二次，第 4 题</p><p class="t-question" lang="en">Mark is a genius. By the time he graduated, he <span class="t-blank" aria-label="待填空"></span> jobs by a dozen computer companies.</p><ol lang="en" type="A"><li>has offered</li><li>has been offered</li><li>had offered</li><li>had been offered</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>D. had been offered</b></p><p><span class="tv-en" lang="en">by the time he graduated</span> 把参照点定在毕业时，工作邀约在此前已发出，因此用 <span class="tv-en" lang="en">had</span>。发邀约的是电脑公司，Mark 收到邀约，因此用 <span class="tv-en" lang="en">been offered</span>。把接受者放到句首以后，<span class="tv-en" lang="en">jobs</span> 仍然是宾语。题目没有说他已接受哪份工作。</p></div></details>
+    </section><section class="t-bank" data-question-id="tj-2023-second-08" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2023 天津第二次，第 8 题</p><p class="t-question" lang="en">The wooden tower that <span class="t-blank" aria-label="待填空"></span> will be open to tourists soon, and the work is almost finished.</p><ol lang="en" type="A"><li>is being restored</li><li>is restored</li><li>is restoring</li><li>restores</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>A. is being restored</b></p><p><span class="tv-en" lang="en">that</span> 指木塔，木塔接受修复，排除 <span class="tv-en" lang="en">is restoring / restores</span>。<span class="tv-en" lang="en">the work is almost finished</span> 表示修复还差一点才完成，选 <span class="tv-en" lang="en">is being restored</span>；<span class="tv-en" lang="en">is restored</span> 不突出眼下正在进行的过程。<span class="tv-en" lang="en">soon</span> 说明什么时候开放，管的是主句的 <span class="tv-en" lang="en">will be open</span>，不是修复的时间。</p></div></details>
+    </section><details class="tv-more"><summary>将来、情态和其他形式</summary><table class="tv-ledger "><caption>其他常用组合</caption><thead><tr><th scope="col">形式</th><th scope="col">例句</th><th scope="col">时间或情态关系</th></tr></thead><tbody><tr><th scope="row">一般现在</th><td><span class="tv-en" lang="en">Class photos are taken outdoors.</span></td><td>班级合照一般在室外拍。</td></tr><tr><th scope="row">现在进行</th><td><span class="tv-en" lang="en">The photo is being taken now.</span></td><td>此刻正在拍。</td></tr><tr><th scope="row">将来与过去将来</th><td><span class="tv-en" lang="en">It will be taken on Friday. / They said it would be taken on Friday.</span></td><td>前一句从现在展望周五；后一句从说话的那时展望周五。后一句不保证实际拍了。</td></tr><tr><th scope="row">将来完成</th><td><span class="tv-en" lang="en">By noon, the photo will have been taken.</span></td><td>预计到中午时已经拍完。</td></tr><tr><th scope="row">情态与正式安排</th><td><span class="tv-en" lang="en">The photo must be taken today. / It is to be taken after lunch.</span></td><td>must 表要求；is to 表安排。</td></tr><tr><th scope="row">情态完成被动</th><td><span class="tv-en" lang="en">It must have been taken before noon. / It should have been taken before noon.</span></td><td>must 表对先前情况的把握；should 可表示预期或评价，是否实际拍了仍需看语境。</td></tr></tbody></table><aside class="tv-note"><p><b>低频组合：</b><span class="tv-en" lang="en">The yearbook has been being edited for two weeks.</span> 在语法上能够构成，却很少这样说。通常改为主动句 <span class="tv-en" lang="en">The editors have been working on the yearbook for two weeks.</span>。<span class="tv-en" lang="en">will be being edited</span> 也是较少见的组合，可按需要改成 <span class="tv-en" lang="en">They will be editing it.</span>。</p></aside><dl class="tv-pairs"><div><dt>双宾语</dt><dd><span class="tv-en" lang="en">A school offered Mia a place. → Mia was offered a place.</span> 提升接受者 <span class="tv-en" lang="en">Mia</span> 后仍可保留 <span class="tv-en" lang="en">a place</span>；也可说 <span class="tv-en" lang="en">A place was offered to Mia.</span>。</dd></div><div><dt>介词、小品词</dt><dd><span class="tv-en" lang="en">The children were looked after. / The event was called off.</span> 中的 <span class="tv-en" lang="en">after / off</span> 属于原动词组合，不能丢。</dd></div><div><dt>施事与时间截止</dt><dd><span class="tv-en" lang="en">taken by the photographer</span> 交代施事；<span class="tv-en" lang="en">taken by noon</span> 给出时间界点。施事不明或不重要时，完全可以不写。</dd></div><div><dt>get 被动与使役</dt><dd><span class="tv-en" lang="en">The camera got damaged.</span> 是口语里描述相机受损的说法。<span class="tv-en" lang="en">Mia had the camera repaired.</span> 表示 Mia 让别人修相机；<span class="tv-en" lang="en">Mia had repaired the camera before the fair began.</span> 中修理者是 Mia，<span class="tv-en" lang="en">had repaired</span> 是过去完成。</dd></div></dl><p class="tv-reference">语法参考：<a href="https://dictionary.cambridge.org/us/grammar/british-grammar/passive-forms" target="_blank" rel="noopener">Cambridge English Grammar Today：Passive: forms</a></p></details></section></article><article data-page="voice-boundaries" data-g="2" aria-label="被动、系表与主动形式表被动" hidden><section class="tv-card"><h2>被动语态、系表结构与主动形式表被动意义</h2><p>物作主语，既可以报告它受到处理，也可以描述它的性质、状态或变化。判断语态要看本句的动词怎样使用。</p><table class="tv-ledger tv-matrix"><caption>出版活动里的四种结构</caption><thead><tr><th scope="col">结构</th><th scope="col">例句</th><th scope="col">判断依据</th></tr></thead><tbody><tr><th scope="row">事件被动</th><td><span class="tv-en" lang="en">The yearbook was printed on Friday.</span></td><td>年鉴接受印刷；周五交代这件事发生的时间。</td></tr><tr><th scope="row">中动结构</th><td><span class="tv-en" lang="en">The yearbook sells well.</span></td><td>主动形式描述年鉴的销售表现。改成 was sold 就在报告某次出售，意思变了。</td></tr><tr><th scope="row">系表状态</th><td><span class="tv-en" lang="en">The school shop was still closed at ten.</span></td><td><span class="tv-en" lang="en">still</span> 强调状态延续。<span class="tv-en" lang="en">The shop was closed by the manager at nine.</span> 则写关店这个动作。</td></tr><tr><th scope="row">不及物用法</th><td><span class="tv-en" lang="en">The yearbook came out in May.</span></td><td><span class="tv-en" lang="en">come out</span> 表示出版、面世，在此没有宾语。若要用事件被动，换一个能带宾语的动词：<span class="tv-en" lang="en">It was published in May.</span>。</td></tr></tbody></table><aside class="tv-note"><p><b>区分：</b><span class="tv-en" lang="en">The door opened.</span> 只交代门打开这一变化；<span class="tv-en" lang="en">The door was opened.</span> 把它说成由外部动作打开。对于 <span class="tv-en" lang="en">happen / occur / arrive</span> 的常用不及物义，不能凭空加 <span class="tv-en" lang="en">be</span> 改成被动。</p></aside><h3>主语是动作对象，却不用被动形式</h3><dl class="tv-pairs"><div><dt>need + doing / 被动不定式</dt><dd><span class="tv-en" lang="en">The cover needs replacing.</span> 可改成 <span class="tv-en" lang="en">The cover needs to be replaced.</span>。要被换的是封面。</dd></div><div><dt>be worth + doing</dt><dd><span class="tv-en" lang="en">The introduction is worth reading.</span> 表示“引言值得读”，<span class="tv-en" lang="en">reading</span> 的对象就是主语。常用结构是 <span class="tv-en" lang="en">worth doing</span>。</dd></div><div><dt>easy、comfortable 等 + to do</dt><dd><span class="tv-en" lang="en">The introduction is easy to read.</span> 中，引言是读的对象，不再重复 <span class="tv-en" lang="en">it</span>。<span class="tv-en" lang="en">This chair is comfortable to sit on.</span> 中的 <span class="tv-en" lang="en">on</span> 仍要保留。</dd></div><div><dt>名词 + to do</dt><dd><span class="tv-en" lang="en">We have some pages to proofread.</span> 暗含 <span class="tv-en" lang="en">we</span> 校对；<span class="tv-en" lang="en">There are some pages to be proofread.</span> 只说明还有几页待校对。</dd></div></dl><details class="tv-more"><summary>同一个动词的义项也会改变语态</summary><p><span class="tv-en" lang="en">The soup tastes good.</span> 中 <span class="tv-en" lang="en">taste</span> 是系动词，<span class="tv-en" lang="en">good</span> 作表语；<span class="tv-en" lang="en">The soup was tasted by a judge.</span> 中 <span class="tv-en" lang="en">taste</span> 意为“品尝”，可以用被动。</p><p><span class="tv-en" lang="en">belong to</span>、<span class="tv-en" lang="en">consist of</span> 和表示拥有的 <span class="tv-en" lang="en">have</span> 通常不用普通被动。不能据此判所有状态义都不用被动：<span class="tv-en" lang="en">be known / be loved</span> 是常见形式。</p><p class="tv-reference">语法参考：<a href="https://dictionary.cambridge.org/us/grammar/british-grammar/passive-typical-errors" target="_blank" rel="noopener">Cambridge English Grammar Today：Passive: typical errors</a></p></details></section></article><aside class="group-recall" data-g="2" hidden><h3>考点辨析</h3><p>The hall has been decorated 与 The hall is being decorated 分别在交代什么？</p><details><summary>查看解析</summary><div class="recall-answer">第一句交代现在已有布置结果；第二句交代布置正在进行。两句都由礼堂承受动作，都用被动。</div></details></aside><article data-page="agreement-head-coordination" data-g="3" aria-label="主语中心词与并列结构" hidden><section class="tv-card"><h2>主语中心、并列与就近一致</h2><p>先划出本分句的主语，再找中心词。离谓语更近的名词，有时只是主语里的修饰语或插入的附带成分。</p><figure class="tv-register"><figcaption>运动会名单：分清主语中心、附带成分与真正并列</figcaption><div class="tv-trace"><p><span class="tv-en" lang="en">[<mark class="tv-head">The list</mark> <span class="tv-attach">of runners</span>] <mark class="tv-verb">is</mark> on the desk.</span></p><p><span class="tv-en" lang="en">of runners</span> 属于主语短语，但决定单复数的是 <span class="tv-en" lang="en">list</span>。</p></div><div class="tv-trace"><p><span class="tv-en" lang="en">[<mark class="tv-head">The captain</mark>], <span class="tv-attach">along with the other runners</span>, <mark class="tv-verb">is</mark> warming up.</span></p><p><span class="tv-en" lang="en">along with</span> 引出附带成分；与 <span class="tv-en" lang="en">together with / as well as</span> 类似，不等于 <span class="tv-en" lang="en">and</span>。</p></div><div class="tv-trace"><p><span class="tv-en" lang="en">[<mark class="tv-head">The captain and the other runners</mark>] <mark class="tv-plural">are</mark> warming up.</span></p><p><span class="tv-en" lang="en">and</span> 把两项真正并列为主语，这里指多人，因此用复数。</p></div></figure><aside class="tv-note"><p><b>区分：</b>只把 <span class="tv-en" lang="en">along with</span> 改成 <span class="tv-en" lang="en">and</span>，就把附带提及变成了整个主语的一部分；谓语由 <span class="tv-en" lang="en">is</span> 改为 <span class="tv-en" lang="en">are</span>。<span class="tv-en" lang="en">A and B</span> 若实际同指一人、一物或一个整体，还需按所指判断。</p></aside><section class="t-bank" data-question-id="coverage-tenses-12" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2022天津第二次，第 5 题</p><p class="t-question" lang="en">Critical reasoning, together with problem-solving, <span class="t-blank" aria-label="待填空"></span> teenagers to make better decisions.</p><ol lang="en" type="A"><li>prepare</li><li>prepares</li><li>is preparing</li><li>are preparing</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>B. prepares</b></p><p>主语中心是 <span class="tv-en" lang="en">critical reasoning</span>；<span class="tv-en" lang="en">together with problem-solving</span> 是附带成分。题目说这项能力通常怎样帮助青少年，选一般现在时的 <span class="tv-en" lang="en">prepares</span>。<span class="tv-en" lang="en">prepare</span> 错在复数，<span class="tv-en" lang="en">is preparing</span> 虽为单数，却把普遍作用说成正在发生的活动。</p></div></details>
+    </section><section class="t-bank" data-question-id="tj-2023-first-14" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2023 天津第一次，第 14 题</p><p class="t-question" lang="en">Human impact on the animal kingdom, such as hunting and destruction of habitats, <span class="t-blank" aria-label="待填空"></span> a reduction in the population of certain species in the past three decades.</p><ol lang="en" type="A"><li>has caused</li><li>have caused</li><li>was causing</li><li>were causing</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>A. has caused</b></p><p>主语中心是单数 <span class="tv-en" lang="en">impact</span>。<span class="tv-en" lang="en">on the animal kingdom</span> 限定影响的对象，<span class="tv-en" lang="en">such as hunting and destruction of habitats</span> 列举具体影响方式，都不改变主语的数。<span class="tv-en" lang="en">in the past three decades</span> 在此表示截至当前的累计，故用 <span class="tv-en" lang="en">has caused</span>。</p></div></details>
+    </section><details class="tv-more"><summary>each、并列、倒装与从句主语</summary><dl class="tv-pairs"><div><dt>each / every 与附加 each</dt><dd><span class="tv-en" lang="en">Each runner has a race number.</span> 按每人分别说，用单数。<span class="tv-en" lang="en">The runners each have a race number.</span> 的主语仍是 <span class="tv-en" lang="en">the runners</span>，<span class="tv-en" lang="en">each</span> 不改变复数。</dd></div><div><dt>and 指同一人</dt><dd><span class="tv-en" lang="en">Our coach and team manager is Ms Li.</span> 两个职务由同一个人担任。<span class="tv-en" lang="en">Our coach and our team manager are both here.</span> 在此指两个人。</dd></div><div><dt>选择并列与就近</dt><dd><span class="tv-en" lang="en">Either the coach or the runners are responsible.</span> 高中考试通常就近选 <span class="tv-en" lang="en">are</span>。<span class="tv-en" lang="en">neither…nor / not only…but also</span> 连的是两个主语时同理；它们连接宾语时不参与主谓一致。</dd></div><div><dt>there be 与前置地点</dt><dd><span class="tv-en" lang="en">There is a list on the desk. / There are two lists on the desk.</span> 真正说明存在的是后面的名词短语。若并列项目的数不同，考题通常按靠近谓语的第一项处理。<span class="tv-en" lang="en">On the desk are two lists.</span> 同样由 <span class="tv-en" lang="en">two lists</span> 决定。</dd></div><div><dt>非谓语与从句作主语</dt><dd><span class="tv-en" lang="en">Checking the list takes time.</span> 中动名词短语作主语；<span class="tv-en" lang="en">Whether the race will go ahead depends on the weather.</span> 把一个问题整体看待，谓语用单数。单个不定式作主语时也通常用单数。</dd></div></dl><p class="tv-reference">语法参考：<a href="https://dictionary.cambridge.org/us/grammar/british-grammar/subject-verb-agreement" target="_blank" rel="noopener">Cambridge English Grammar Today：Subject–verb agreement</a></p></details></section></article><article data-page="agreement-quantity-collective-relative" data-g="3" aria-label="数量短语、集合名词与从句" hidden><section class="tv-card"><h2>数量结构、集合名词与从句的一致</h2><table class="tv-ledger tv-matrix"><caption>数量结构：到底在说数值、整体还是成员？</caption><thead><tr><th scope="col">结构</th><th scope="col">成对例句</th><th scope="col">决定谓语的依据</th></tr></thead><tbody><tr><th scope="row">the number of / a number of</th><td><span class="tv-en" lang="en">The number of volunteers <mark class="tv-verb">is</mark> rising.<br>A number of volunteers <mark class="tv-plural">are</mark> waiting outside.</span></td><td><span class="tv-en" lang="en">the number</span> 说人数这个数值；<span class="tv-en" lang="en">a number of</span> 表示“若干”，说的是多位志愿者。</td></tr><tr><th scope="row">百分比、分数及部分</th><td><span class="tv-en" lang="en">Thirty percent of the budget <mark class="tv-verb">has</mark> been spent.<br>Thirty percent of the tickets <mark class="tv-plural">have</mark> been sold.</span></td><td>百分数相同。<span class="tv-en" lang="en">budget</span> 指一笔预算，用单数；<span class="tv-en" lang="en">tickets</span> 指许多张票，用复数。<span class="tv-en" lang="en">most of / plenty of / a lot of</span> 也先看所指。</td></tr><tr><th scope="row">时间、距离、金额</th><td><span class="tv-en" lang="en">Three hours <mark class="tv-verb">is</mark> enough.<br>Three hours <mark class="tv-plural">have</mark> passed.</span></td><td>上句把三小时看成一个时长；下句报告三个小时已经过去。</td></tr></tbody></table><details class="tv-more"><summary>集合名词、each of 与固定数量结构</summary><dl class="tv-pairs"><div><dt>集合名词作整体或强调成员</dt><dd><span class="tv-en" lang="en">The team has decided to enter the race.</span> 看整个队的决定；英式英语可说 <span class="tv-en" lang="en">The team are changing into their kits.</span>，分别看队员。要明确也可说 <span class="tv-en" lang="en">The team members are changing.</span>。</dd></div><div><dt>词尾与语法数</dt><dd><span class="tv-en" lang="en">The police are investigating.</span> 用复数。<span class="tv-en" lang="en">The news is encouraging. / The equipment is ready.</span> 用单数。<span class="tv-en" lang="en">works</span> 指多件作品，<span class="tv-en" lang="en">work</span> 指工作通常不可数。</dd></div><div><dt>each of / none of</dt><dd><span class="tv-en" lang="en">Each of the teams has a captain.</span> 按成员逐个看，高中正式语境中 <span class="tv-en" lang="en">either / neither of</span> 也常配单数。<span class="tv-en" lang="en">None of the money has been spent. / None of the volunteers have arrived.</span> 的对象不同，<span class="tv-en" lang="en">none</span> 不是固定单数。</dd></div><div><dt>固定数量结构</dt><dd><span class="tv-en" lang="en">A pair of shoes is missing. / Two pairs of shoes are missing.</span> 一双或两双决定单复数。<span class="tv-en" lang="en">Many a runner has withdrawn. / More than one runner has withdrawn.</span> 虽涉及多人，高中规范仍用单数。</dd></div></dl><p class="tv-reference">语法参考：<a href="https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/group-nouns" target="_blank" rel="noopener">British Council LearnEnglish：Group nouns</a></p></details><figure class="tv-register"><figcaption>定语从句：按本分句的主语及所指判断</figcaption><div class="tv-trace"><p><span class="tv-en" lang="en">Mia is one of the <mark class="tv-head">runners</mark> [who <mark class="tv-plural">train</mark> here].</span></p><p>先圈出“在这里训练的跑者”这一组，再说 Mia 是其中之一。主句由 <span class="tv-en" lang="en">Mia</span> 决定；<span class="tv-en" lang="en">who</span> 回指那些跑者，从句用复数。</p></div><div class="tv-trace"><p><span class="tv-en" lang="en">Mia is the <mark class="tv-head">only one</mark> of our runners [who <mark class="tv-verb">is</mark> going to the final].</span></p><p>这里说本队只有 Mia 进入决赛；从句指向唯一的那个人，谓语用单数。按从句实际限定的对象判断。</p></div><div class="tv-trace"><p><span class="tv-en" lang="en">The route [that <mark class="tv-head">she</mark> <mark class="tv-verb">knows</mark>] is shorter.</span></p><p><span class="tv-en" lang="en">that</span> 是 <span class="tv-en" lang="en">knows</span> 的宾语；从句主语是 <span class="tv-en" lang="en">she</span>。先行词若改成复数 <span class="tv-en" lang="en">routes</span>，也不会使 <span class="tv-en" lang="en">knows</span> 变成 <span class="tv-en" lang="en">know</span>。</p></div></figure><aside class="tv-note"><p><b>区分：</b><span class="tv-en" lang="en">The photos, most of which were blurred, were retaken.</span> 中 <span class="tv-en" lang="en">most of which</span> 指多数照片。<span class="tv-en" lang="en">The race was postponed, which was disappointing.</span> 中 <span class="tv-en" lang="en">which</span> 指推迟比赛这件事，按一件事用单数。</p></aside><section class="t-bank" data-question-id="coverage-tenses-1" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2025天津第二次，第 4 题</p><p class="t-question" lang="en">Deng Jiaxian was one of the 23 scientists who <span class="t-blank" aria-label="待填空"></span> awarded for their extraordinary contributions to China&#x27;s “two bombs, one satellite” project.</p><ol lang="en" type="A"><li>was</li><li>were</li><li>has</li><li>have</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>B. were</b></p><p>先读 <span class="tv-en" lang="en">the 23 scientists who were awarded</span>：从句说明这 23 位科学家都获得了表彰。<span class="tv-en" lang="en">who</span> 回指复数 <span class="tv-en" lang="en">scientists</span>，因此用 <span class="tv-en" lang="en">were awarded</span>。主句的 <span class="tv-en" lang="en">was</span> 由 <span class="tv-en" lang="en">Deng Jiaxian</span> 决定，不能带进定语从句。</p></div></details>
+    </section><details class="tv-more"><summary>两道百分比原题对照</summary><section class="t-bank" data-question-id="coverage-tenses-15" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2022天津第一次，第 13 题</p><p class="t-question" lang="en">In the past ten years, one percent of our company&#x27;s profits <span class="t-blank" aria-label="待填空"></span> given to local charities.</p><ol lang="en" type="A"><li>has been</li><li>have been</li><li>was</li><li>were</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>B. have been</b></p><p><span class="tv-en" lang="en">in the past ten years</span> 在此把捐赠累计到现在。<span class="tv-en" lang="en">one percent</span> 不是看数字 1，而要看 <span class="tv-en" lang="en">of our company’s profits</span>；<span class="tv-en" lang="en">profits</span> 是复数，选 <span class="tv-en" lang="en">have been given</span>。</p></div></details>
+    </section><section class="t-bank" data-question-id="coverage-tenses-29" aria-label="题库原题">
+    <p class="t-source">题库原题 · 2025天津南开中学开学考，第 27 题</p><p class="t-question" lang="en">Over the past decade, ten percent of the city&#x27;s budget <span class="t-blank" aria-label="待填空"></span> invested in environmental protection.</p><ol lang="en" type="A"><li>has been</li><li>have been</li><li>was</li><li>were</li></ol>
+    <details><summary>查看答案与依据</summary><div class="manual-note"><p lang="en"><b>A. has been</b></p><p><span class="tv-en" lang="en">over the past decade</span> 在此把投入累计到现在。<span class="tv-en" lang="en">the city’s budget</span> 指一笔预算，所以即使比例为 10%，仍选单数的 <span class="tv-en" lang="en">has been invested</span>。</p></div></details>
+    </section></details></section></article><aside class="group-recall" data-g="3" hidden><h3>考点辨析</h3><p>The number of applicants has risen. A number of applicants have withdrawn. 为什么用不同的助动词？</p><details><summary>查看解析</summary><div class="recall-answer">前句主语指「人数」这一个数值；后句 <em lang="en">a number of applicants</em> 表示「许多申请者」，谓语用复数。</div></details></aside></div>
+<footer hidden><button class="turn" data-prev></button><span class="counter"></span><button class="turn" data-next></button></footer>
+</main>
+<script>
+const moduleId = 'tenses';
+const config = window.__GRAMMAR_CARD_EMBED__;
+const pages = Array.from(document.querySelectorAll('article[data-page]'));
+const groups = Array.from(document.querySelectorAll('.group-nav'));
+const main = document.querySelector('#manual');
+const map = document.querySelector('#overview');
+const back = document.querySelector('.back-map');
+const previous = document.querySelector('[data-prev]');
+const next = document.querySelector('[data-next]');
+let current;
+
+function report() {
+  if (config) parent.postMessage({type:'grammar-cards-state', module:moduleId, unitId:current?.dataset.page || null, manualOverview: !current, height:Math.ceil(main.getBoundingClientRect().height)}, '*');
+}
+
+function show(target, userAction) {
+  current = pages.find(p => p.dataset.page === target);
+  const groupId = current?.dataset.g;
+  const unit = current?.dataset.page || 'overview';
+  const inGroup = pages.filter(p => p.dataset.g === groupId);
+  const i = pages.indexOf(current);
+  const lastInGroup = current && current === inGroup[inGroup.length-1];
+  map.hidden = Boolean(current);
+  document.querySelector('footer').hidden = back.hidden = !current;
+  pages.forEach(p => { p.hidden = current !== p; });
+  groups.forEach(g => { g.hidden = g.dataset.g !== groupId; });
+  document.querySelectorAll('.group-recall').forEach(r => { r.hidden = !lastInGroup || r.dataset.g !== groupId; });
+  document.querySelectorAll('.group-nav a').forEach(a => {
+    if (a.dataset.target === unit) a.setAttribute('aria-current','page');
+    else a.removeAttribute('aria-current');
+  });
+  if (current) {
+    previous.dataset.target = pages[i-1]?.dataset.page || 'overview';
+    previous.textContent = i === 0 ? '‹ 本章总览' : '‹ 上一张';
+    next.dataset.target = pages[i+1]?.dataset.page || 'overview';
+    next.textContent = i === pages.length-1 ? '回到本章总览' : lastInGroup ? '下一组 ›' : '下一张 ›';
+    document.querySelector('.counter').textContent = '本组 ' + (inGroup.indexOf(current)+1) + ' / ' + inGroup.length;
+  }
+  document.querySelector('#course').href = 'index.html?topic=' + moduleId + '&chapter=handbook' + (current ? '&unit='+encodeURIComponent(unit) : '');
+  if (userAction) {
+    if (config) parent.postMessage({type:'grammar-manual-turn',module:moduleId,unitId:current?.dataset.page || null}, '*');
+    else {
+      if (location.hash.slice(1) !== unit) history.pushState(null,'','#'+encodeURIComponent(unit));
+      main.scrollIntoView({block:'start'});
+    }
+    const focus = current?.querySelector('h2,h3') || map.querySelector('h2');
+    focus.tabIndex = -1;
+    focus.focus({preventScroll:true});
+  }
+  requestAnimationFrame(report);
+}
+main.addEventListener('click', event => {
+  const link = event.target.closest('[data-target]');
+  if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  show(link.dataset.target,true);
+});
+function showRequested() {
+  show(config ? config.unitId : location.hash.slice(1),false);
+}
+showRequested();
+if (!config) window.addEventListener('hashchange',showRequested);
+new ResizeObserver(report).observe(main);
+</script>
+</body>
+</html>

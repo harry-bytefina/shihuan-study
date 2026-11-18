@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>情景交际 · 十环</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="site-editorial.css">
+<script>
+if (window.__GRAMMAR_CARD_EMBED__) document.documentElement.dataset.embedded = 'true';
+</script>
+<style>
+:root{--pen:var(--accent);--edge:var(--rule)}
+[hidden]{display:none!important}
+button,summary{font:inherit;cursor:pointer;color:inherit}
+.manual-page{--manual-inset:28px;min-width:0;padding-block:40px 82px}
+html[data-embedded],html[data-embedded] body{background:transparent}
+html[data-embedded] .manual-page{padding:0 3px 4px}
+html[data-embedded] :is(.site-header,.skip,.standalone){display:none}
+body.prepositions{--pen:#2f6056}
+body.nonfinite{--pen:#68452d}
+.cover{padding:11px var(--manual-inset);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:3px 14px}
+.cover h1{margin:0;font:700 1.18rem/1.45 var(--serif)}
+.standalone{font-size:.83rem;margin-inline-end:auto}
+.turn{color:var(--accent);border:1px solid var(--deep-rule);border-radius:2px;background:transparent;min-height:36px;min-width:0;padding:4px 11px}
+.turn:hover:not(:disabled){background:var(--wash);border-color:var(--accent)}
+.chapter-map{padding:32px var(--manual-inset)}
+.chapter-map h2{color:var(--accent);font:650 1.65rem/1.35 var(--serif);margin:0 0 12px}
+.chapter-map>p{margin:0 0 16px;max-width:56em;line-height:1.7}
+.anchor-example{padding:14px 16px;background:var(--wash);border-inline-start:2px solid var(--pen);overflow-wrap:anywhere}
+.anchor-example p{margin:.55em 0}
+.anchor-example table{width:100%;border-collapse:collapse;text-align:left}
+.anchor-example th,.anchor-example td{padding:7px;border-bottom:1px solid var(--edge)}
+.anchor-example caption{font-weight:600;padding:7px 0;text-align:left}
+.anchor-example td span[lang=en]{display:block;font-family:var(--serif)}
+.outline{border-top:3px double var(--deep-rule);margin-bottom:28px}
+.outline-group{display:grid;grid-template-columns:minmax(170px,30%) 1fr;gap:8px 24px;padding:12px 0;border-bottom:1px solid var(--edge)}
+.outline-group h3{font:650 19px/1.45 var(--serif);margin:0}
+.outline a{text-decoration:none}.outline a:hover{text-decoration:underline}
+.group-number,.section-number{font:550 12px/1.6 var(--sans);color:var(--muted);font-variant-numeric:tabular-nums;display:inline-block}
+.group-number{padding-right:10px;vertical-align:.15em}
+.section-number{min-width:2.4em}
+.outline-links{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px}
+.outline-links a{display:flex;align-items:baseline;color:var(--ink);font-size:14px;line-height:1.5;padding:4px 0}
+.group-nav p{margin:4px 0}
+@media(max-width:780px){.outline-group{grid-template-columns:1fr}.outline-links{padding-inline-start:1.6em}}
+@media(max-width:500px){.outline-links{grid-template-columns:1fr}.outline-group{gap:4px}.outline-links a{padding:5px 0}}
+.group-nav,.group-recall{padding:14px var(--manual-inset)}
+.group-nav{border-bottom:1px solid var(--edge)}
+.group-nav h2{margin:0;color:var(--accent);font:650 1.25rem/1.45 var(--serif)}
+.group-nav p{font-size:14px;color:var(--muted)}
+.group-nav nav{display:flex;flex-wrap:wrap;gap:3px 12px;margin-top:7px}
+.group-nav a{padding:4px 1px;border-bottom:2px solid transparent;text-decoration:none;font:14px/1.45 var(--sans)}
+.group-nav a:hover{text-decoration:underline}
+.group-nav a[aria-current]{color:var(--ink);border-color:var(--accent);background:var(--wash)}
+.group-recall{border-top:3px double var(--deep-rule)}
+.group-recall h3{font:600 19px/1.5 var(--serif);margin:0}
+.group-recall summary{color:var(--pen)}.group-recall p{margin:6px 0}
+.back-map{border:0;background:none;font:14px/1.4 var(--sans);color:var(--accent);text-decoration:underline;text-underline-offset:3px;padding:7px 0}
+article[data-page]{max-width:846px;min-width:0;margin-inline:auto;padding:34px var(--manual-inset);overflow-wrap:break-word}
+article h2,article h3,article h4{font-family:var(--serif);line-height:1.35;text-wrap:balance}
+article h2{font-size:2rem;margin:0 0 .65em}
+article h3{font-size:1.4rem;margin:.65em 0}
+article p{margin:.65em 0}
+article svg{max-width:100%}
+.manual-example,article blockquote{font-family:var(--serif);font-size:1.17em}
+.manual-caption{color:var(--muted);font-size:.9em}
+.manual-note,.manual-reading{border-inline-start:3px solid var(--pen);padding:.3em 1em;margin:1em 0}
+.manual-table, article table{width:100%;border-collapse:collapse;text-align:left;font-size:.96em;line-height:1.55}
+article th,article td{padding:.6em .7em;vertical-align:top;border-bottom:1px solid var(--edge)}
+article th{color:var(--pen);background:var(--wash)}
+article summary{color:var(--pen);font-weight:600}
+.manual-reading blockquote{margin:12px 0}
+footer{border-top:1px solid var(--edge);padding:12px var(--manual-inset);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.counter{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:760px){
+  .manual-page{--manual-inset:0px;padding-block:22px 52px}
+  .chapter-map,article[data-page]{padding-block:24px}
+  .chapter-map h2{font-size:1.45rem}
+  article h2{font-size:1.55rem}
+  article h3{font-size:1.22rem}
+  article td,article th{padding:.45em .38em}
+  .turn{padding-inline:8px}
+}
+@media(min-width:651px){article[data-page].turning{animation:page-in .21s ease-out}@keyframes page-in{from{opacity:.72;transform:translateX(7px)}to{opacity:1;transform:none}}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+body.situational {--pen:#285950;--sit-line:#c6d0c7;--sit-reply:#e9efe7;--sit-ink:#254d45;--sit-note:#654858;--sit-note-bg:#f2eaed}
+.sit-manual h2 {font-size:27px;margin:0 0 10px}
+.sit-manual h3 {font-size:20px;margin:24px 0 8px}
+.sit-manual p {margin:.6em 0}
+.sit-manual .sit-lead {max-width:46em}
+.sit-en,.sit-manual [lang=en],.sit-exchange [lang=en] {font:1.13em/1.55 var(--serif)}
+.sit-signal {color:var(--sit-ink);background:var(--sit-reply);padding:0 .12em}
+.sit-result {color:var(--sit-note);background:var(--sit-note-bg);padding:0 .12em}
+.sit-exchange {border-block:1px solid var(--sit-line);margin:13px 0;padding:5px 0}
+.sit-exchange figcaption {color:var(--pen);font-weight:650;margin:5px 12px}
+.sit-turn {display:grid;grid-template-columns:1.65rem minmax(0,1fr);align-items:baseline;padding:7px 10px;gap:8px}
+.sit-turn+.sit-turn {background:var(--sit-reply)}
+.sit-turn p {margin:0}
+.sit-turn .sit-role {color:var(--pen);font:650 13px/1.5 var(--sans);font-variant-numeric:tabular-nums}
+.sit-turn .sit-note {font:14px/1.55 var(--sans);color:var(--muted);margin-top:2px}
+.sit-pairs {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px;margin:12px 0}
+.sit-pairs>div {display:block;padding:9px 0;border-top:1px solid var(--sit-line);overflow-wrap:anywhere}
+.sit-pairs dt {font-weight:650;color:var(--pen)}
+.sit-pairs dd {margin:4px 0 0}
+.sit-matrix {display:grid;margin:12px 0;border-block:1px solid var(--sit-line)}
+.sit-line {display:grid;grid-template-columns:minmax(5.5rem,26%) minmax(0,1fr);gap:8px 12px;padding:8px 10px}
+.sit-line+.sit-line {border-top:1px solid var(--sit-line)}
+.sit-line dt {font-weight:650;color:var(--pen)}
+.sit-line dd {margin:0;overflow-wrap:anywhere}
+.sit-outcome {margin:11px 0;padding:6px 12px;border-inline-start:3px solid var(--sit-note);background:var(--sit-note-bg)}
+.sit-outcome b {color:var(--sit-note)}
+.sit-stage {display:flex;flex-wrap:wrap;align-items:center;gap:5px 10px;padding:8px 0;border-block:1px solid var(--sit-line)}
+.sit-stage span {font-weight:600;color:var(--sit-ink)}
+.sit-stage b {color:var(--sit-note)}
+.sit-switch {position:relative;min-inline-size:0;padding:0;border:0;margin:14px 0}
+.sit-switch legend {color:var(--pen);font-weight:650;padding:0}
+.sit-switch input {position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%)}
+.sit-tabs {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--sit-line)}
+.sit-tabs label {cursor:pointer;display:grid;place-items:center;text-align:center;overflow-wrap:anywhere;padding:6px 4px;border-bottom:3px solid transparent;font:15px/1.45 var(--serif)}
+.sit-tabs label:hover {background:var(--sit-reply)}
+.sit-case {display:none}
+#sit-you:checked ~ .sit-tabs [for=sit-you],#sit-i:checked ~ .sit-tabs [for=sit-i],#sit-offer:checked ~ .sit-tabs [for=sit-offer] {border-color:var(--pen);color:var(--pen);background:var(--sit-reply)}
+#sit-you:focus-visible ~ .sit-tabs [for=sit-you],#sit-i:focus-visible ~ .sit-tabs [for=sit-i],#sit-offer:focus-visible ~ .sit-tabs [for=sit-offer] {outline:2px solid var(--pen);outline-offset:2px}
+#sit-you:checked ~ .sit-case-you,#sit-i:checked ~ .sit-case-i,#sit-offer:checked ~ .sit-case-offer {display:block}
+.sit-exercise {margin:20px 0 0;padding-top:12px;border-top:1px solid var(--sit-line)}
+.sit-intro .sit-exercise {margin:0;padding:0;border:0}
+.sit-exercise .sit-source {margin:0;color:var(--muted);font-size:13px}
+.sit-exercise .sit-exchange {margin:8px 0}
+.sit-blank {display:inline-block;width:3.8ch;border-bottom:1px solid currentColor}
+.sit-options {list-style-type:upper-alpha;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 20px;margin:8px 0 10px;padding-inline-start:1.7em;overflow-wrap:anywhere}
+.sit-options li::marker {color:var(--muted)}
+.sit-exercise summary {cursor:pointer;font-weight:650;color:var(--pen)}
+.sit-exercise summary:hover {text-decoration:underline;text-underline-offset:3px}
+.sit-reason {padding:5px 12px;margin:7px 0 12px;border-inline-start:3px solid var(--pen);background:var(--sit-reply)}
+@media(max-width:460px) {
+  .sit-pairs {grid-template-columns:minmax(0,1fr);gap:0}
+  .sit-options {grid-template-columns:minmax(0,1fr)}
+  .sit-turn {padding-inline:7px;gap:4px}
+  .sit-tabs label {font-size:14px}
+}
+
+</style>
+</head>
+<body class="situational">
+<header class="site-header"><div class="site-inner"><a class="brand" href="index.html" aria-label="十环"><img src="assets/zhang-shihuan-logo.svg" alt="" width="69" height="36"></a><nav class="site-nav" aria-label="主导航"><a href="external-practice.html">每日外刊</a><a href="index.html?view=study" aria-current="page">专题精讲</a><a href="cloze-pages/index.html">完形填空</a><a href="index.html?view=reading&amp;reading_type=comprehension">阅读理解</a></nav></div></header>
+<main id="manual" class="manual-page editorial-page">
+<header class="cover editorial-rail"><h1>情景交际</h1><a class="standalone" id="course" href="index.html?topic=situational&amp;chapter=handbook">在本章题卷中查看</a><button type="button" class="back-map" data-target="overview" hidden>返回本章总览</button></header>
+<section class="chapter-map" id="overview"><h2 tabindex="-1">考点目录</h2><nav aria-label="本章考点目录"><div class="outline"><section class="outline-group"><h3><a href="#unit-1" data-target="unit-1"><small class="group-number">01</small>话轮判断与固定表达</a></h3><ol class="outline-links"><li><a href="#unit-1" data-target="unit-1"><small class="section-number">1.1</small>问事实、问看法与请求行动</a></li><li><a href="#unit-2" data-target="unit-2"><small class="section-number">1.2</small>惊讶、质疑与鼓励</a></li><li><a href="#unit-3" data-target="unit-3"><small class="section-number">1.3</small>固定表达与下文证据</a></li></ol></section><section class="outline-group"><h3><a href="#unit-4" data-target="unit-4"><small class="group-number">02</small>请求、许可与帮助</a></h3><ol class="outline-links"><li><a href="#unit-4" data-target="unit-4"><small class="section-number">2.1</small>mind 问句与答语的否定范围</a></li><li><a href="#expanded-situational-1" data-target="expanded-situational-1"><small class="section-number">2.2</small>请求、许可与主动提供帮助</a></li></ol></section><section class="outline-group"><h3><a href="#expanded-situational-2" data-target="expanded-situational-2"><small class="group-number">03</small>观点回应、礼貌应答与约定</a></h3><ol class="outline-links"><li><a href="#expanded-situational-2" data-target="expanded-situational-2"><small class="section-number">3.1</small>观点分歧、事实确认与纠正</a></li><li><a href="#expanded-situational-3" data-target="expanded-situational-3"><small class="section-number">3.2</small>感谢、道歉、祝贺和安慰</a></li><li><a href="#expanded-situational-4" data-target="expanded-situational-4"><small class="section-number">3.3</small>建议、邀请与安排</a></li></ol></section><section class="outline-group"><h3><a href="#expanded-situational-5" data-target="expanded-situational-5"><small class="group-number">04</small>服务场景与信息确认</a></h3><ol class="outline-links"><li><a href="#expanded-situational-5" data-target="expanded-situational-5"><small class="section-number">4.1</small>投诉与补救</a></li><li><a href="#expanded-situational-6" data-target="expanded-situational-6"><small class="section-number">4.2</small>电话、问路和澄清</a></li></ol></section></div></nav><h2>典型题精析</h2><p>情景交际题要求选出能接上前一句、也能解释后一句的答语。涉及请求时，还要分清接下来由谁行动。</p><div class="anchor-example"><div class="sit-intro"><section class="sit-exercise" data-question-id="coverage-situational-13">
+        <p class="sit-source">题库原题 · 2026 天津河西质量调查一，第 7 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Would you mind if I opened the window? It&#x27;s a bit stuffy in here.</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span> I&#x27;ve got a cold and the wind might make me feel worse.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>Not at all. Go ahead.</li><li>Yes, please do.</li><li>I&#x27;d rather you didn&#x27;t.</li><li>Of course not. It&#x27;s fine.</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">C. I&#x27;d rather you didn&#x27;t.</strong></p><p>A 想开窗，A 是开窗的人。B 感冒了，认为吹风会加重不适，因而希望 A 别开窗。<i>I’d rather you didn’t.</i> 中 <i>didn’t</i> 省略的是 <i>open the window</i>。A 和 D 明确表示不介意；B 的 <i>please do</i> 同样是在请对方开窗，都与感冒和怕风的理由相反。</p></div></details>
+        </section></div></div></section>
+<section class="group-nav" data-g="0" hidden><h2><small class="group-number">01</small>话轮判断与固定表达</h2><p>同一个问句可能是在问事实、问看法或请人做事，前后两句决定答语的目的。</p><nav aria-label="本组知识点"><a href="#unit-1" data-target="unit-1"><small class="section-number">1.1</small>问事实、问看法与请求行动</a><a href="#unit-2" data-target="unit-2"><small class="section-number">1.2</small>惊讶、质疑与鼓励</a><a href="#unit-3" data-target="unit-3"><small class="section-number">1.3</small>固定表达与下文证据</a></nav></section><section class="group-nav" data-g="1" hidden><h2><small class="group-number">02</small>请求、许可与帮助</h2><p>请求对方做、征求许可自己做、主动替对方做，三者的执行人不同。</p><nav aria-label="本组知识点"><a href="#unit-4" data-target="unit-4"><small class="section-number">2.1</small>mind 问句与答语的否定范围</a><a href="#expanded-situational-1" data-target="expanded-situational-1"><small class="section-number">2.2</small>请求、许可与主动提供帮助</a></nav></section><section class="group-nav" data-g="2" hidden><h2><small class="group-number">03</small>观点回应、礼貌应答与约定</h2><p>区分答语是在确认事实、回应对方的感受，还是把某个安排定下来。</p><nav aria-label="本组知识点"><a href="#expanded-situational-2" data-target="expanded-situational-2"><small class="section-number">3.1</small>观点分歧、事实确认与纠正</a><a href="#expanded-situational-3" data-target="expanded-situational-3"><small class="section-number">3.2</small>感谢、道歉、祝贺和安慰</a><a href="#expanded-situational-4" data-target="expanded-situational-4"><small class="section-number">3.3</small>建议、邀请与安排</a></nav></section><section class="group-nav" data-g="3" hidden><h2><small class="group-number">04</small>服务场景与信息确认</h2><p>服务、电话和问路都涉及下一步行动，答语会说明谁该做什么。</p><nav aria-label="本组知识点"><a href="#expanded-situational-5" data-target="expanded-situational-5"><small class="section-number">4.1</small>投诉与补救</a><a href="#expanded-situational-6" data-target="expanded-situational-6"><small class="section-number">4.2</small>电话、问路和澄清</a></nav></section>
+<div id="pages"><article data-page="unit-1" data-g="0" aria-label="问事实、问看法与请求行动" hidden><section class="sit-manual">
+    <h2 tabindex="-1">问事实、问看法与请求行动</h2><p class="sit-lead">疑问句的形式只能帮你缩小范围。<i>Can you…?</i> 出现在临场对话里，往往要对方办一件事；用于问一个人的能力时，同一句式也可以真的问“会不会”。</p>
+    <dl class="sit-matrix"><div class="sit-line"><dt>问事实</dt><dd><span lang="en">What time does the train leave?</span> 答发车时间。</dd></div><div class="sit-line"><dt>问看法</dt><dd><span lang="en">How did you find the exhibition?</span> 问“你觉得展览怎么样？”可以答 <i>I found it fascinating.</i></dd></div><div class="sit-line"><dt>请求行动</dt><dd><span lang="en">Can you pass me the salt?</span> 饭桌上问的是“请递一下盐”，<i>Here you are</i> 能完成请求。</dd></div></dl><div class="sit-outcome"><b>区分</b>　同是 <i>find</i>：<i>How did you find the exhibition?</i>（看完后）问评价；<i>How did you find my address?</i> 往往问“你怎么找到我的地址的”。结合宾语和对话场景判断。</div><section class="sit-exercise" data-question-id="coverage-situational-14">
+        <p class="sit-source">题库原题 · 2026 天津河东质量检测一，第 1 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">How did you find the film Zootopia 2?</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. I can&#x27;t think too highly of it.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>It makes no sense</li><li>It&#x27;s up to you</li><li>It&#x27;s awful</li><li>It&#x27;s really amazing</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">D. It&#x27;s really amazing</strong></p><p><i>How did you find the film?</i> 问的是观影感受。<i>I can’t think too highly of it.</i> 是说评价再高也不过分，属于高度赞扬，不能按一个 <i>can’t</i> 判成差评。A、C 都给了负面评价，B 则把决定交给对方。</p></div></details>
+        </section><section class="sit-exercise" data-question-id="coverage-situational-3">
+        <p class="sit-source">题库原题 · 2023 天津第二次，第 5 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Is it all right if I leave a bit earlier?</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. I can finish the report on my own.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>Sure thing</li><li>Help yourself</li><li>Forget it</li><li>That depends</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">A. Sure thing</strong></p><p>问句是在征求早退许可；<i>on my own</i> 说明 B 能独自完成报告，所以放行。<i>Help yourself</i> 多用于让客人自行取用食物、饮料等；<i>That depends</i> 表示尚未决定，这里已经有了明确许可。</p></div></details>
+        </section>
+    </section></article><article data-page="unit-2" data-g="0" aria-label="惊讶、质疑与鼓励" hidden><section class="sit-manual">
+    <h2 tabindex="-1">惊讶、质疑与鼓励</h2><p class="sit-lead">听到出乎预料的消息，英语常用反问式表达惊讶。答语如果转向鼓励，其后通常能找到对方尚未完成的目标或正面临的困难。</p>
+    <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">They’ve asked me to speak in front of the whole school.</p><p class="sit-note">A 告知一件事。</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><mark class="sit-signal">Really?</mark> I thought they’d asked the head teacher.</p><p class="sit-note">B 原先以为是校长发言，因此感到意外。</p></div></div></figure><figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">I don’t think I can finish the speech in time.</p><p class="sit-note">A 担心来不及写完。</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><mark class="sit-signal">You can do it.</mark> You’ve already finished the outline.</p><p class="sit-note">B 指出已有进展，鼓励 A 继续。</p></div></div></figure><div class="sit-outcome"><b>区分</b>　<i>Are you sure?</i> 请对方再确认，<i>You can’t be serious!</i> 表示自己难以相信。<i>I beg to differ</i> 用于表达不同意见，语气较正式；它本身不表示惊讶。</div><section class="sit-exercise" data-question-id="coverage-situational-4">
+        <p class="sit-source">题库原题 · 2023 天津第一次，第 6 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Mike will announce his retirement from professional soccer next week.</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>! He&#x27;s only 25 and still very fit.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>I don&#x27;t mind at all</li><li>I couldn&#x27;t agree more</li><li>You will make it</li><li>You can&#x27;t be serious</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">D. You can&#x27;t be serious</strong></p><p><i>only 25</i> 和 <i>still very fit</i> 说明答话人没料到迈克这么早退役，故用 <i>You can’t be serious</i> 表示难以置信。对话中没有意见可供赞同，也没有人正期待鼓励。</p></div></details>
+        </section>
+    </section></article><article data-page="unit-3" data-g="0" aria-label="固定表达与下文证据" hidden><section class="sit-manual">
+    <h2 tabindex="-1">固定表达与下文证据</h2><p class="sit-lead">不少固定表达只能回应某一种意思。先看答语里紧跟空格的内容：它会告诉你说话者是认得、赞同，还是愿意听下去。</p>
+    <dl class="sit-matrix"><div class="sit-line"><dt>想起一点</dt><dd><span lang="en">That rings a bell, but I can’t remember where I heard it.</span> “有印象”和“说不出在哪听到”可以同时成立。</dd></div><div class="sit-line"><dt>愿意听</dt><dd><span lang="en">I’m all ears. What did you have in mind?</span> 让对方把想法讲出来；此时还没有答应按那想法办。</dd></div><div class="sit-line"><dt>让对方决定</dt><dd><span lang="en">It’s up to you. Either day works for me.</span> 两天都方便，把选择权交给对方。</dd></div><div class="sit-line"><dt>认可理由</dt><dd><span lang="en">That’s a good point. I hadn’t thought about the cost.</span> 对方提出了一个自己没想到的考虑因素。</dd></div></dl><div class="sit-outcome"><b>区分</b>　<i>You read my mind</i> 是“你说出了我也在想的事”；<i>I’m all ears</i> 是“你讲，我听”。前者说明想法已有交集，后者只说明愿意听。</div><section class="sit-exercise" data-question-id="coverage-situational-1">
+        <p class="sit-source">题库原题 · 2024 天津第二次，第 10 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Do you remember little Julien from Grade Two?</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en">Well, <span class="sit-blank" role="img" aria-label="待填空"></span>, but I can&#x27;t quite think who he is.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>it&#x27;s up to you</li><li>that&#x27;s a good point</li><li>I really envy you</li><li>that name rings a bell</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">D. that name rings a bell</strong></p><p><i>but I can’t quite think who he is</i> 说明 B 认不出这个人。<i>rings a bell</i> 只表示名字听着耳熟，与记不清人物并不矛盾。<i>That’s a good point</i> 需要上文有可评价的观点，这里问的是是否记得一个人。</p></div></details>
+        </section><section class="sit-exercise" data-question-id="bank-situational-2-transfer">
+        <p class="sit-source">题库原题 · 2025 天津第一次，第 10 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">What are you doing this weekend? Want to hang out?</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. Something fun in mind?</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>It&#x27;s a pity</li><li>I&#x27;m all ears</li><li>That&#x27;s enough</li><li>You are lucky</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">B. I&#x27;m all ears</strong></p><p>B 反问 <i>Something fun in mind?</i>，是在请 A 继续说计划。<i>I’m all ears</i> 表示愿意听；周末见不见，B 还没给答复。<i>That’s enough</i> 反而让对方别再说。</p></div></details>
+        </section>
+    </section></article><aside class="group-recall" data-g="0" hidden><h3>考点辨析</h3><p>对方问 How did you find the lecture? 如果你刚听完讲座，这句话通常问的是路线还是评价？</p><details><summary>查看解析</summary><div class="recall-answer"><p>问评价。可以答 <i>I found it much clearer than I’d expected.</i> 若想问怎么去讲座现场，常说 <i>How did you get to the lecture hall?</i></p></div></details></aside><article data-page="unit-4" data-g="1" aria-label="mind 问句与答语的否定范围" hidden><section class="sit-manual">
+    <h2 tabindex="-1">mind 问句与答语的否定范围</h2><p class="sit-lead">这类题先找动作的执行人，再判断答语中的 <i>not</i> 否定什么。两种问句都可以答 <i>No, not at all.</i>（不介意），但之后要动手的人不同。</p>
+    <figure class="sit-exchange"><figcaption>征求许可</figcaption><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Would you mind if <mark class="sit-signal">I</mark> switched off the light?</p><p class="sit-note">if 从句的主语是 I，A 申请自己关灯。</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en">No, not at all. <mark class="sit-result">Go ahead.</mark></p><p class="sit-note">B 不介意；由 A 关灯。</p></div></div></figure><figure class="sit-exchange"><figcaption>请对方做事</figcaption><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Would you mind <mark class="sit-signal">switching off</mark> the light?</p><p class="sit-note">-ing 的动作由被请求的 you 执行。</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en">No, not at all. <mark class="sit-result">I’ll do it now.</mark></p><p class="sit-note">B 不介意；由 B 关灯。</p></div></div></figure><dl class="sit-matrix"><div class="sit-line"><dt>不介意</dt><dd><i>Of course not.</i> = <i>Of course I don’t mind.</i> 省略的是 <i>mind</i>。</dd></div><div class="sit-line"><dt>请别这样</dt><dd><i>I’d rather you didn’t.</i> 省略的是具体动作，如 <i>switch off the light</i>。</dd></div><div class="sit-line"><dt>确有不便</dt><dd><i>Sorry, I’d rather you left it on. I’m still reading.</i> 说明希望对方保持原状，并给出理由。</dd></div></dl><div class="sit-outcome"><b>区分</b>　<i>Do you mind if I switch off the light?</i> 常用现在时；<i>Would you mind if I switched off the light?</i> 常用过去时形式表示措辞委婉。这两句都在征求接下来关灯的许可。<i>Never mind.</i> 常用来表示“没关系”或“算了”，不等于 <i>I don’t mind.</i></div><section class="sit-exercise" data-question-id="coverage-situational-31-transfer">
+        <p class="sit-source">题库原题 · 2019 天津第一次，第 3 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Edward, do you mind giving me a ride to the railway station?</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. I&#x27;d be glad to.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>Yes, I do</li><li>Of course not</li><li>Never mind</li><li>Go ahead</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">B. Of course not</strong></p><p><i>giving me a ride</i> 的执行人是被问到的 Edward。<i>Of course not</i> 否定的是 <i>mind</i>，即“当然不介意”；<i>I’d be glad to</i> 进一步确认他愿意开车。<i>Go ahead</i> 会把行动交回给问话人，方向错了。</p></div></details>
+        </section>
+    </section></article><article data-page="expanded-situational-1" data-g="1" aria-label="请求、许可与主动提供帮助" hidden><section class="sit-manual">
+    <h2 tabindex="-1">请求、许可与主动提供帮助</h2><p class="sit-lead">三种问法可以出现在同一个场景里。看主语，再看不定式或动词原形由谁执行：对方去做、自己获准去做，还是自己替对方做。</p>
+    <fieldset class="sit-switch"><legend>同一情境：动作由谁完成</legend><input type="radio" id="sit-you" name="sit-actor" checked><input type="radio" id="sit-i" name="sit-actor" ><input type="radio" id="sit-offer" name="sit-actor" ><div class="sit-tabs"><label for="sit-you" lang="en">Could you…?</label><label for="sit-i" lang="en">Could I…?</label><label for="sit-offer" lang="en">Would you like me to…?</label></div><div class="sit-case sit-case-you"><figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Could <mark class="sit-signal">you</mark> carry these boxes upstairs?</p><p class="sit-note">请求：A 请 B 搬箱子。</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en">Of course.</p><p class="sit-note">B 答应去搬。</p></div></div></figure></div><div class="sit-case sit-case-i"><figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Could <mark class="sit-signal">I</mark> use your trolley?</p><p class="sit-note">许可：A 想使用 B 的手推车。</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en">Sure. It’s by the door.</p><p class="sit-note">B 同意 A 使用。</p></div></div></figure></div><div class="sit-case sit-case-offer"><figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Would you like <mark class="sit-signal">me</mark> to carry those boxes?</p><p class="sit-note">提供帮助：A 提议自己去搬箱子。</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en">That would be great.</p><p class="sit-note">B 接受 A 的帮助。</p></div></div></figure></div></fieldset><dl class="sit-matrix"><div class="sit-line"><dt>答应请求</dt><dd><i>Sure. / With pleasure.</i> 表示被请求的人愿意做。</dd></div><div class="sit-line"><dt>准许行动</dt><dd><i>Yes, of course. / Go ahead.</i> 表示说话的人可以行动。</dd></div><div class="sit-line"><dt>接受或婉拒</dt><dd><i>That would be great.</i> 接受帮助；<i>Thanks, but I can manage.</i> 既致谢又说明自己能处理。</dd></div></dl><div class="sit-outcome"><b>区分</b>　<i>Can I help you?</i> 在商店里通常是店员主动提供服务，实际在问顾客需要什么。不能见到 <i>Can I</i> 就一律判为征求许可。</div><section class="sit-exercise" data-question-id="coverage-situational-30-transfer">
+        <p class="sit-source">题库原题 · 2019 天津第一次，第 1 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Everybody is helping out with dinner. Would you clean the fish?</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. I&#x27;d rather make the salad.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>A piece of cake</li><li>No problem</li><li>Couldn&#x27;t be better</li><li>Anything but that</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">D. Anything but that</strong></p><p>A 请 B 处理鱼。B 说 <i>I’d rather make the salad</i>，表明愿意帮忙，但想换一项任务。<i>Anything but that</i> 的 <i>that</i> 指处理鱼；A、B 两个选项都容易被理解成愿意处理鱼。</p></div></details>
+        </section><section class="sit-exercise" data-question-id="coverage-situational-48-transfer">
+        <p class="sit-source">题库原题 · 2015 重庆，第 5 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">I can drive you home.</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>, but are you sure it&#x27;s not too much trouble?</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>That would be great</li><li>Don&#x27;t bother</li><li>I&#x27;m afraid not</li><li>Take care</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">A. That would be great</strong></p><p><i>I can drive you home</i> 是 A 主动提出帮忙。B 先用 <i>That would be great</i> 表示接受，随后确认会不会给 A 添麻烦。<i>Don’t bother</i> 已经谢绝帮助，与接下来确认是否方便衔接不自然。</p></div></details>
+        </section>
+    </section></article><aside class="group-recall" data-g="1" hidden><h3>考点辨析</h3><p>Would you mind if I moved this chair? 与 Would you mind moving this chair? 如果对方答 Not at all，分别由谁搬？</p><details><summary>查看解析</summary><div class="recall-answer"><p>第一句由问话人搬，因为 <i>if</i> 从句的主语是 <i>I</i>；第二句由被问的人搬。<i>Not at all</i> 两次都表示“不介意”。</p></div></details></aside><article data-page="expanded-situational-2" data-g="2" aria-label="观点分歧、事实确认与纠正" hidden><section class="sit-manual">
+    <h2 tabindex="-1">观点分歧、事实确认与纠正</h2><p class="sit-lead">先找 <i>that</i> 或省略内容指向的完整命题。对一个判断表示赞同，和确认它确有其事，是两种回应。</p>
+    <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">So we have to hand in the form tomorrow?</p><p class="sit-note">A 核对提交期限。</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><mark class="sit-signal">That’s right.</mark> The office closes at five.</p><p class="sit-note">B 确认期限，并补充办公时间。</p></div></div></figure><figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">I think five o’clock is too early.</p><p class="sit-note">A 评价这个时间不合理。</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><mark class="sit-signal">I agree.</mark> Most of us will still be in class.</p><p class="sit-note">B 赞同这一评价，并给出理由。</p></div></div></figure><dl class="sit-matrix"><div class="sit-line"><dt>完全赞同</dt><dd><i>I couldn’t agree more.</i> = 已经赞同到不能更赞同。比较级与否定连用，这里的 <i>couldn’t</i> 不是反对。</dd></div><div class="sit-line"><dt>纠正一部分</dt><dd><i>Not exactly.</i> 表示对方只说对了一部分，或把事实说得过头，后面常补准确说法。</dd></div><div class="sit-line"><dt>纠正事实</dt><dd><i>Actually, it’s due next Friday, not this Friday.</i> 直接改正日期。</dd></div></dl><div class="sit-outcome"><b>区分</b>　<i>You’ve got me there.</i> 常用于承认自己答不上来或被问住了；不表示“你和我想的一样”。若后文直接给出相反观点，需要选表示不同意的答语。</div><section class="sit-exercise" data-question-id="coverage-situational-35-transfer">
+        <p class="sit-source">题库原题 · 2017 天津春，第 2 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">So he told you you&#x27;d got the job?</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. But he said they were impressed with me.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>Not exactly</li><li>That&#x27;s for sure</li><li>Don&#x27;t mention it</li><li>Sounds great</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">A. Not exactly</strong></p><p>A 推断的是“他告诉你被录用了”。B 只确认对方说过“他们对我印象很好”。印象好不等于收到录取通知，所以用 <i>Not exactly</i> 纠正这个推断。<i>That’s for sure</i> 会把录用当成确定消息。</p></div></details>
+        </section><section class="sit-exercise" data-question-id="coverage-situational-16">
+        <p class="sit-source">题库原题 · 2026 天津河北质量检测一，第 5 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">I think this contemporary abstract painting just looks like a mess of colours.</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. Actually, I find it quite meaningful.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>I beg to differ</li><li>You read my mind</li><li>I couldn&#x27;t agree more</li><li>You&#x27;ve got me there</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">A. I beg to differ</strong></p><p>A 的判断是“这幅画只是乱糟糟的色块”；B 接着说自己觉得画有内涵，故用 <i>I beg to differ</i> 表示不同意。<i>You read my mind</i> 和 <i>I couldn’t agree more</i> 都会把两人的观点说成一致。</p></div></details>
+        </section>
+    </section></article><article data-page="expanded-situational-3" data-g="2" aria-label="感谢、道歉、祝贺和安慰" hidden><section class="sit-manual">
+    <h2 tabindex="-1">感谢、道歉、祝贺和安慰</h2><p class="sit-lead">用“谁做了什么”定答语方向：帮忙的人回应感谢；受影响的人回应道歉；取得成绩的人接受祝贺；得知坏消息的人表达关心。</p>
+    <dl class="sit-pairs"><div class="sit-line"><dt>感谢 → 回应</dt><dd><i>Thanks for carrying the boxes. – My pleasure.</i> 受帮助的一方先道谢，帮忙的一方表示不客气。</dd></div><div class="sit-line"><dt>道歉 → 接受</dt><dd><i>I’m sorry I’m late. – That’s all right; we’ve only just started.</i> 对方迟到，说话人用“才刚开始”说明影响不大。</dd></div><div class="sit-line"><dt>祝贺 → 致谢</dt><dd><i>Congratulations on your scholarship! – Thank you.</i> 接受祝贺的一方道谢。</dd></div><div class="sit-line"><dt>坏消息 → 关心</dt><dd><i>I didn’t get the scholarship. – I’m sorry to hear that.</i> 此处 <i>sorry</i> 表示遗憾，没有承认过错。</dd></div></dl><div class="sit-outcome"><b>区分</b>　<i>Could you give me a hand? – With pleasure.</i> 动作还没做，答语表示愿意；<i>Thanks for your help. – My pleasure.</i> 已经帮过忙，答语回应感谢。这是常见搭配和应答位置，两种表达仍要放回具体对话判断。</div><section class="sit-exercise" data-question-id="coverage-situational-36">
+        <p class="sit-source">题库原题 · 2025 天津十二区重点学校联考二，第 10 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">I heard your company won the national innovation award. Congratulations!</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. Our team put in years of effort to make it happen.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>That&#x27;s all right</li><li>It&#x27;s my pleasure</li><li>You&#x27;re kidding</li><li>Thanks a million</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">D. Thanks a million</strong></p><p><i>Congratulations!</i> 是对获奖方表示祝贺，获奖方用 <i>Thanks a million</i> 致谢。<i>It’s my pleasure</i> 可以回应别人对自己帮忙的感谢；这里 A 在祝贺 B，感谢的方向不能倒。</p></div></details>
+        </section><section class="sit-exercise" data-question-id="coverage-situational-48">
+        <p class="sit-source">题库原题 · 2026 天津和平质量调查一，第 8 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">I&#x27;m sorry I forgot to bring your book.</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. I don&#x27;t need it right now anyway.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>It&#x27;s not a big deal</li><li>All right</li><li>With pleasure</li><li>You said it</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">A. It&#x27;s not a big deal</strong></p><p>A 为忘带书道歉。<i>I don’t need it right now</i> 说明没耽误 B 用书，因此 <i>It’s not a big deal</i> 是把影响说轻。<i>With pleasure</i> 是乐意答应做某事，前一句没有提出请求。</p></div></details>
+        </section>
+    </section></article><article data-page="expanded-situational-4" data-g="2" aria-label="建议、邀请与安排" hidden><section class="sit-manual">
+    <h2 tabindex="-1">建议、邀请与安排</h2><p class="sit-lead">建议是给出可选方案，邀请是问对方是否参加，安排则要把时间或行动落实。答语的关键在于：谈完以后，这件事到底定了没有。</p>
+    <dl class="sit-pairs"><div class="sit-line"><dt>提出建议</dt><dd><i>Why don’t we take the early train?</i> 提议坐早班车；<i>That makes sense.</i> 认可这个方案。</dd></div><div class="sit-line"><dt>接受邀请</dt><dd><i>Would you like to join us? – I’d love to. What time shall we meet?</i> 接受后开始商量见面时间。</dd></div><div class="sit-line"><dt>婉拒或改期</dt><dd><i>I’d love to, but I’m working on Friday. Would Saturday work?</i> 周五不去；周六是新提议，等对方确认。</dd></div><div class="sit-line"><dt>确认安排</dt><dd><i>Seven at the station, then? – That’s settled.</i> 时间地点已说清楚，答语表示就这样定了。</dd></div></dl><div class="sit-outcome"><b>区分</b>　<i>Sounds good.</i> 可以赞成一条建议；若后面跟着 <i>but I’ll have to check</i>，最终仍未确认。<i>There’s no hurry.</i> 表示不用急着开始或决定，不能当成敲定安排。</div><section class="sit-exercise" data-question-id="coverage-situational-28">
+        <p class="sit-source">题库原题 · 2025 天津部分区质量调查二，第 1 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Could you go shopping with me this afternoon?</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>, but I have to finish the report for tomorrow&#x27;s meeting.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>I&#x27;d love to</li><li>It&#x27;s hard to say</li><li>I don&#x27;t mind</li><li>It&#x27;s nothing</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">A. I&#x27;d love to</strong></p><p><i>I’d love to</i> 表示有意愿，<i>but I have to finish the report</i> 说明今天下午另有安排：接受邀约这一步没有发生。<i>I don’t mind</i> 表示不介意，不适合把后面的明确冲突当作无所谓。</p></div></details>
+        </section><section class="sit-exercise" data-question-id="bank-situational-2">
+        <p class="sit-source">题库原题 · 2025 天津第一次，第 1 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">OK. Let&#x27;s move on to the next phase.</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. We haven&#x27;t finished the last question yet.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>Go for it</li><li>There&#x27;s no hurry</li><li>Give it a try</li><li>That&#x27;s settled</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">B. There&#x27;s no hurry</strong></p><p><i>We haven’t finished the last question yet</i> 把当前进度拉回上一阶段。<i>There’s no hurry</i> 是让对方暂缓推进；<i>That’s settled</i> 会表示已经定下来，<i>Go for it</i> 则支持现在就行动。</p></div></details>
+        </section>
+    </section></article><aside class="group-recall" data-g="2" hidden><h3>考点辨析</h3><p>面对周五的邀请，对方答 I’d love to, but I’m on duty that evening. 周五的安排定了吗？</p><details><summary>查看解析</summary><div class="recall-answer"><p>没定。<i>I’d love to</i> 表示愿意参加，<i>but</i> 后的值班冲突限制了这次邀约。除非另约时间并确认，不能按已接受来理解。</p></div></details></aside><article data-page="expanded-situational-5" data-g="3" aria-label="投诉与补救" hidden><section class="sit-manual">
+    <h2 tabindex="-1">投诉与补救</h2><p class="sit-lead">先分清顾客遇到的障碍和店员提出的下一步。答语中“理解问题”“处理问题”“保证某种结果”的承诺程度不同。</p>
+    <div class="sit-stage"><span>指出问题</span><b aria-hidden="true">→</b><span>核实或解释</span><b aria-hidden="true">→</b><span>提出处理办法</span></div><figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">I ordered a medium, but you sent me a large.</p><p class="sit-note">顾客指出尺码不符。</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en">I’m sorry about that. Can I have your order number? I’ll <mark class="sit-signal">look into it</mark> for you.</p><p class="sit-note">店员要订单号核查；此时还没确认换货。</p></div></div></figure><dl class="sit-matrix"><div class="sit-line"><dt>核实</dt><dd><i>I’ll look into it.</i> 承诺去调查，处理结果尚未确定。</dd></div><div class="sit-line"><dt>替代办法</dt><dd><i>I can take your order over the phone.</i> 已经给出一种可行的下单方式。</dd></div><div class="sit-line"><dt>明确处理</dt><dd><i>I’ll send you a replacement today.</i> 许诺今天寄替换品，处理办法和时间都有了。</dd></div></dl><div class="sit-outcome"><b>区分</b>　<i>That’s fine</i> 出现在提供补救办法之前，可以表示“这个障碍可以绕开”。如果对方刚说退款没有到账，只答 <i>That’s fine</i> 而不说明处理办法，意思可能像是在轻描淡写、没有回应诉求。</div><section class="sit-exercise" data-question-id="coverage-situational-9">
+        <p class="sit-source">题库原题 · 2021 天津第二次，第 1 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">I was trying to place an order on your website, but I failed.</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. I can take your order over the phone.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>That&#x27;s fine</li><li>No way</li><li>My pleasure</li><li>Of course</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">A. That&#x27;s fine</strong></p><p>顾客下单失败，店员用 <i>That’s fine</i> 表示这不妨碍办理，再提出电话下单。<i>My pleasure</i> 通常接顾客的感谢；顾客这时描述的是遇到的问题。</p></div></details>
+        </section><section class="sit-exercise" data-question-id="coverage-situational-18">
+        <p class="sit-source">题库原题 · 2026 天津红桥一模，第 15 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">The T-shirt I received is not the same as what is shown online.</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>? But I promise you we&#x27;ll look into it right away.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>Who says</li><li>How come</li><li>What for</li><li>Why worry</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">B. How come</strong></p><p>顾客指出实物和网页展示不一致，<i>How come?</i> 表达对这个差异的意外。后一句承诺马上调查；<i>look into</i> 是查明原因，还没有承诺退款或换货。<i>What for?</i> 问用途或目的，<i>Who says?</i> 则会质疑顾客的说法。</p></div></details>
+        </section>
+    </section></article><article data-page="expanded-situational-6" data-g="3" aria-label="电话、问路和澄清" hidden><section class="sit-manual">
+    <h2 tabindex="-1">电话、问路和澄清</h2><p class="sit-lead">这些对话的答语往往决定对方的下一步：继续等候、按路线移动、重复刚才的话，或核对自己的理解。</p>
+    <dl class="sit-matrix"><div class="sit-line"><dt>电话：等候</dt><dd><span lang="en">Could I speak to Ms Chen? – Hold on. I’ll see if she’s free.</span> <i>Hold on</i> 与电话里的 <i>Hang on</i> 都可以表示稍等，保持通话。</dd></div><div class="sit-line"><dt>问路：给方位</dt><dd><span lang="en">How do I get to the library? – Go straight past the bank, then turn left at the next corner.</span> 先经过银行，再在下一个路口左转；<i>past</i> 给途经点，<i>at</i> 给转弯点。</dd></div><div class="sit-line"><dt>没听清：重复</dt><dd><span lang="en">Could you say that again? I didn’t catch the last part.</span> 请对方再说一遍。</dd></div><div class="sit-line"><dt>听到了：核对</dt><dd><span lang="en">Do you mean the first turning after the bank?</span> 把自己理解的路线复述出来，请对方确认。</dd></div></dl><div class="sit-outcome"><b>区分</b>　<i>Go ahead</i> 在电话或对话里可以让对方继续说，在许可场合可以说“你做吧”；<i>Go straight ahead</i> 才是路线上“直走”。<i>After you</i> 是让对方先走或先进去，<i>Hang on</i> 则是请对方稍等。</div><section class="sit-exercise" data-question-id="coverage-situational-2">
+        <p class="sit-source">题库原题 · 2023 天津第二次，第 1 题</p>
+        <figure class="sit-exchange"><div class="sit-turn"><span class="sit-role">A</span><div><p lang="en">Is Mr. Pearl available, please?</p></div></div><div class="sit-turn"><span class="sit-role">B</span><div><p lang="en"><span class="sit-blank" role="img" aria-label="待填空"></span>. I&#x27;ll just see if he is in the office.</p></div></div></figure>
+        <ol type="A" class="sit-options sit-en" lang="en"><li>After you</li><li>Hang on</li><li>With pleasure</li><li>Go ahead</li></ol>
+        <details><summary>查看答案与依据</summary><div class="sit-reason"><p><strong class="sit-en" lang="en">B. Hang on</strong></p><p>来电者问 Pearl 先生是否能接电话。<i>I’ll just see if he is in the office</i> 说明接线人要先去确认，所以用 <i>Hang on</i> 请来电者稍等，不要挂断。<i>Go ahead</i> 会让对方说下去或继续行动，等候与继续的方向相反。</p></div></details>
+        </section>
+    </section></article><aside class="group-recall" data-g="3" hidden><h3>考点辨析</h3><p>听到店员说 I’ll look into it right away，顾客能确定商家会退款吗？</p><details><summary>查看解析</summary><div class="recall-answer"><p>不能。<i>look into it</i> 表示马上核查；<i>We’ll issue a refund</i> 才明确表示会退款。</p></div></details></aside></div>
+<footer hidden><button class="turn" data-prev></button><span class="counter"></span><button class="turn" data-next></button></footer>
+</main>
+<script>
+const moduleId = 'situational';
+const config = window.__GRAMMAR_CARD_EMBED__;
+const pages = Array.from(document.querySelectorAll('article[data-page]'));
+const groups = Array.from(document.querySelectorAll('.group-nav'));
+const main = document.querySelector('#manual');
+const map = document.querySelector('#overview');
+const back = document.querySelector('.back-map');
+const previous = document.querySelector('[data-prev]');
+const next = document.querySelector('[data-next]');
+let current;
+
+function report() {
+  if (config) parent.postMessage({type:'grammar-cards-state', module:moduleId, unitId:current?.dataset.page || null, manualOverview: !current, height:Math.ceil(main.getBoundingClientRect().height)}, '*');
+}
+
+function show(target, userAction) {
+  current = pages.find(p => p.dataset.page === target);
+  const groupId = current?.dataset.g;
+  const unit = current?.dataset.page || 'overview';
+  const inGroup = pages.filter(p => p.dataset.g === groupId);
+  const i = pages.indexOf(current);
+  const lastInGroup = current && current === inGroup[inGroup.length-1];
+  map.hidden = Boolean(current);
+  document.querySelector('footer').hidden = back.hidden = !current;
+  pages.forEach(p => { p.hidden = current !== p; });
+  groups.forEach(g => { g.hidden = g.dataset.g !== groupId; });
+  document.querySelectorAll('.group-recall').forEach(r => { r.hidden = !lastInGroup || r.dataset.g !== groupId; });
+  document.querySelectorAll('.group-nav a').forEach(a => {
+    if (a.dataset.target === unit) a.setAttribute('aria-current','page');
+    else a.removeAttribute('aria-current');
+  });
+  if (current) {
+    previous.dataset.target = pages[i-1]?.dataset.page || 'overview';
+    previous.textContent = i === 0 ? '‹ 本章总览' : '‹ 上一张';
+    next.dataset.target = pages[i+1]?.dataset.page || 'overview';
+    next.textContent = i === pages.length-1 ? '回到本章总览' : lastInGroup ? '下一组 ›' : '下一张 ›';
+    document.querySelector('.counter').textContent = '本组 ' + (inGroup.indexOf(current)+1) + ' / ' + inGroup.length;
+  }
+  document.querySelector('#course').href = 'index.html?topic=' + moduleId + '&chapter=handbook' + (current ? '&unit='+encodeURIComponent(unit) : '');
+  if (userAction) {
+    if (config) parent.postMessage({type:'grammar-manual-turn',module:moduleId,unitId:current?.dataset.page || null}, '*');
+    else {
+      if (location.hash.slice(1) !== unit) history.pushState(null,'','#'+encodeURIComponent(unit));
+      main.scrollIntoView({block:'start'});
+    }
+    const focus = current?.querySelector('h2,h3') || map.querySelector('h2');
+    focus.tabIndex = -1;
+    focus.focus({preventScroll:true});
+  }
+  requestAnimationFrame(report);
+}
+main.addEventListener('click', event => {
+  const link = event.target.closest('[data-target]');
+  if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  show(link.dataset.target,true);
+});
+function showRequested() {
+  show(config ? config.unitId : location.hash.slice(1),false);
+}
+showRequested();
+if (!config) window.addEventListener('hashchange',showRequested);
+new ResizeObserver(report).observe(main);
+</script>
+</body>
+</html>

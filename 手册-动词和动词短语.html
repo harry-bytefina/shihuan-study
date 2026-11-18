@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>动词和动词短语 · 十环</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="site-editorial.css">
+<script>
+if (window.__GRAMMAR_CARD_EMBED__) document.documentElement.dataset.embedded = 'true';
+</script>
+<style>
+:root{--pen:var(--accent);--edge:var(--rule)}
+[hidden]{display:none!important}
+button,summary{font:inherit;cursor:pointer;color:inherit}
+.manual-page{--manual-inset:28px;min-width:0;padding-block:40px 82px}
+html[data-embedded],html[data-embedded] body{background:transparent}
+html[data-embedded] .manual-page{padding:0 3px 4px}
+html[data-embedded] :is(.site-header,.skip,.standalone){display:none}
+body.prepositions{--pen:#2f6056}
+body.nonfinite{--pen:#68452d}
+.cover{padding:11px var(--manual-inset);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:3px 14px}
+.cover h1{margin:0;font:700 1.18rem/1.45 var(--serif)}
+.standalone{font-size:.83rem;margin-inline-end:auto}
+.turn{color:var(--accent);border:1px solid var(--deep-rule);border-radius:2px;background:transparent;min-height:36px;min-width:0;padding:4px 11px}
+.turn:hover:not(:disabled){background:var(--wash);border-color:var(--accent)}
+.chapter-map{padding:32px var(--manual-inset)}
+.chapter-map h2{color:var(--accent);font:650 1.65rem/1.35 var(--serif);margin:0 0 12px}
+.chapter-map>p{margin:0 0 16px;max-width:56em;line-height:1.7}
+.anchor-example{padding:14px 16px;background:var(--wash);border-inline-start:2px solid var(--pen);overflow-wrap:anywhere}
+.anchor-example p{margin:.55em 0}
+.anchor-example table{width:100%;border-collapse:collapse;text-align:left}
+.anchor-example th,.anchor-example td{padding:7px;border-bottom:1px solid var(--edge)}
+.anchor-example caption{font-weight:600;padding:7px 0;text-align:left}
+.anchor-example td span[lang=en]{display:block;font-family:var(--serif)}
+.outline{border-top:3px double var(--deep-rule);margin-bottom:28px}
+.outline-group{display:grid;grid-template-columns:minmax(170px,30%) 1fr;gap:8px 24px;padding:12px 0;border-bottom:1px solid var(--edge)}
+.outline-group h3{font:650 19px/1.45 var(--serif);margin:0}
+.outline a{text-decoration:none}.outline a:hover{text-decoration:underline}
+.group-number,.section-number{font:550 12px/1.6 var(--sans);color:var(--muted);font-variant-numeric:tabular-nums;display:inline-block}
+.group-number{padding-right:10px;vertical-align:.15em}
+.section-number{min-width:2.4em}
+.outline-links{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px}
+.outline-links a{display:flex;align-items:baseline;color:var(--ink);font-size:14px;line-height:1.5;padding:4px 0}
+.group-nav p{margin:4px 0}
+@media(max-width:780px){.outline-group{grid-template-columns:1fr}.outline-links{padding-inline-start:1.6em}}
+@media(max-width:500px){.outline-links{grid-template-columns:1fr}.outline-group{gap:4px}.outline-links a{padding:5px 0}}
+.group-nav,.group-recall{padding:14px var(--manual-inset)}
+.group-nav{border-bottom:1px solid var(--edge)}
+.group-nav h2{margin:0;color:var(--accent);font:650 1.25rem/1.45 var(--serif)}
+.group-nav p{font-size:14px;color:var(--muted)}
+.group-nav nav{display:flex;flex-wrap:wrap;gap:3px 12px;margin-top:7px}
+.group-nav a{padding:4px 1px;border-bottom:2px solid transparent;text-decoration:none;font:14px/1.45 var(--sans)}
+.group-nav a:hover{text-decoration:underline}
+.group-nav a[aria-current]{color:var(--ink);border-color:var(--accent);background:var(--wash)}
+.group-recall{border-top:3px double var(--deep-rule)}
+.group-recall h3{font:600 19px/1.5 var(--serif);margin:0}
+.group-recall summary{color:var(--pen)}.group-recall p{margin:6px 0}
+.back-map{border:0;background:none;font:14px/1.4 var(--sans);color:var(--accent);text-decoration:underline;text-underline-offset:3px;padding:7px 0}
+article[data-page]{max-width:846px;min-width:0;margin-inline:auto;padding:34px var(--manual-inset);overflow-wrap:break-word}
+article h2,article h3,article h4{font-family:var(--serif);line-height:1.35;text-wrap:balance}
+article h2{font-size:2rem;margin:0 0 .65em}
+article h3{font-size:1.4rem;margin:.65em 0}
+article p{margin:.65em 0}
+article svg{max-width:100%}
+.manual-example,article blockquote{font-family:var(--serif);font-size:1.17em}
+.manual-caption{color:var(--muted);font-size:.9em}
+.manual-note,.manual-reading{border-inline-start:3px solid var(--pen);padding:.3em 1em;margin:1em 0}
+.manual-table, article table{width:100%;border-collapse:collapse;text-align:left;font-size:.96em;line-height:1.55}
+article th,article td{padding:.6em .7em;vertical-align:top;border-bottom:1px solid var(--edge)}
+article th{color:var(--pen);background:var(--wash)}
+article summary{color:var(--pen);font-weight:600}
+.manual-reading blockquote{margin:12px 0}
+footer{border-top:1px solid var(--edge);padding:12px var(--manual-inset);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.counter{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:760px){
+  .manual-page{--manual-inset:0px;padding-block:22px 52px}
+  .chapter-map,article[data-page]{padding-block:24px}
+  .chapter-map h2{font-size:1.45rem}
+  article h2{font-size:1.55rem}
+  article h3{font-size:1.22rem}
+  article td,article th{padding:.45em .38em}
+  .turn{padding-inline:8px}
+}
+@media(min-width:651px){article[data-page].turning{animation:page-in .21s ease-out}@keyframes page-in{from{opacity:.72;transform:translateX(7px)}to{opacity:1;transform:none}}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+body.verbs {--pen:#1d554e;--v-rule:#bac9bc;--v-accent:#e5efe6;--v-blue:#1a4c67;--v-object:#e5edf0;--v-result:#f0e7d2}
+.verbs .v-lesson>h2 {font-size:33px;margin-bottom:16px}
+.verbs [lang=en] {font-family:var(--serif)}
+.v-line {font-family:var(--serif);font-size:21px;line-height:1.55}
+.verbs mark {padding:.05em .2em;color:var(--ink);background:var(--v-accent);box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.verbs mark.v-object {background:var(--v-object);color:var(--v-blue)}
+.verbs mark.v-result {background:var(--v-result)}
+.v-alignment {margin:21px 0;border-block:1px solid var(--v-rule)}
+.v-alignment figcaption,.verbs .v-table caption {color:var(--pen);font-weight:650;text-align:left;padding:8px 0}
+.v-compare {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}
+.v-compare>div {min-width:0;padding:10px 0 12px;border-top:1px solid var(--v-rule)}
+.v-compare h4,.v-note h4 {margin:0;font:650 16px/1.45 var(--sans);color:var(--pen)}
+.v-compare p {margin:.38em 0}
+.v-compare p:not(.v-line) {color:var(--muted);font-size:15px}
+.v-table {margin:20px 0}
+.verbs .anchor-example .v-table {margin:0}
+.verbs .v-table table {table-layout:auto}
+.verbs .v-table th {background:var(--v-accent)}
+.verbs .v-table td:first-child {font-weight:550}
+.v-note {border-inline-start:3px solid var(--pen);padding:9px 14px;margin:18px 0;background:#eef0e7}
+.v-note p {margin:.3em 0 0}
+.v-quiz {border-top:1px solid var(--v-rule);padding:12px 0 0;margin:22px 0 0}
+.v-quiz .v-source {margin:0;color:var(--muted);font-size:13px}
+.v-options {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2em;margin:7px 0 12px;padding-inline-start:26px;font-size:18px}
+.v-blank {display:inline-block;min-width:3em;height:.8em;border-bottom:1px solid currentColor}
+.v-fold {border-top:1px solid var(--v-rule);margin:12px 0 0;padding:7px 0 0}
+.v-fold summary {color:var(--pen);font-weight:650;min-height:32px}
+.v-fold .v-answer {font-size:19px;font-weight:700;color:var(--pen);margin:.4em 0}
+.v-switch {min-width:0;margin:20px 0;padding:12px 14px 14px;border:1px solid var(--v-rule);background:#f1f3eb}
+.v-switch legend {font-weight:650;color:var(--pen);padding:0 6px}
+.v-switch input {position:absolute;inline-size:1px;block-size:1px;opacity:0}
+.v-switch-labels {display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+.v-switch label {padding:6px 11px;border:1px solid var(--v-rule);cursor:pointer;background:#fcfaf2;font-size:14px}
+.v-switch-output {min-height:100px;border-top:1px solid var(--v-rule);padding:9px 0 0}
+.v-switch-output>div {display:none}
+.v-switch-output p {margin:.28em 0}
+#v-order-after:checked~.v-switch-labels [for=v-order-after],#v-order-mid:checked~.v-switch-labels [for=v-order-mid],#v-order-pronoun:checked~.v-switch-labels [for=v-order-pronoun] {background:var(--pen);border-color:var(--pen);color:white}
+#v-order-after:focus-visible~.v-switch-labels [for=v-order-after],#v-order-mid:focus-visible~.v-switch-labels [for=v-order-mid],#v-order-pronoun:focus-visible~.v-switch-labels [for=v-order-pronoun] {outline:2px solid var(--pen);outline-offset:2px}
+#v-order-after:checked~.v-switch-output .v-case-after,#v-order-mid:checked~.v-switch-output .v-case-mid,#v-order-pronoun:checked~.v-switch-output .v-case-pronoun {display:block}
+@media(max-width:650px) {
+  .verbs .v-lesson>h2 {font-size:26px}
+  .v-line {font-size:19px}
+  .v-compare {gap:0 16px}
+  .verbs .v-table {font-size:15px}
+}
+@media(max-width:460px) {
+  .v-compare,.v-options {grid-template-columns:1fr}
+  .v-options {row-gap:3px}
+  .v-switch {padding-inline:10px}
+}
+
+</style>
+</head>
+<body class="verbs">
+<header class="site-header"><div class="site-inner"><a class="brand" href="index.html" aria-label="十环"><img src="assets/zhang-shihuan-logo.svg" alt="" width="69" height="36"></a><nav class="site-nav" aria-label="主导航"><a href="external-practice.html">每日外刊</a><a href="index.html?view=study" aria-current="page">专题精讲</a><a href="cloze-pages/index.html">完形填空</a><a href="index.html?view=reading&amp;reading_type=comprehension">阅读理解</a></nav></div></header>
+<main id="manual" class="manual-page editorial-page">
+<header class="cover editorial-rail"><h1>动词和动词短语</h1><a class="standalone" id="course" href="index.html?topic=verbs&amp;chapter=handbook">在本章题卷中查看</a><button type="button" class="back-map" data-target="overview" hidden>返回本章总览</button></header>
+<section class="chapter-map" id="overview"><h2 tabindex="-1">考点目录</h2><nav aria-label="本章考点目录"><div class="outline"><section class="outline-group"><h3><a href="#unit-1" data-target="unit-1"><small class="group-number">01</small>动词词义与句法功能</a></h3><ol class="outline-links"><li><a href="#unit-1" data-target="unit-1"><small class="section-number">1.1</small>动词的对象与动作结果</a></li><li><a href="#unit-2" data-target="unit-2"><small class="section-number">1.2</small>短语动词的整体义</a></li><li><a href="#unit-3" data-target="unit-3"><small class="section-number">1.3</small>及物、不及物与系动词</a></li><li><a href="#unit-4" data-target="unit-4"><small class="section-number">1.4</small>词义辨析：搭配、方向与语境</a></li></ol></section><section class="outline-group"><h3><a href="#expanded-verbs-1" data-target="expanded-verbs-1"><small class="group-number">02</small>动词搭配与宾语位置</a></h3><ol class="outline-links"><li><a href="#expanded-verbs-1" data-target="expanded-verbs-1"><small class="section-number">2.1</small>易混动词的用法与搭配</a></li><li><a href="#expanded-verbs-2" data-target="expanded-verbs-2"><small class="section-number">2.2</small>不定式、-ing 与宾语补足语</a></li><li><a href="#expanded-verbs-3" data-target="expanded-verbs-3"><small class="section-number">2.3</small>短语动词的宾语位置</a></li></ol></section><section class="outline-group"><h3><a href="#expanded-verbs-4" data-target="expanded-verbs-4"><small class="group-number">03</small>补语形式、动作关系与语态</a></h3><ol class="outline-links"><li><a href="#expanded-verbs-4" data-target="expanded-verbs-4"><small class="section-number">3.1</small>形式与意义：remember、stop、try、mean</a></li><li><a href="#expanded-verbs-5" data-target="expanded-verbs-5"><small class="section-number">3.2</small>助动词链、被动与使役</a></li></ol></section></div></nav><h2>典型题精析</h2><p>短语搭配题先确认动作的对象和结果；句型题再判断动词后接宾语、表语，还是由另一个人或物承担后续动作。</p><div class="anchor-example"><div class="v-table"><table><caption>两道题用到同一个短语，宾语不同</caption><thead><tr><th scope="col">题库来源</th><th scope="col">设空后的对象</th><th scope="col">语境</th></tr></thead><tbody><tr><td>2025 天津第二次第 13 题</td><td><span lang="en">work and school</span></td><td>家人一起外出，共度时光</td></tr><tr><td>2023 天津第一次第 12 题</td><td><span lang="en">a small amount of money each month</span></td><td>每月处理一笔小额资金，养成理财习惯</td></tr></tbody></table></div><details class="v-fold"><summary>查看两处词义</summary><p>两题都用 <span lang="en">put aside</span>。第一题暂时不理会工作和功课；第二题定期留下一笔钱。<a href="#unit-1" data-target="unit-1">看两道原题的选项与依据</a>。</p></details></div></section>
+<section class="group-nav" data-g="0" hidden><h2><small class="group-number">01</small>动词词义与句法功能</h2><p>区分动词所表达的动作，以及它后面的名词或形容词在句中担任的成分。</p><nav aria-label="本组知识点"><a href="#unit-1" data-target="unit-1"><small class="section-number">1.1</small>动词的对象与动作结果</a><a href="#unit-2" data-target="unit-2"><small class="section-number">1.2</small>短语动词的整体义</a><a href="#unit-3" data-target="unit-3"><small class="section-number">1.3</small>及物、不及物与系动词</a><a href="#unit-4" data-target="unit-4"><small class="section-number">1.4</small>词义辨析：搭配、方向与语境</a></nav></section><section class="group-nav" data-g="1" hidden><h2><small class="group-number">02</small>动词搭配与宾语位置</h2><p>用宾语判断易混词；动词接另一动作时确认执行者，接人称代词时确认小品词的位置。</p><nav aria-label="本组知识点"><a href="#expanded-verbs-1" data-target="expanded-verbs-1"><small class="section-number">2.1</small>易混动词的用法与搭配</a><a href="#expanded-verbs-2" data-target="expanded-verbs-2"><small class="section-number">2.2</small>不定式、-ing 与宾语补足语</a><a href="#expanded-verbs-3" data-target="expanded-verbs-3"><small class="section-number">2.3</small>短语动词的宾语位置</a></nav></section><section class="group-nav" data-g="2" hidden><h2><small class="group-number">03</small>补语形式、动作关系与语态</h2><p>辨别 to do 和 doing 表达的不同事件，分清使役结构中谁做动作、谁承受动作。</p><nav aria-label="本组知识点"><a href="#expanded-verbs-4" data-target="expanded-verbs-4"><small class="section-number">3.1</small>形式与意义：remember、stop、try、mean</a><a href="#expanded-verbs-5" data-target="expanded-verbs-5"><small class="section-number">3.2</small>助动词链、被动与使役</a></nav></section>
+<div id="pages"><article data-page="unit-1" data-g="0" aria-label="动词的对象与动作结果" hidden><section class="v-lesson"><h2>动词的对象与动作结果</h2><p>动作的含义常常要和宾语一起确定。判断选项时，看动作落在谁或什么上，再问这个对象在动作之后发生了什么变化。</p><figure class="v-alignment"><figcaption>同一个动作，宾语决定结果</figcaption><div class="v-compare"><div><h4>暂时不理会</h4><p class="v-line" lang="en">They <mark class="v-verb">put aside</mark> <mark class="v-object">their differences</mark> and kept working.</p><p>暂且搁置分歧，继续合作。分歧没有消失，只是先不处理。</p></div><div><h4>有意留下备用</h4><p class="v-line" lang="en">They <mark class="v-verb">put aside</mark> <mark class="v-object">some money</mark> for the trip.</p><p>留出一笔旅行经费。这笔钱仍归他们所有，只是不花在别处。</p></div></div></figure><aside class="v-note"><h4>区分：改变对象与描述对象</h4><p><span lang="en">boost our mood</span> 指让心情好转，<span lang="en">reflect our mood</span> 则指体现原有心情。如题干说运动有助于应对焦虑，支持的是 <span lang="en">boost</span>，因为它解释了益处。两个搭配在语法上都成立。</p></aside><section class="v-quiz" aria-label="题库原题" data-question-id="bank-verbs-1"><p class="v-source">题库原题 · 2025天津第二次第13题</p><p class="v-line" lang="en">A family day out is an opportunity to <span class="v-blank" aria-label="空格">&nbsp;</span> work and school and spend quality time together.</p><ol class="v-options" type="A" lang="en"><li>put aside</li><li>pass on</li><li>take up</li><li>give away</li></ol><details class="v-fold"><summary>核对答案与依据</summary><p class="v-answer"><span lang="en">A. put aside</span></p><p>家庭出游让人暂时把工作和功课放到一边，好好相处。<span lang="en">spend quality time together</span> 补出这样做的目的。<span lang="en">pass on</span> 表示传递，<span lang="en">take up</span> 可指开始从事，<span lang="en">give away</span> 可指送掉或泄露，都没有“先搁置”的意思。</p></details></section><section class="v-quiz" aria-label="题库原题" data-question-id="coverage-verbs-6"><p class="v-source">题库原题 · 2023天津第一次第12题</p><p class="v-line" lang="en"><span class="v-blank" aria-label="空格">&nbsp;</span> a small amount of money each month is widely recognized as a good habit for personal finance management.</p><ol class="v-options" type="A" lang="en"><li>Picking out</li><li>Putting aside</li><li>Giving away</li><li>Getting back</li></ol><details class="v-fold"><summary>核对答案与依据</summary><p class="v-answer"><span lang="en">B. Putting aside</span></p><p><span lang="en">a small amount of money each month</span> 和理财习惯指向定期存钱，所以选 <span lang="en">putting aside</span>。<span lang="en">picking out</span> 是挑选，<span lang="en">giving away</span> 是送掉，<span lang="en">getting back</span> 是拿回来。四项都用 -ing，区别在钱的去向。</p></details></section></section></article><article data-page="unit-2" data-g="0" aria-label="短语动词的整体义" hidden><section class="v-lesson"><h2>短语动词的整体义</h2><p>短语动词应整组识别。熟悉的词若另接小品词或介词，整个组合的意思、宾语类型和位置都可能改变。</p><div class="v-table"><table><caption>从组合和对象确定词义</caption><thead><tr><th scope="col">短语与对象</th><th scope="col">动作含义</th><th scope="col">常见语境</th></tr></thead><tbody><tr><td><span lang="en">give away furniture</span></td><td>把家具送给别人</td><td>物品从自己手中转到别人手中</td></tr><tr><td><span lang="en">give away a secret</span></td><td>把秘密泄露出去</td><td>原本保密的信息被别人知道</td></tr><tr><td><span lang="en">pick up a book</span></td><td>拿起一本书</td><td>具体物品被拿起来</td></tr><tr><td><span lang="en">pick up some Italian</span></td><td>在接触中学会一些意大利语</td><td>技能或语言逐渐掌握，不强调系统授课</td></tr><tr><td><span lang="en">take up a post</span></td><td>就任某职位</td><td>开始承担职责；take up space 则说占用空间</td></tr><tr><td><span lang="en">put off buying a printer</span></td><td>推迟购买打印机</td><td>暂缓的是购买这件事，buying 不表示已经买过</td></tr><tr><td><span lang="en">bring in new technology</span></td><td>引进新技术</td><td>从外部引入当前缺少的技术</td></tr></tbody></table></div><aside class="v-note"><h4>区分：run out 与 run out of</h4><p><span lang="en">We ran out of flour.</span> 以使用者为主语，<span lang="en">flour</span> 放在 <span lang="en">of</span> 后。<span lang="en">The flour ran out.</span> 以耗尽的材料为主语，<span lang="en">run out</span> 后不直接带宾语。</p></aside><section class="v-quiz" aria-label="题库原题" data-question-id="coverage-verbs-9"><p class="v-source">题库原题 · 2021天津第二次第2题</p><p class="v-line" lang="en">I wanted to make dumplings but found I had <span class="v-blank" aria-label="空格">&nbsp;</span> flour, so I went out to buy some.</p><ol class="v-options" type="A" lang="en"><li>made up for</li><li>run out of</li><li>kept away from</li><li>got down to</li></ol><details class="v-fold"><summary>核对答案与依据</summary><p class="v-answer"><span lang="en">B. run out of</span></p><p><span lang="en">so I went out to buy some</span> 给出了结果：家里没有面粉了。主语是 <span lang="en">I</span>，后面有 <span lang="en">flour</span>，因此用 <span lang="en">had run out of flour</span>。<span lang="en">get down to</span> 是开始认真做某事；<span lang="en">make up for / keep away from</span> 分别是弥补、远离。</p></details></section></section></article><article data-page="unit-3" data-g="0" aria-label="及物、不及物与系动词" hidden><section class="v-lesson"><h2>及物、不及物与系动词</h2><div class="v-table"><table><caption>动词后的成分：宾语、表语或状语</caption><thead><tr><th scope="col">句型</th><th scope="col">对照例句</th><th scope="col">成分关系</th></tr></thead><tbody><tr><td>主语 + 不及物动词</td><td><span lang="en">The door opened.</span></td><td>门自己开了。opened 后无需直接宾语。</td></tr><tr><td>主语 + 及物动词 + 宾语</td><td><span lang="en">Li Ming opened the door.</span></td><td>Li Ming 是动作发出者，the door 是被打开的对象。</td></tr><tr><td>主语 + 系动词 + 表语</td><td><span lang="en">The door remained open.</span></td><td>open 说明门仍开着；不是 remained 支配的对象。</td></tr><tr><td>主语 + 不及物动词 + 地点状语</td><td><span lang="en">Li Ming stayed at school.</span></td><td>at school 说明停留的地点；不能把 school 当作 stayed 的直接宾语。</td></tr></tbody></table></div><figure class="v-alignment"><figcaption>同一个 feel，结构随词义改变</figcaption><div class="v-compare"><div><h4>系动词 + 形容词作表语</h4><p class="v-line" lang="en">The fabric feels <mark class="v-result">soft</mark>.</p><p>soft 说明布料摸起来的质地。</p></div><div><h4>及物动词 + 宾语 + 方式状语</h4><p class="v-line" lang="en">She felt <mark class="v-object">the fabric</mark> <mark class="v-result">carefully</mark>.</p><p>felt 是“用手摸”，对象是 fabric；carefully 说明她怎么摸。</p></div></div></figure><aside class="v-note"><h4>区分：系动词按意义分组</h4><p><span lang="en">seem / look</span> 表示表象；<span lang="en">become / turn / grow</span> 可表示变化；<span lang="en">remain / stay / keep</span> 可表示维持。表语也可以是名词，例如 <span lang="en">She became an engineer.</span></p></aside><aside class="v-note"><h4>区分：直接宾语和被动结构</h4><p><span lang="en">The book cost me 60 yuan.</span> 有宾语成分，但在“价格为”的义项下，通常不能按 <span lang="en">She opened the door.</span> 那样变成被动。及物性先看当前句子是否直接带宾语。</p></aside><section class="v-quiz" aria-label="题库原题" data-question-id="coverage-verbs-10"><p class="v-source">题库原题 · 2021天津第二次第13题</p><p class="v-line" lang="en">Although a few have come and gone, the restaurant&#x27;s regular customers have <span class="v-blank" aria-label="空格">&nbsp;</span> the same for nearly 40 years.</p><ol class="v-options" type="A" lang="en"><li>stayed</li><li>turned</li><li>grown</li><li>got</li></ol><details class="v-fold"><summary>核对答案与依据</summary><p class="v-answer"><span lang="en">A. stayed</span></p><p><span lang="en">the same</span> 是表语，指常客整体没有变。<span lang="en">nearly 40 years</span> 表示持续到现在的一段时间，<span lang="en">although</span> 引出少数人来去这一让步信息。<span lang="en">stay</span> 表状态延续；其余三项在作系动词时都可表示变化，不能与这里的 <span lang="en">the same</span> 构成所需意思。</p></details></section></section></article><article data-page="unit-4" data-g="0" aria-label="词义辨析：搭配、方向与语境" hidden><section class="v-lesson"><h2>词义辨析：搭配、方向与语境</h2><p>几个选项都能放进同一语法位置时，比较它们各自要求什么对象、动作指向哪里。题干常用转折或结果信号限定含义。</p><div class="v-table"><table><caption>同一件事可以从不同参与者说起</caption><thead><tr><th scope="col">例句</th><th scope="col">主语与搭配</th><th scope="col">信息重点</th></tr></thead><tbody><tr><td><span lang="en">The book cost me 60 yuan.</span></td><td>东西 + cost + 人 + 钱</td><td>买这本书花了多少钱</td></tr><tr><td><span lang="en">I spent 60 yuan on the book.</span></td><td>人 + spend + 钱 + on + 东西</td><td>买书的人把钱花在哪儿</td></tr><tr><td><span lang="en">I paid 60 yuan for the book.</span></td><td>人 + pay + 钱 + for + 东西</td><td>钱是为哪笔交易付的</td></tr><tr><td><span lang="en">It took me two days to read the book.</span></td><td>It + take + 人 + 时间 + to do</td><td>完成读书这件事耗了多少时间</td></tr></tbody></table></div><aside class="v-note"><h4>区分：金额够不够，和谁来付款</h4><p><span lang="en">Her income can cover the cost.</span> 表示她的收入足以承担这笔费用。<span lang="en">She can pay the fee.</span> 说她可以付这笔费。<span lang="en">cover</span> 强调资源能否满足费用，<span lang="en">pay</span> 强调实际支付。</p></aside><section class="v-quiz" aria-label="题库原题" data-question-id="coverage-verbs-3"><p class="v-source">题库原题 · 2024天津第一次第13题</p><p class="v-line" lang="en">Caroline doesn&#x27;t have a natural talent for music but she <span class="v-blank" aria-label="空格">&nbsp;</span> it with hard work.</p><ol class="v-options" type="A" lang="en"><li>lives up to</li><li>makes up for</li><li>reaches out to</li><li>looks out for</li></ol><details class="v-fold"><summary>核对答案与依据</summary><p class="v-answer"><span lang="en">B. makes up for</span></p><p><span lang="en">but</span> 连接“没有天赋”和“靠勤奋补足”这两层意思；<span lang="en">it</span> 照应前面说到的音乐天赋，弥补的是天赋的缺乏；<span lang="en">with hard work</span> 说用勤奋来补。<span lang="en">live up to</span> 的常见对象是期待或标准，<span lang="en">reach out to</span> 指主动联系，<span lang="en">look out for</span> 指留意或照看。只有 <span lang="en">make up for</span> 表示用努力补足缺陷。</p></details></section></section></article><aside class="group-recall" data-g="0" hidden><h3>考点辨析</h3><p>The leaves turned yellow. She turned the key. 哪一个 turned 表状态变化？哪一个有动作对象？</p><details><summary>查看解析</summary><div class="recall-answer">第一句的 <span lang="en">yellow</span> 是表语，说明树叶变成黄色。第二句的 <span lang="en">the key</span> 是宾语，说明她转动的是什么。</div></details></aside><article data-page="expanded-verbs-1" data-g="1" aria-label="易混动词的用法与搭配" hidden><section class="v-lesson"><h2>易混动词的用法与搭配</h2><figure class="v-alignment"><figcaption>价格上涨与人为提价</figcaption><div class="v-compare"><div><h4>rise：发生上升</h4><p class="v-line" lang="en">Prices <mark class="v-verb">rose</mark> after the holiday.</p><p>prices 是发生变化的事物；rise 在这里没有直接宾语。动词三态：<span lang="en">rise—rose—risen</span>。</p></div><div><h4>raise：把某物提高</h4><p class="v-line" lang="en">The shop <mark class="v-verb">raised</mark> <mark class="v-object">its prices</mark> after the holiday.</p><p>the shop 是动作发出者，its prices 是被提高的对象。动词三态：<span lang="en">raise—raised—raised</span>。</p></div></div></figure><div class="v-table"><table><caption>lie、lay：用宾语与动词形式区分</caption><thead><tr><th scope="col">原形</th><th scope="col">过去式</th><th scope="col">过去分词</th><th scope="col">常见结构</th></tr></thead><tbody><tr><td><span lang="en">lie</span></td><td><span lang="en">lay</span></td><td><span lang="en">lain</span></td><td>躺：<span lang="en">lie on the sofa</span>，不带直接宾语</td></tr><tr><td><span lang="en">lay</span></td><td><span lang="en">laid</span></td><td><span lang="en">laid</span></td><td>放置：<span lang="en">lay the book on the desk</span>，the book 是宾语</td></tr><tr><td><span lang="en">lie</span></td><td><span lang="en">lied</span></td><td><span lang="en">lied</span></td><td>说谎：<span lang="en">lie to somebody</span>，to 后接被欺骗的人</td></tr></tbody></table></div><aside class="v-note"><h4>区分：借入与借出</h4><p><span lang="en">I borrowed a dictionary from Li Ming.</span> 是我借入；<span lang="en">Li Ming lent me a dictionary.</span> 是李明借出。同一次借用，主语换了视角。</p></aside><details class="v-fold"><summary>补充：preserve、reserve 与 consult 的宾语</summary><p><span lang="en">preserve old buildings</span> 是保护现有的老建筑；<span lang="en">reserve two seats</span> 是为之后使用预留两个座位。</p><p><span lang="en">consult your doctor</span> 是咨询医生，<span lang="en">consult a dictionary</span> 是查阅词典；表示向某人请教时可以直接接人作宾语，不需要加 <span lang="en">to</span>。</p></details><section class="v-quiz" aria-label="题库原题" data-question-id="coverage-verbs-19"><p class="v-source">题库原题 · 2025 天津南开“三月高考”第13题</p><p class="v-line" lang="en">They hope this new evidence will <span class="v-blank" aria-label="空格">&nbsp;</span> her innocence.</p><ol class="v-options" type="A" lang="en"><li>prove</li><li>meet</li><li>resolve</li><li>approve</li></ol><details class="v-fold"><summary>核对答案与依据</summary><p class="v-answer"><span lang="en">A. prove</span></p><p><span lang="en">evidence</span> 是证据，<span lang="en">her innocence</span> 是它要证实的事实。<span lang="en">prove</span> 可以直接接 <span lang="en">her innocence</span>；<span lang="en">approve a proposal</span> 是批准提议，<span lang="en">approve of something</span> 是赞成某事，均不表示用证据证明。<span lang="en">meet</span> 常接需求或标准，<span lang="en">resolve</span> 常接问题或争端。</p></details></section></section></article><article data-page="expanded-verbs-2" data-g="1" aria-label="不定式、-ing 与宾语补足语" hidden><section class="v-lesson"><h2>不定式、-ing 与宾语补足语</h2><figure class="v-alignment"><figcaption>同一动作由谁执行</figcaption><div class="v-compare"><div><h4>主语做后面的动作</h4><p class="v-line" lang="en">Li Ming expects <mark class="v-result">to present the report</mark> tomorrow.</p><p>作报告的人就是李明。时间指向明天，expect 表示预期，不保证事情已经发生。</p></div><div><h4>宾语做后面的动作</h4><p class="v-line" lang="en">Li Ming expects <mark class="v-object">Lin Na</mark> <mark class="v-result">to present the report</mark> tomorrow.</p><p>Lin Na 是 expects 的宾语，也是作报告的人。</p></div></div></figure><div class="v-table"><table><caption>动词后可接的结构</caption><thead><tr><th scope="col">句型</th><th scope="col">代表动词</th><th scope="col">对照例句</th></tr></thead><tbody><tr><td>V + to do</td><td><span lang="en">plan / decide / hope</span></td><td><span lang="en">They decided to revise the report.</span></td></tr><tr><td>V + doing</td><td><span lang="en">avoid / finish / consider</span></td><td><span lang="en">They finished revising the report.</span></td></tr><tr><td>V + 宾语 + to do</td><td><span lang="en">ask / allow / encourage</span></td><td><span lang="en">The teacher asked Lin Na to revise it.</span></td></tr><tr><td>V + 宾语 + 动词原形</td><td><span lang="en">make / let</span></td><td><span lang="en">The teacher let Lin Na revise it.</span></td></tr><tr><td>V + 宾语 + do 或 doing</td><td><span lang="en">see / hear / notice</span></td><td><span lang="en">I saw Lin Na leave. / I saw Lin Na leaving.</span></td></tr></tbody></table></div><aside class="v-note"><h4>区分：动词不同，结构不能照抄</h4><p><span lang="en">hope to do</span> 和 <span lang="en">hope that she will do it</span> 都可用；不说 <span lang="en">hope her to do it</span>。<span lang="en">suggest doing</span> 与 <span lang="en">suggest that she (should) do it</span> 都可用；不说 <span lang="en">suggest her to do it</span>。</p></aside><p>同样的位置也可能由形容词决定：<span lang="en">They are willing to revise it.</span> 中不定式补充说明 <span lang="en">willing</span>，整句的限定动词是 <span lang="en">are</span>。</p><details class="v-fold"><summary>补充：感官动词与使役动词</summary><p><span lang="en">I saw Lin Na leave.</span> 把离开作为一个完整事件来观察；<span lang="en">I saw Lin Na leaving.</span> 描述当时看见她正在离开的过程。</p><p><span lang="en">They made Lin Na wait.</span> 变被动为 <span lang="en">Lin Na was made to wait.</span>；<span lang="en">let somebody do</span> 的对应被动常用 <span lang="en">be allowed to do</span>。<span lang="en">help somebody (to) do</span> 中的 <span lang="en">to</span> 可以省略。</p></details></section></article><article data-page="expanded-verbs-3" data-g="1" aria-label="短语动词的宾语位置" hidden><section class="v-lesson"><h2>短语动词的宾语位置</h2><p>可分短语动词有两种名词宾语位置；人称代词作宾语时放在动词与小品词之间。含介词的组合要保留介词和它的宾语。</p><fieldset class="v-switch"><legend>可分短语：只改变宾语的位置或形式</legend><input id="v-order-after" type="radio" name="v-word-order" checked><input id="v-order-mid" type="radio" name="v-word-order"><input id="v-order-pronoun" type="radio" name="v-word-order"><div class="v-switch-labels"><label for="v-order-after">名词在后</label><label for="v-order-mid">名词在中间</label><label for="v-order-pronoun">换成人称代词</label></div><div class="v-switch-output"><div class="v-case-after"><p class="v-line" lang="en">They put aside <mark class="v-object">the report</mark>.</p><p>名词 <span lang="en">the report</span> 可以接在 <span lang="en">aside</span> 后。</p></div><div class="v-case-mid"><p class="v-line" lang="en">They put <mark class="v-object">the report</mark> aside.</p><p>也可把同一个名词宾语移到中间，句意不变。</p></div><div class="v-case-pronoun"><p class="v-line" lang="en">They put <mark class="v-object">it</mark> aside.</p><p>换成人称代词 <span lang="en">it</span> 后必须放在中间：<span lang="en">put it aside</span>，不说 <span lang="en">put aside it</span>。</p></div></div></fieldset><div class="v-table"><table><caption>区分：可分结构与介词结构</caption><thead><tr><th scope="col">结构</th><th scope="col">名词宾语</th><th scope="col">人称代词宾语</th></tr></thead><tbody><tr><td>动词 + 小品词</td><td><span lang="en">turn off the light / turn the light off</span></td><td><span lang="en">turn it off</span></td></tr><tr><td>动词 + 介词</td><td><span lang="en">look after the child</span></td><td><span lang="en">look after him</span>；不说 <span lang="en">look him after</span></td></tr><tr><td>动词 + 小品词 + 介词</td><td><span lang="en">run out of flour</span></td><td><span lang="en">run out of it</span>；<span lang="en">it</span> 紧跟介词 <span lang="en">of</span></td></tr><tr><td>无宾语的短语动词</td><td><span lang="en">The bus broke down.</span></td><td><span lang="en">break down</span> 表示车抛锚时不带宾语</td></tr></tbody></table></div><aside class="v-note"><h4>补充：宾语很长时</h4><p>在可分结构中，带长修饰语的名词宾语通常放在小品词后。如 <span lang="en">They turned off all the lights along the corridor.</span> 同一个短语也可能换结构：<span lang="en">take off your coat</span> 带宾语，<span lang="en">The plane took off.</span> 的 <span lang="en">take off</span> 表“起飞”，没有宾语可移动。</p></aside></section></article><aside class="group-recall" data-g="1" hidden><h3>考点辨析</h3><p>The teacher asked me to put the dictionaries away. 换成 them 后，代词放在哪儿？是谁去收字典？</p><details><summary>查看解析</summary><div class="recall-answer">改为 <span lang="en">The teacher asked me to put them away.</span>。代词放在 <span lang="en">put</span> 和 <span lang="en">away</span> 之间；收字典的人是被老师要求做这件事的 <span lang="en">me</span>。</div></details></aside><article data-page="expanded-verbs-4" data-g="2" aria-label="形式与意义：remember、stop、try、mean" hidden><section class="v-lesson"><h2>形式与意义：remember、stop、try、mean</h2><figure class="v-alignment"><figcaption>remember：记起一段经历，还是记得该做什么</figcaption><div class="v-compare"><div><h4>remember doing：回想已经发生的事</h4><p class="v-line" lang="en">I remember <mark class="v-result">locking the door</mark>.</p><p>先锁门，再回忆。可以译成“我记得自己锁过门”。</p></div><div><h4>remember to do：记得执行一项任务</h4><p class="v-line" lang="en">I remembered <mark class="v-result">to lock the door</mark>.</p><p>先想起该锁门，再去锁门。还原成提醒语 Remember to lock the door. 时，锁门尚未执行。</p></div></div></figure><div class="v-table"><table><caption>形式改变时，具体变的是哪层意思</caption><thead><tr><th scope="col">动词</th><th scope="col">接 to do</th><th scope="col">接 doing</th></tr></thead><tbody><tr><td><span lang="en">stop</span></td><td><span lang="en">She stopped to answer the phone.</span> 她停下原来做的事，去接电话；不定式表目的。</td><td><span lang="en">She stopped answering the phone.</span> 她不再接电话；接电话是被停止的行为。</td></tr><tr><td><span lang="en">try</span></td><td><span lang="en">She tried to open the window.</span> 她努力把窗打开，没说结果。</td><td><span lang="en">Try using the spare key.</span> 试着用备用钥匙，看看能否解决问题。</td></tr><tr><td><span lang="en">mean</span></td><td><span lang="en">I didn’t mean to interrupt.</span> 我并非有意打断。</td><td><span lang="en">Leaving later means missing the last bus.</span> 晚些出发的后果是赶不上末班车。</td></tr><tr><td><span lang="en">forget</span></td><td><span lang="en">She forgot to call.</span> 她忘了打电话，通常指电话没打。</td><td><span lang="en">I’ll never forget meeting her.</span> 见面已经发生，这段记忆不会淡忘。</td></tr><tr><td><span lang="en">regret</span></td><td><span lang="en">We regret to inform you that the event is cancelled.</span> 遗憾地告知坏消息。</td><td><span lang="en">She regretted ignoring the warning.</span> 她为曾经不听警告而后悔。</td></tr><tr><td><span lang="en">go on</span></td><td><span lang="en">He went on to discuss the results.</span> 前一话题告一段落，转而谈结果。</td><td><span lang="en">He went on talking about the results.</span> 他继续谈结果，话题没有换。</td></tr></tbody></table></div><aside class="v-note"><h4>区分：-ing 不等于已经发生</h4><p><span lang="en">consider changing the plan</span> 是考虑改变计划，改变尚未发生。<span lang="en">The filter needs cleaning.</span> 表示滤水器需要被清洗，可换成 <span lang="en">needs to be cleaned</span>。时间和语态要结合前面的动词判断。</p></aside></section></article><article data-page="expanded-verbs-5" data-g="2" aria-label="助动词链、被动与使役" hidden><section class="v-lesson"><h2>助动词链、被动与使役</h2><p>助动词有固定顺序：情态在前，接完成 have，再接进行 be、被动 be。某一层用不上就省去；一层出现时，会规定下一个成分的形式。</p><div class="v-table"><table><caption>助动词链：同一个 repair 怎样变形</caption><thead><tr><th scope="col">例句片段</th><th scope="col">各层怎样接</th><th scope="col">句意</th></tr></thead><tbody><tr><td><span lang="en"><mark class="v-verb">has</mark> <mark class="v-result">repaired</mark></span></td><td>完成 have + 过去分词；主语执行修理</td><td>已经修理了某物</td></tr><tr><td><span lang="en"><mark class="v-verb">is</mark> <mark class="v-verb">being</mark> <mark class="v-result">repaired</mark></span></td><td>进行 be + -ing；being 是被动 be 的 -ing 形式</td><td>正在维修</td></tr><tr><td><span lang="en"><mark class="v-verb">has</mark> <mark class="v-verb">been</mark> <mark class="v-result">repaired</mark></span></td><td>完成 have + 过去分词；been 是被动 be 的过去分词</td><td>已经维修</td></tr><tr><td><span lang="en"><mark class="v-verb">may</mark> <mark class="v-verb">have</mark> <mark class="v-verb">been</mark> <mark class="v-result">repaired</mark></span></td><td>情态 may + 原形；have + been；been + repaired</td><td>可能已经维修过</td></tr></tbody></table></div><p><span lang="en">The phone is being repaired.</span> 中 <span lang="en">is</span> 表示现在时，并与主语的单数形式一致。整条动词链只作一个谓语；<span lang="en">to be repaired</span> 虽含 <span lang="en">be</span>，作为不定式仍是非谓语。</p><details class="v-fold"><summary>区分：be + 过去分词表示状态，还是表示动作</summary><p><span lang="en">The doors are closed now.</span> 可以只表示门现在关着。<span lang="en">The doors are closed by the staff at six every evening.</span> 交代执行者和动作发生时间，说的是每天的关门动作。</p></details><figure class="v-alignment"><figcaption>get 在两种结构中放在哪里</figcaption><div class="v-compare"><div><h4>主语承受动作</h4><p class="v-line" lang="en">The phone got <mark class="v-result">damaged</mark> on the way home.</p><p>手机在路上受损。get + 过去分词在这里构成被动，主语承受动作。</p></div><div><h4>宾语承受动作</h4><p class="v-line" lang="en">Helen got <mark class="v-object">the phone</mark> <mark class="v-result">repaired</mark> yesterday.</p><p>Helen 安排维修，the phone 被修理。repaired 是宾语补足语。</p></div></div></figure><aside class="v-note"><h4>区分：主动安排与碰上坏事</h4><p><span lang="en">have the phone repaired</span> 通常指安排人修；<span lang="en">have one’s phone stolen</span> 通常指遭遇失窃。宾语和过去分词都是被动关系，句子的主语是否主动促成，要看事件和语境。<span lang="en">I had him check the phone.</span> 则是我让他检查手机，<span lang="en">him</span> 执行 <span lang="en">check</span>，用动词原形。</p></aside><section class="v-quiz" aria-label="题库原题" data-question-id="coverage-nonfinite-37"><p class="v-source">题库原题 · 2025天津红桥质量调查二第11题</p><p class="v-line" lang="en">Helen&#x27;s smartphone doesn&#x27;t work. She has to get it <span class="v-blank" aria-label="空格">&nbsp;</span>.</p><ol class="v-options" type="A" lang="en"><li>to be repairing</li><li>repairing</li><li>to repair</li><li>repaired</li></ol><details class="v-fold"><summary>核对答案与依据</summary><p class="v-answer"><span lang="en">D. repaired</span></p><p><span lang="en">it</span> 指手机，手机是被修理的对象。空格属于 <span lang="en">get + 宾语 + 过去分词</span>，填 <span lang="en">repaired</span>。换成 <span lang="en">get somebody to repair it</span> 时，<span lang="en">somebody</span> 才是执行修理的人。</p></details></section></section></article><aside class="group-recall" data-g="2" hidden><h3>考点辨析</h3><p>She stopped to get her bike repaired. 她停下了什么？自行车是动作执行者还是承受者？</p><details><summary>查看解析</summary><div class="recall-answer"><span lang="en">stopped to get</span> 表示停下正在做的另一件事，目的是安排修车。<span lang="en">her bike</span> 承受 <span lang="en">repair</span> 这个动作，故用 <span lang="en">repaired</span>。</div></details></aside></div>
+<footer hidden><button class="turn" data-prev></button><span class="counter"></span><button class="turn" data-next></button></footer>
+</main>
+<script>
+const moduleId = 'verbs';
+const config = window.__GRAMMAR_CARD_EMBED__;
+const pages = Array.from(document.querySelectorAll('article[data-page]'));
+const groups = Array.from(document.querySelectorAll('.group-nav'));
+const main = document.querySelector('#manual');
+const map = document.querySelector('#overview');
+const back = document.querySelector('.back-map');
+const previous = document.querySelector('[data-prev]');
+const next = document.querySelector('[data-next]');
+let current;
+
+function report() {
+  if (config) parent.postMessage({type:'grammar-cards-state', module:moduleId, unitId:current?.dataset.page || null, manualOverview: !current, height:Math.ceil(main.getBoundingClientRect().height)}, '*');
+}
+
+function show(target, userAction) {
+  current = pages.find(p => p.dataset.page === target);
+  const groupId = current?.dataset.g;
+  const unit = current?.dataset.page || 'overview';
+  const inGroup = pages.filter(p => p.dataset.g === groupId);
+  const i = pages.indexOf(current);
+  const lastInGroup = current && current === inGroup[inGroup.length-1];
+  map.hidden = Boolean(current);
+  document.querySelector('footer').hidden = back.hidden = !current;
+  pages.forEach(p => { p.hidden = current !== p; });
+  groups.forEach(g => { g.hidden = g.dataset.g !== groupId; });
+  document.querySelectorAll('.group-recall').forEach(r => { r.hidden = !lastInGroup || r.dataset.g !== groupId; });
+  document.querySelectorAll('.group-nav a').forEach(a => {
+    if (a.dataset.target === unit) a.setAttribute('aria-current','page');
+    else a.removeAttribute('aria-current');
+  });
+  if (current) {
+    previous.dataset.target = pages[i-1]?.dataset.page || 'overview';
+    previous.textContent = i === 0 ? '‹ 本章总览' : '‹ 上一张';
+    next.dataset.target = pages[i+1]?.dataset.page || 'overview';
+    next.textContent = i === pages.length-1 ? '回到本章总览' : lastInGroup ? '下一组 ›' : '下一张 ›';
+    document.querySelector('.counter').textContent = '本组 ' + (inGroup.indexOf(current)+1) + ' / ' + inGroup.length;
+  }
+  document.querySelector('#course').href = 'index.html?topic=' + moduleId + '&chapter=handbook' + (current ? '&unit='+encodeURIComponent(unit) : '');
+  if (userAction) {
+    if (config) parent.postMessage({type:'grammar-manual-turn',module:moduleId,unitId:current?.dataset.page || null}, '*');
+    else {
+      if (location.hash.slice(1) !== unit) history.pushState(null,'','#'+encodeURIComponent(unit));
+      main.scrollIntoView({block:'start'});
+    }
+    const focus = current?.querySelector('h2,h3') || map.querySelector('h2');
+    focus.tabIndex = -1;
+    focus.focus({preventScroll:true});
+  }
+  requestAnimationFrame(report);
+}
+main.addEventListener('click', event => {
+  const link = event.target.closest('[data-target]');
+  if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  show(link.dataset.target,true);
+});
+function showRequested() {
+  show(config ? config.unitId : location.hash.slice(1),false);
+}
+showRequested();
+if (!config) window.addEventListener('hashchange',showRequested);
+new ResizeObserver(report).observe(main);
+</script>
+</body>
+</html>
