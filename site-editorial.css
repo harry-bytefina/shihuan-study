@@ -30,6 +30,7 @@ button { color: inherit; }
 .site-inner { min-height: 68px; display: flex; justify-content: space-between; align-items: center; gap: 10px 36px; }
 .brand { display: inline-flex; align-items: center; flex-shrink: 0; min-height: 44px; text-decoration: none; }
 .brand img { display: block; }
+.brand-tagline { color: #223d59; font: 600 1rem/1.35 var(--serif); white-space: nowrap; }
 .site-nav { display: flex; gap: 26px; white-space: nowrap; }
 .site-nav a { padding-block: 12px; color: var(--muted); text-decoration: none; font-size: .87rem; }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--accent); text-decoration: underline; text-underline-offset: .4em; }

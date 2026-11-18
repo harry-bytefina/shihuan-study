@@ -262,7 +262,7 @@
   }
   reader.dataset.dayIndex = String(active + 1);
   reader.dataset.readingId = day.id;
-  document.title = day.title + ' · 每日外刊 · 十环';
+  document.title = day.title + ' · ' + document.title;
   const layout = el('div', 'issue-layout');
   const body = el('div', 'issue-body');
   const edition = el('div', 'external-edition');
